@@ -274,6 +274,45 @@ const Index = () => {
         </div>
       </section>
 
+      {/* GUARANTEE */}
+      <section className="py-20 md:py-28 container max-w-4xl">
+        <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/30 p-8 md:p-12 text-center overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-sky opacity-40 pointer-events-none" />
+          <div className="relative">
+            <div className="inline-flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-gold-strong shadow-gold mb-6 animate-pulse-gold">
+              <span className="text-5xl md:text-6xl">🛡️</span>
+            </div>
+            <p className="inline-block bg-accent/15 text-accent-foreground font-bold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider mb-4">
+              Garantía blindada
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
+              7 días de garantía incondicional
+            </h2>
+            <p className="text-muted-foreground text-lg mt-5 max-w-2xl mx-auto leading-relaxed">
+              Prueba el kit completo durante <b>7 días sin riesgo</b>. Si por cualquier motivo no estás 100% satisfecha, te devolvemos <b>todo tu dinero</b> — sin preguntas, sin burocracia y sin complicaciones.
+            </p>
+
+            <div className="grid sm:grid-cols-3 gap-4 mt-10 max-w-2xl mx-auto">
+              {[
+                { icon: "✅", title: "Sin riesgo", text: "Reembolso total garantizado" },
+                { icon: "💬", title: "Sin preguntas", text: "Solo envíanos un email" },
+                { icon: "⚡", title: "Sin demora", text: "Devolución rápida y simple" },
+              ].map((item, i) => (
+                <div key={i} className="bg-background/70 backdrop-blur rounded-2xl p-5 border border-border/60">
+                  <div className="text-3xl mb-2">{item.icon}</div>
+                  <div className="font-display font-bold text-primary">{item.title}</div>
+                  <div className="text-sm text-muted-foreground mt-1">{item.text}</div>
+                </div>
+              ))}
+            </div>
+
+            <p className="font-display italic text-primary text-lg mt-10">
+              "El riesgo es nuestro. Tu satisfacción es la prioridad."
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20 md:py-28 container max-w-3xl">
         <div className="text-center mb-12">

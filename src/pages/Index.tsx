@@ -27,12 +27,12 @@ const Index = () => {
   ];
 
   const audience = [
-    { icon: "🙏", text: "Mujeres cristianas" },
-    { icon: "🎁", text: "Quien quiere regalar" },
-    { icon: "💰", text: "Quien quiere vender" },
+    { icon: "🙏", text: "Hombres y mujeres cristianos" },
+    { icon: "🎁", text: "Quien quiere regalar con propósito" },
+    { icon: "💰", text: "Emprendedores que quieren vender" },
     { icon: "✂️", text: "Amantes de las manualidades" },
-    { icon: "⛪", text: "Iglesias y grupos" },
-    { icon: "👩‍🏫", text: "Maestras de escuela dominical" },
+    { icon: "⛪", text: "Iglesias, grupos y ministerios" },
+    { icon: "👨‍👩‍👧", text: "Familias y maestros de escuela bíblica" },
   ];
 
   const testimonials = [
@@ -147,7 +147,7 @@ const Index = () => {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
               ¿Para quién es?
             </h2>
-            <p className="text-muted-foreground mt-3 text-lg">Perfecto para quien quiere crear con propósito</p>
+            <p className="text-muted-foreground mt-3 text-lg">Para hombres y mujeres que quieren crear con propósito</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -190,7 +190,6 @@ const Index = () => {
                   height={88}
                   className="w-11 h-11 rounded-full object-cover ring-2 ring-accent/40"
                 />
-              </div>
                 <div>
                   <div className="font-semibold text-primary">{t.name}</div>
                   <div className="text-sm text-muted-foreground">{t.city}</div>

@@ -8,6 +8,12 @@ import llavero3 from "@/assets/llavero-3.jpg";
 import llavero4 from "@/assets/llavero-4.jpg";
 import llavero5 from "@/assets/llavero-5.jpg";
 import llavero6 from "@/assets/llavero-6.jpg";
+import avatar1 from "@/assets/avatar-1.jpg";
+import avatar2 from "@/assets/avatar-2.jpg";
+import avatar3 from "@/assets/avatar-3.jpg";
+import avatar4 from "@/assets/avatar-4.jpg";
+import avatar5 from "@/assets/avatar-5.jpg";
+import avatar6 from "@/assets/avatar-6.jpg";
 
 const CHECKOUT_URL = "https://pay.cakto.com.br/9cw8k44_844198";
 
@@ -30,12 +36,12 @@ const Index = () => {
   ];
 
   const testimonials = [
-    { name: "Ana Paula", city: "Ciudad de México, MX", text: "¡Me encantaron los moldes! Súper fáciles de armar y quedaron preciosos. ¡Ya regalé a toda mi familia de la iglesia!" },
-    { name: "Fernanda López", city: "Bogotá, CO", text: "Empecé a vender los llaveros en la feria de la iglesia y recuperé la inversión el primer día." },
-    { name: "Mariana Santos", city: "Lima, PE", text: "El video tutorial me ayudó muchísimo. Nunca había hecho manualidades y armé todo perfecto." },
-    { name: "Patricia Olivera", city: "Buenos Aires, AR", text: "Los versículos en los llaveros son una bendición. ¡Los niños de la escuela bíblica los amaron!" },
-    { name: "Juliana Costa", city: "Madrid, ES", text: "Material de calidad increíble. Imprimí en casa y quedó profesional. Súper recomendado." },
-    { name: "Camila Rodríguez", city: "Quito, EC", text: "Entrega instantánea y moldes maravillosos. ¡Ya estoy esperando nuevos kits!" },
+    { name: "Ana Paula", city: "Ciudad de México, MX", avatar: avatar1, text: "¡Me encantaron los moldes! Súper fáciles de armar y quedaron preciosos. ¡Ya regalé a toda mi familia de la iglesia!" },
+    { name: "Fernanda López", city: "Bogotá, CO", avatar: avatar2, text: "Empecé a vender los llaveros en la feria de la iglesia y recuperé la inversión el primer día." },
+    { name: "Mariana Santos", city: "Lima, PE", avatar: avatar3, text: "El video tutorial me ayudó muchísimo. Nunca había hecho manualidades y armé todo perfecto." },
+    { name: "Patricia Olivera", city: "Buenos Aires, AR", avatar: avatar4, text: "Los versículos en los llaveros son una bendición. ¡Los niños de la escuela bíblica los amaron!" },
+    { name: "Juliana Costa", city: "Madrid, ES", avatar: avatar5, text: "Material de calidad increíble. Imprimí en casa y quedó profesional. Súper recomendado." },
+    { name: "Camila Rodríguez", city: "Quito, EC", avatar: avatar6, text: "Entrega instantánea y moldes maravillosos. ¡Ya estoy esperando nuevos kits!" },
   ];
 
   const faqs = [
@@ -176,9 +182,14 @@ const Index = () => {
               <div className="text-accent text-lg mb-2">★★★★★</div>
               <p className="text-foreground italic leading-relaxed flex-1">"{t.text}"</p>
               <div className="flex items-center gap-3 mt-5 pt-5 border-t border-border">
-                <div className="w-11 h-11 rounded-full bg-gradient-gold flex items-center justify-center text-primary-foreground font-display font-bold text-lg">
-                  {t.name.charAt(0)}
-                </div>
+                <img
+                  src={t.avatar}
+                  alt={`Foto de ${t.name}, clienta satisfecha`}
+                  loading="lazy"
+                  width={88}
+                  height={88}
+                  className="w-11 h-11 rounded-full object-cover ring-2 ring-accent/40"
+                />
                 <div>
                   <div className="font-semibold text-primary">{t.name}</div>
                   <div className="text-sm text-muted-foreground">{t.city}</div>

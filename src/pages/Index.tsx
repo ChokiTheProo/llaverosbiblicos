@@ -15,7 +15,7 @@ import avatar4 from "@/assets/avatar-4.jpg";
 import avatar5 from "@/assets/avatar-5.jpg";
 import avatar6 from "@/assets/avatar-6.jpg";
 
-const CHECKOUT_URL = "https://pay.cakto.com.br/9cw8k44_844198";
+const CHECKOUT_URL = "https://pay.hotmart.com/T105491862G?checkoutMode=10";
 
 const Index = () => {
   const benefits = [

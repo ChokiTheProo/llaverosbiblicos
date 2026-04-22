@@ -257,6 +257,36 @@ const Index = () => {
         </div>
       </section>
 
+      {/* PRICE CTA AFTER BONUSES */}
+      <section className="pb-20 md:pb-28 px-4">
+        <div className="w-full max-w-xl mx-auto">
+          <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/40 overflow-hidden">
+            <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-accent/10 to-transparent pointer-events-none" />
+            <div className="relative flex flex-col items-center text-center px-6 py-10 sm:px-10 sm:py-12">
+              <p className="font-display text-2xl sm:text-3xl font-bold text-primary text-balance leading-tight">
+                Llévate <span className="text-accent">todo esto</span> por apenas
+              </p>
+
+              <div className="flex items-baseline justify-center gap-1 mt-6">
+                <span className="font-display text-3xl sm:text-4xl font-bold text-accent">$</span>
+                <span className="font-display text-7xl sm:text-8xl font-bold text-accent leading-none tracking-tight">
+                  9.90
+                </span>
+                <span className="font-display text-lg sm:text-xl text-muted-foreground ml-1">USD</span>
+              </div>
+              <p className="text-sm text-muted-foreground mt-4">💳 Pago único · Acceso inmediato</p>
+
+              <a
+                href={CHECKOUT_URL}
+                className="mt-8 inline-flex items-center justify-center w-full text-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base sm:text-lg font-bold rounded-full px-6 py-5 shadow-gold transition-smooth"
+              >
+                ¡QUIERO MI KIT AHORA!
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* TESTIMONIALS */}
       <section className="pb-20 md:pb-28 container max-w-6xl">
         <div className="text-center mb-14">

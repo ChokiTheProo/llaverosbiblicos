@@ -208,7 +208,7 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {[
             {
               tag: "Bono #1",
@@ -237,6 +237,13 @@ const Index = () => {
               title: "Scripts de Venta para WhatsApp y Facebook",
               desc: "Mensajes listos para copiar y pegar que te ayudan a vender más llaveros por chat y redes sociales.",
               value: "USD 15",
+            },
+            {
+              tag: "Bono #5",
+              icon: "🎉",
+              title: "Dinámicas con Llaveros Bíblicos para Jóvenes y Grupos",
+              desc: "Actividades y juegos creativos usando los llaveros bíblicos para reuniones de jóvenes, células y escuela dominical.",
+              value: "USD 19",
             },
           ].map((bonus, i) => (
             <div
@@ -368,7 +375,7 @@ const Index = () => {
                 ))}
                 <div className="flex items-center gap-3 bg-gradient-to-r from-accent/15 to-accent/5 rounded-xl p-4 mt-5 border border-accent/20">
                   <span className="text-3xl">🎁</span>
-                  <span className="font-semibold text-foreground"><b>+3 regalos sorpresa</b> de obsequio</span>
+                  <span className="font-semibold text-foreground"><b>+5 regalos sorpresa</b> de obsequio</span>
                 </div>
               </div>
 

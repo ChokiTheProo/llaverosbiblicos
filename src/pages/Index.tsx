@@ -263,18 +263,7 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Guarantee */}
-          <div className="mt-8 bg-card rounded-2xl p-6 border border-border shadow-card flex items-start gap-5">
-            <div className="text-5xl">🛡️</div>
-            <div>
-              <h4 className="font-display text-xl font-bold text-primary">
-                7 días de garantía incondicional
-              </h4>
-              <p className="text-muted-foreground text-sm mt-1">
-                Si no te gusta por cualquier motivo, te devolvemos el 100% de tu dinero. Sin burocracia.
-              </p>
-            </div>
-          </div>
+          {/* Guarantee removed */}
 
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-6 text-sm text-muted-foreground">
             <span>🔒 Compra segura</span>

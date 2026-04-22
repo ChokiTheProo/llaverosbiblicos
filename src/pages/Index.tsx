@@ -59,35 +59,56 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
-      {/* HERO */}
-      <header className="bg-gradient-sky relative">
-        <div className="container py-16 md:py-24 text-center max-w-4xl">
-          <h1 className="font-display text-5xl md:text-7xl font-bold text-primary leading-[1.05] text-balance animate-fade-up">
-            Moldes de Llaveros Bíblicos
-            <span className="block italic text-secondary mt-2">para Imprimir y Armar</span>
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            50 personajes de la Biblia con versículos — listos para usar, regalar o vender.
-          </p>
+      <StickyCountdownBar href={CHECKOUT_URL} />
 
-          <div className="mt-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+      {/* HERO */}
+      <header className="bg-gradient-sky relative overflow-hidden">
+        {/* Decorative golden orbs */}
+        <div aria-hidden className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-accent/20 blur-3xl" />
+        <div aria-hidden className="pointer-events-none absolute -bottom-32 -right-24 h-80 w-80 rounded-full bg-secondary/20 blur-3xl" />
+
+        <div className="container py-14 md:py-24 text-center max-w-4xl relative">
+          {/* Limited offer badge */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 backdrop-blur px-4 py-1.5 text-xs sm:text-sm font-semibold text-accent-foreground animate-fade-up">
+            <Flame className="h-4 w-4 text-accent" aria-hidden />
+            Oferta por tiempo limitado · <span className="text-accent">50% OFF</span>
+          </div>
+
+          {/* Floating glass card behind headline */}
+          <div className="relative mt-6 mx-auto max-w-3xl">
+            <div aria-hidden className="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-white/70 to-white/30 blur-xl" />
+            <div className="glass rounded-[2rem] px-6 py-8 sm:px-10 sm:py-10 shadow-soft animate-fade-up">
+              <h1 className="font-display text-5xl md:text-7xl font-semibold text-primary leading-[1.02] text-balance">
+                Moldes de Llaveros Bíblicos
+                <span className="block italic font-medium text-secondary mt-1">para Imprimir y Armar</span>
+              </h1>
+              <p className="text-base md:text-lg text-muted-foreground mt-5 max-w-2xl mx-auto">
+                50 personajes de la Biblia con versículos — listos para usar, regalar o vender.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-10 animate-fade-up" style={{ animationDelay: "0.15s" }}>
             <Button
               asChild
               size="lg"
-              className="bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg md:text-xl font-bold rounded-full px-10 py-7 shadow-gold animate-pulse-gold transition-smooth"
+              className="bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg md:text-xl font-bold rounded-full px-10 py-7 shadow-gold animate-pulse-gold transition-smooth hover:-translate-y-0.5"
             >
               <a href={CHECKOUT_URL}>QUIERO MI KIT AHORA</a>
             </Button>
-            <p className="text-sm text-muted-foreground mt-4">⚡ Acceso inmediato después del pago</p>
+            <p className="text-sm text-muted-foreground mt-4 inline-flex items-center gap-1.5">
+              <Sparkles className="h-3.5 w-3.5 text-accent" aria-hidden />
+              Acceso inmediato después del pago
+            </p>
           </div>
 
-          <div className="mt-12 md:mt-16 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <div className="mt-12 md:mt-16 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.25s" }}>
             <img
               src={productoPreview}
               alt="Vista previa del kit de 50 moldes de llaveros bíblicos"
               width={1200}
               height={1500}
-              className="w-full rounded-2xl shadow-soft"
+              className="w-full rounded-3xl shadow-soft ring-1 ring-white/60"
             />
           </div>
         </div>

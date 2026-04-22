@@ -260,17 +260,19 @@ const Index = () => {
               <p className="text-muted-foreground text-sm leading-relaxed flex-1">
                 {bonus.desc}
               </p>
-              <div className="mt-5 pt-4 border-t border-border space-y-2">
+              <div className="mt-5 pt-4 border-t border-border space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-muted-foreground">Valor:</span>
-                  <span className="font-display font-bold text-accent line-through">
+                  <span className="font-display font-bold text-muted-foreground line-through">
                     {bonus.value}
                   </span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">Ahorras:</span>
-                  <span className="font-display font-bold text-accent">
-                    GRATIS
+                <div className="flex items-center justify-between gap-2 bg-success/10 border-2 border-dashed border-success/50 rounded-xl px-3 py-2">
+                  <span className="text-sm font-semibold text-success-foreground flex items-center gap-1">
+                    <span className="text-base">🎉</span> Hoy:
+                  </span>
+                  <span className="font-display font-extrabold text-success text-2xl tracking-wider -rotate-3 drop-shadow-sm">
+                    ¡GRATIS!
                   </span>
                 </div>
               </div>

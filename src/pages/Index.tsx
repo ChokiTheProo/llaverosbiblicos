@@ -406,11 +406,13 @@ const Index = () => {
                     </div>
                   ))}
                 </div>
-                <div className="mt-4 pt-4 border-t border-success/30 flex items-center justify-between">
-                  <span className="font-display font-bold text-primary">Ahorras hoy:</span>
-                  <span className="font-display font-extrabold text-success text-2xl tracking-tight">
-                    USD 72
-                  </span>
+                <div className="mt-4 pt-4 border-t border-success/30 text-center">
+                  <p className="font-display font-bold text-primary text-base sm:text-lg leading-tight">
+                    Hoy vas a pagar solo
+                  </p>
+                  <p className="font-display font-extrabold text-success text-3xl sm:text-4xl tracking-tight mt-1">
+                    USD 9,90
+                  </p>
                 </div>
               </div>
 

@@ -194,42 +194,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="pb-20 md:pb-28 container max-w-6xl">
-        <div className="text-center mb-14">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
-            Lo que dicen nuestras clientas
-          </h2>
-          <p className="text-muted-foreground mt-3 text-lg">Más de 500 clientas satisfechas ⭐</p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {testimonials.map((t, i) => (
-            <div
-              key={i}
-              className="bg-card rounded-2xl p-6 shadow-card border border-border/60 hover:shadow-soft transition-smooth flex flex-col"
-            >
-              <div className="text-accent text-lg mb-2">★★★★★</div>
-              <p className="text-foreground italic leading-relaxed flex-1">"{t.text}"</p>
-              <div className="flex items-center gap-3 mt-5 pt-5 border-t border-border">
-                <img
-                  src={t.avatar}
-                  alt={`Foto de ${t.name}, clienta satisfecha`}
-                  loading="lazy"
-                  width={88}
-                  height={88}
-                  className="w-11 h-11 rounded-full object-cover ring-2 ring-accent/40"
-                />
-                <div>
-                  <div className="font-semibold text-primary">{t.name}</div>
-                  <div className="text-sm text-muted-foreground">{t.city}</div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* BONUSES */}
       <section className="py-20 md:py-28 container max-w-5xl">
         <div className="text-center mb-14">
@@ -296,6 +260,42 @@ const Index = () => {
           <p className="font-display text-xl md:text-2xl text-primary">
             Todo esto <b className="text-accent">GRATIS</b> al adquirir tu kit hoy
           </p>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="pb-20 md:pb-28 container max-w-6xl">
+        <div className="text-center mb-14">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
+            Lo que dicen nuestras clientas
+          </h2>
+          <p className="text-muted-foreground mt-3 text-lg">Más de 500 clientas satisfechas ⭐</p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {testimonials.map((t, i) => (
+            <div
+              key={i}
+              className="bg-card rounded-2xl p-6 shadow-card border border-border/60 hover:shadow-soft transition-smooth flex flex-col"
+            >
+              <div className="text-accent text-lg mb-2">★★★★★</div>
+              <p className="text-foreground italic leading-relaxed flex-1">"{t.text}"</p>
+              <div className="flex items-center gap-3 mt-5 pt-5 border-t border-border">
+                <img
+                  src={t.avatar}
+                  alt={`Foto de ${t.name}, clienta satisfecha`}
+                  loading="lazy"
+                  width={88}
+                  height={88}
+                  className="w-11 h-11 rounded-full object-cover ring-2 ring-accent/40"
+                />
+                <div>
+                  <div className="font-semibold text-primary">{t.name}</div>
+                  <div className="text-sm text-muted-foreground">{t.city}</div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

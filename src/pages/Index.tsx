@@ -164,8 +164,36 @@ const Index = () => {
         </div>
       </section>
 
+      {/* PRICE CTA BEFORE TESTIMONIALS */}
+      <section className="py-16 md:py-20 container max-w-3xl">
+        <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/40 p-8 md:p-12 text-center overflow-hidden">
+          <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-accent/10 to-transparent pointer-events-none" />
+          <div className="relative">
+            <p className="font-display text-2xl md:text-3xl font-bold text-primary text-balance leading-tight">
+              Llévate <span className="text-accent">todo esto</span> por apenas
+            </p>
+            <div className="flex items-baseline justify-center gap-2 mt-4">
+              <span className="font-display text-2xl font-bold text-accent">$</span>
+              <span className="font-display text-7xl md:text-8xl font-bold text-accent leading-none">
+                9.90
+              </span>
+              <span className="font-display text-xl text-muted-foreground">USD</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-3">💳 Pago único · Acceso inmediato</p>
+
+            <Button
+              asChild
+              size="lg"
+              className="mt-8 bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg font-bold rounded-full px-10 py-7 shadow-gold animate-pulse-gold transition-smooth"
+            >
+              <a href={CHECKOUT_URL}>🛒 ¡QUIERO MI KIT AHORA!</a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* TESTIMONIALS */}
-      <section className="py-20 md:py-28 container max-w-6xl">
+      <section className="pb-20 md:pb-28 container max-w-6xl">
         <div className="text-center mb-14">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
             Lo que dicen nuestras clientas

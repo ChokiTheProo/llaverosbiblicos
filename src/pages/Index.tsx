@@ -59,8 +59,8 @@ const Index = () => {
       <header className="bg-gradient-sky relative">
         <div className="container py-16 md:py-24 text-center max-w-4xl">
           <h1 className="font-display text-5xl md:text-7xl font-bold text-primary leading-[1.05] text-balance animate-fade-up">
-            Moldes de Llaveros Bíblicos
-            <span className="block italic text-secondary mt-2">para Imprimir y Armar</span>
+            Pack de 50 Llaveros Bíblicos
+            <span className="block italic text-secondary mt-2">— Descarga, Imprime y Listo</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
             50 personajes de la Biblia con versículos — listos para usar, regalar o vender.

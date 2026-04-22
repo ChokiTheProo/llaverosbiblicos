@@ -327,21 +327,31 @@ const Index = () => {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="pb-20 md:pb-28 container max-w-6xl">
+      <section className="pb-20 md:pb-28 container max-w-6xl reveal">
         <div className="text-center mb-14">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
+          <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
             Lo que dicen nuestras clientas
           </h2>
-          <p className="text-muted-foreground mt-3 text-lg">Más de 500 clientas satisfechas ⭐</p>
+          <p className="text-muted-foreground mt-3 text-lg inline-flex items-center gap-1.5 justify-center">
+            Más de 500 clientas satisfechas
+            <span className="inline-flex items-center text-accent">
+              <Star className="h-4 w-4 fill-current" aria-hidden />
+            </span>
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-card rounded-2xl p-6 shadow-card border border-border/60 hover:shadow-soft transition-smooth flex flex-col"
+              className="relative bg-card rounded-2xl p-6 shadow-card border border-border/60 hover:shadow-soft hover:-translate-y-1 transition-smooth flex flex-col"
             >
-              <div className="text-accent text-lg mb-2">★★★★★</div>
+              <span aria-hidden className="absolute -top-3 left-5 font-display text-6xl leading-none text-accent/40 select-none">"</span>
+              <div className="flex items-center gap-0.5 text-accent mb-3">
+                {Array.from({ length: 5 }).map((_, k) => (
+                  <Star key={k} className="h-4 w-4 fill-current" aria-hidden />
+                ))}
+              </div>
               <p className="text-foreground italic leading-relaxed flex-1">"{t.text}"</p>
               <div className="flex items-center gap-3 mt-5 pt-5 border-t border-border">
                 <img

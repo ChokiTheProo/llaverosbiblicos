@@ -72,7 +72,7 @@ const Index = () => {
               size="lg"
               className="bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg md:text-xl font-bold rounded-full px-10 py-7 shadow-gold animate-pulse-gold transition-smooth"
             >
-              <a href={CHECKOUT_URL}>🔥 QUIERO MI KIT AHORA</a>
+              <a href={CHECKOUT_URL}>QUIERO MI KIT AHORA</a>
             </Button>
             <p className="text-sm text-muted-foreground mt-4">⚡ Acceso inmediato después del pago</p>
           </div>
@@ -187,7 +187,7 @@ const Index = () => {
                 href={CHECKOUT_URL}
                 className="mt-8 inline-flex items-center justify-center w-full text-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base sm:text-lg font-bold rounded-full px-6 py-5 shadow-gold transition-smooth"
               >
-                🛒 ¡QUIERO MI KIT AHORA!
+                ¡QUIERO MI KIT AHORA!
               </a>
             </div>
           </div>
@@ -419,7 +419,7 @@ const Index = () => {
                 size="lg"
                 className="w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg font-bold rounded-full py-7 shadow-gold animate-pulse-gold transition-smooth"
               >
-                <a href={CHECKOUT_URL}>🛒 ¡QUIERO EL KIT AHORA!</a>
+                <a href={CHECKOUT_URL}>¡QUIERO EL KIT AHORA!</a>
               </Button>
 
             </div>

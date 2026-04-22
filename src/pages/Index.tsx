@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CountdownTimer } from "@/components/CountdownTimer";
+import { StickyCountdownBar } from "@/components/StickyCountdownBar";
+import { useReveal } from "@/hooks/use-reveal";
+import { Flame, ShieldCheck, Sparkles, Star } from "lucide-react";
 import productoPreview from "@/assets/producto-preview.jpg";
 import llavero1 from "@/assets/llavero-1.jpg";
 import llavero2 from "@/assets/llavero-2.jpg";
@@ -18,6 +21,7 @@ import avatar6 from "@/assets/avatar-6.jpg";
 const CHECKOUT_URL = "https://pay.hotmart.com/T105491862G?checkoutMode=10";
 
 const Index = () => {
+  useReveal();
   const benefits = [
     "50 moldes de llaveros con personajes bíblicos",
     "Cada molde con su versículo incluido",

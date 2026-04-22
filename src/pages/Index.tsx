@@ -208,7 +208,7 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             {
               tag: "Bono #1",
@@ -230,6 +230,13 @@ const Index = () => {
               title: "Plantilla de Control de Gastos, Ventas y Ganancias para Llaveros Bíblicos",
               desc: "Organiza tus finanzas, controla tus ventas y visualiza tus ganancias en una plantilla lista para usar.",
               value: "USD 9",
+            },
+            {
+              tag: "Bono #4",
+              icon: "💬",
+              title: "Scripts de Venta para WhatsApp y Facebook",
+              desc: "Mensajes listos para copiar y pegar que te ayudan a vender más llaveros por chat y redes sociales.",
+              value: "USD 15",
             },
           ].map((bonus, i) => (
             <div

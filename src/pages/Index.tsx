@@ -379,9 +379,38 @@ const Index = () => {
                     <span>{item}</span>
                   </div>
                 ))}
-                <div className="flex items-center gap-3 bg-gradient-to-r from-accent/15 to-accent/5 rounded-xl p-4 mt-5 border border-accent/20">
-                  <span className="text-3xl">🎁</span>
-                  <span className="font-semibold text-foreground"><b>+5 regalos sorpresa</b> de obsequio</span>
+              </div>
+
+              {/* Bonos incluidos */}
+              <div className="bg-gradient-to-br from-success/10 to-accent/5 border-2 border-dashed border-success/40 rounded-2xl p-5 my-8">
+                <p className="font-display text-lg font-bold text-primary text-center mb-4">
+                  🎁 Bonos incluidos GRATIS
+                </p>
+                <div className="space-y-2.5">
+                  {[
+                    { icon: "📘", title: "Guía Cómo Vender Llaveros Bíblicos", value: 17 },
+                    { icon: "🧮", title: "Calculadora de Precio y Ganancia", value: 12 },
+                    { icon: "📊", title: "Plantilla de Control de Ventas", value: 9 },
+                    { icon: "💬", title: "Scripts de Venta para WhatsApp/Facebook", value: 15 },
+                    { icon: "🎉", title: "Dinámicas con Llaveros para Grupos", value: 19 },
+                  ].map((bonus, i) => (
+                    <div key={i} className="flex items-center justify-between gap-3 text-sm">
+                      <div className="flex items-center gap-2 text-foreground flex-1 min-w-0">
+                        <span className="text-base flex-shrink-0">{bonus.icon}</span>
+                        <span className="truncate">{bonus.title}</span>
+                      </div>
+                      <div className="flex items-center gap-2 flex-shrink-0">
+                        <span className="text-muted-foreground line-through text-xs">USD {bonus.value}</span>
+                        <span className="font-display font-extrabold text-success text-sm">GRATIS</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-4 pt-4 border-t border-success/30 flex items-center justify-between">
+                  <span className="font-display font-bold text-primary">Ahorras hoy:</span>
+                  <span className="font-display font-extrabold text-success text-2xl tracking-tight">
+                    USD 72
+                  </span>
                 </div>
               </div>
 

@@ -232,9 +232,9 @@ const Index = () => {
             },
             {
               tag: "Bono #3",
-              icon: "✝️",
-              title: "Versículos Extra para Imprimir",
-              desc: "Colección adicional de versículos bíblicos para personalizar aún más tus llaveros.",
+              icon: "📊",
+              title: "Plantilla de Control de Gastos, Ventas y Ganancias para Llaveros Bíblicos",
+              desc: "Organiza tus finanzas, controla tus ventas y visualiza tus ganancias en una plantilla lista para usar.",
               value: "USD 9",
             },
           ].map((bonus, i) => (

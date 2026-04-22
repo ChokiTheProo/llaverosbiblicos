@@ -115,9 +115,9 @@ const Index = () => {
       </header>
 
       {/* WHAT YOU GET */}
-      <section className="py-20 md:py-28 container max-w-5xl">
+      <section className="py-20 md:py-28 container max-w-5xl reveal">
         <div className="text-center mb-14">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
+          <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
             Lo que vas a recibir
           </h2>
           <p className="text-muted-foreground mt-3 text-lg">Todo incluido en tu kit digital</p>
@@ -129,7 +129,9 @@ const Index = () => {
               key={i}
               className="flex items-start gap-3 bg-card rounded-2xl p-5 shadow-card border border-border/60 hover:shadow-soft hover:-translate-y-0.5 transition-smooth"
             >
-              <span className="text-accent text-xl font-bold flex-shrink-0">✦</span>
+              <span className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent/15 text-accent">
+                <Sparkles className="h-4 w-4" aria-hidden />
+              </span>
               <p className="text-foreground font-medium">{b}</p>
             </div>
           ))}

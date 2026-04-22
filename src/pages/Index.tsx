@@ -226,9 +226,9 @@ const Index = () => {
             </h3>
 
             <div className="text-center my-6">
-              <div className="text-muted-foreground line-through text-lg">USD 14.90</div>
+              <div className="text-muted-foreground line-through text-lg">USD 19.90</div>
               <div className="font-display text-6xl md:text-7xl font-bold text-accent mt-1">
-                $6.50
+                $9.90
               </div>
               <div className="text-sm text-muted-foreground mt-2">Pago único · Acceso inmediato</div>
             </div>

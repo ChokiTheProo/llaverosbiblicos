@@ -238,7 +238,6 @@ const Index = () => {
                 <><b>50 moldes</b> de llaveros cristianos</>,
                 <>Personajes de la Biblia con <b>versículos</b></>,
                 <>Listos para <b>imprimir y armar</b></>,
-                <><b>Video tutorial</b> paso a paso</>,
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 text-foreground">
                   <span className="text-accent font-bold text-lg">✦</span>

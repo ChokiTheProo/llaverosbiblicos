@@ -281,9 +281,6 @@ const Index = () => {
             <div className="inline-flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-gold-strong shadow-gold mb-6 animate-pulse-gold">
               <span className="text-5xl md:text-6xl">🛡️</span>
             </div>
-            <p className="inline-block bg-accent/15 text-accent-foreground font-bold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider mb-4">
-              Garantía blindada
-            </p>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
               7 días de garantía incondicional
             </h2>

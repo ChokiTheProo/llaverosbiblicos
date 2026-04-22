@@ -269,8 +269,8 @@ const Index = () => {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-muted-foreground">Ahorras:</span>
-                  <span className="font-display font-bold text-green-500">
-                    {bonus.value} (100%)
+                  <span className="font-display font-bold text-accent">
+                    GRATIS
                   </span>
                 </div>
               </div>

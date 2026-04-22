@@ -376,7 +376,7 @@ const Index = () => {
       <section id="oferta" className="bg-gradient-sky py-20 md:py-28 relative reveal">
         <div className="container max-w-2xl">
           <div className="text-center mb-10">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
+            <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
               Asegura tu kit ahora
             </h2>
             <p className="text-muted-foreground mt-4 text-lg">

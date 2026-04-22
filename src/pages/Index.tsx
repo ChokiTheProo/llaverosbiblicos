@@ -207,71 +207,87 @@ const Index = () => {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
               Asegura tu kit ahora
             </h2>
-            <p className="inline-block bg-accent/15 text-accent-foreground font-semibold mt-4 px-4 py-1.5 rounded-full text-sm">
-              ⚡ Oferta por tiempo limitado
+            <p className="text-muted-foreground mt-4 text-lg">
+              Una inversión única para crear, regalar o vender con propósito
             </p>
-            <p className="text-muted-foreground mt-6">Esta oferta expira en:</p>
-            <div className="mt-4">
-              <CountdownTimer />
-            </div>
           </div>
 
-          <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/30 p-8 md:p-10">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-gold-strong text-primary-foreground px-5 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-card">
+          <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/40 p-8 md:p-12 overflow-hidden">
+            {/* Decorative gradient */}
+            <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-accent/10 to-transparent pointer-events-none" />
+
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-gold-strong text-primary-foreground px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-gold">
               ⭐ Más vendido
             </div>
 
-            <h3 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mt-2">
-              Kit Llaveros Bíblicos
-            </h3>
+            <div className="relative">
+              <h3 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mt-4">
+                Kit Llaveros Bíblicos
+              </h3>
+              <p className="text-center text-muted-foreground mt-2">
+                50 moldes + bonos exclusivos
+              </p>
 
-            <div className="text-center my-6">
-              <div className="text-muted-foreground line-through text-lg">USD 19.90</div>
-              <div className="font-display text-6xl md:text-7xl font-bold text-accent mt-1">
-                $9.90
-              </div>
-              <div className="text-sm text-muted-foreground mt-2">Pago único · Acceso inmediato</div>
-            </div>
-
-            <div className="space-y-3 my-8">
-              {[
-                <><b>50 moldes</b> de llaveros cristianos</>,
-                <>Personajes de la Biblia con <b>versículos</b></>,
-                <>Listos para <b>imprimir y armar</b></>,
-              ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 text-foreground">
-                  <span className="text-accent font-bold text-lg">✦</span>
-                  <span>{item}</span>
+              <div className="text-center my-8 py-6 border-y border-border/60">
+                <div className="flex items-center justify-center gap-3">
+                  <span className="text-muted-foreground line-through text-xl">USD 19.90</span>
+                  <span className="bg-accent/20 text-accent-foreground text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wide">
+                    -50%
+                  </span>
                 </div>
-              ))}
-              <div className="flex items-center gap-3 bg-accent/10 rounded-xl p-3 mt-4">
-                <span className="text-2xl">🎁</span>
-                <span className="font-semibold text-foreground"><b>+3 regalos</b> sorpresa de obsequio</span>
+                <div className="flex items-baseline justify-center gap-2 mt-2">
+                  <span className="font-display text-2xl font-bold text-accent">$</span>
+                  <span className="font-display text-7xl md:text-8xl font-bold text-accent leading-none">
+                    9.90
+                  </span>
+                  <span className="font-display text-xl text-muted-foreground">USD</span>
+                </div>
+                <div className="text-sm text-muted-foreground mt-3">
+                  💳 Pago único · Sin suscripciones
+                </div>
               </div>
+
+              <div className="space-y-3 my-8">
+                {[
+                  <><b>50 moldes</b> de llaveros cristianos</>,
+                  <>Personajes de la Biblia con <b>versículos</b></>,
+                  <>Listos para <b>imprimir y armar</b></>,
+                  <>Acceso <b>inmediato</b> al material</>,
+                  <>Para uso personal o <b>comercial</b></>,
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 text-foreground">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-accent/20 text-accent font-bold text-sm flex-shrink-0">✓</span>
+                    <span>{item}</span>
+                  </div>
+                ))}
+                <div className="flex items-center gap-3 bg-gradient-to-r from-accent/15 to-accent/5 rounded-xl p-4 mt-5 border border-accent/20">
+                  <span className="text-3xl">🎁</span>
+                  <span className="font-semibold text-foreground"><b>+3 regalos sorpresa</b> de obsequio</span>
+                </div>
+              </div>
+
+              <Button
+                asChild
+                size="lg"
+                className="w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg font-bold rounded-full py-7 shadow-gold animate-pulse-gold transition-smooth"
+              >
+                <a href={CHECKOUT_URL}>🛒 ¡QUIERO EL KIT AHORA!</a>
+              </Button>
+
+              <p className="text-center text-sm text-muted-foreground mt-5">
+                ✅ Compra 100% segura · Entrega digital instantánea
+              </p>
             </div>
-
-            <Button
-              asChild
-              size="lg"
-              className="w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg font-bold rounded-full py-7 shadow-gold animate-pulse-gold transition-smooth"
-            >
-              <a href={CHECKOUT_URL}>🛒 ¡QUIERO EL KIT AHORA!</a>
-            </Button>
-
-            <p className="text-center text-sm text-muted-foreground mt-4">
-              ✅ Compra 100% segura · Entrega digital instantánea
-            </p>
           </div>
 
-          {/* Guarantee removed */}
-
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-6 text-sm text-muted-foreground">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-8 text-sm text-muted-foreground">
             <span>🔒 Compra segura</span>
             <span>📧 Soporte por email</span>
             <span>⚡ Entrega instantánea</span>
           </div>
         </div>
       </section>
+
 
       {/* GUARANTEE */}
       <section className="py-20 md:py-28 container max-w-4xl">

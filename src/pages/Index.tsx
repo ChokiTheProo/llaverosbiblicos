@@ -1,9 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CountdownTimer } from "@/components/CountdownTimer";
-import { StickyCountdownBar } from "@/components/StickyCountdownBar";
-import { useReveal } from "@/hooks/use-reveal";
-import { Flame, ShieldCheck, Sparkles, Star } from "lucide-react";
 import productoPreview from "@/assets/producto-preview.jpg";
 import llavero1 from "@/assets/llavero-1.jpg";
 import llavero2 from "@/assets/llavero-2.jpg";
@@ -21,7 +18,6 @@ import avatar6 from "@/assets/avatar-6.jpg";
 const CHECKOUT_URL = "https://pay.hotmart.com/T105491862G?checkoutMode=10";
 
 const Index = () => {
-  useReveal();
   const benefits = [
     "50 moldes de llaveros con personajes bíblicos",
     "Cada molde con su versículo incluido",
@@ -59,65 +55,44 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
-      <StickyCountdownBar href={CHECKOUT_URL} />
-
       {/* HERO */}
-      <header className="bg-gradient-sky relative overflow-hidden">
-        {/* Decorative golden orbs */}
-        <div aria-hidden className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-accent/20 blur-3xl" />
-        <div aria-hidden className="pointer-events-none absolute -bottom-32 -right-24 h-80 w-80 rounded-full bg-secondary/20 blur-3xl" />
+      <header className="bg-gradient-sky relative">
+        <div className="container py-16 md:py-24 text-center max-w-4xl">
+          <h1 className="font-display text-5xl md:text-7xl font-bold text-primary leading-[1.05] text-balance animate-fade-up">
+            Moldes de Llaveros Bíblicos
+            <span className="block italic text-secondary mt-2">para Imprimir y Armar</span>
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            50 personajes de la Biblia con versículos — listos para usar, regalar o vender.
+          </p>
 
-        <div className="container py-14 md:py-24 text-center max-w-4xl relative">
-          {/* Limited offer badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 backdrop-blur px-4 py-1.5 text-xs sm:text-sm font-semibold text-accent-foreground animate-fade-up">
-            <Flame className="h-4 w-4 text-accent" aria-hidden />
-            Oferta por tiempo limitado · <span className="text-accent">50% OFF</span>
-          </div>
-
-          {/* Floating glass card behind headline */}
-          <div className="relative mt-6 mx-auto max-w-3xl">
-            <div aria-hidden className="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-white/70 to-white/30 blur-xl" />
-            <div className="glass rounded-[2rem] px-6 py-8 sm:px-10 sm:py-10 shadow-soft animate-fade-up">
-              <h1 className="font-display text-5xl md:text-7xl font-semibold text-primary leading-[1.02] text-balance">
-                Moldes de Llaveros Bíblicos
-                <span className="block italic font-medium text-secondary mt-1">para Imprimir y Armar</span>
-              </h1>
-              <p className="text-base md:text-lg text-muted-foreground mt-5 max-w-2xl mx-auto">
-                50 personajes de la Biblia con versículos — listos para usar, regalar o vender.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-10 animate-fade-up" style={{ animationDelay: "0.15s" }}>
+          <div className="mt-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <Button
               asChild
               size="lg"
-              className="bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg md:text-xl font-bold rounded-full px-10 py-7 shadow-gold animate-pulse-gold transition-smooth hover:-translate-y-0.5"
+              className="bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg md:text-xl font-bold rounded-full px-10 py-7 shadow-gold animate-pulse-gold transition-smooth"
             >
               <a href={CHECKOUT_URL}>QUIERO MI KIT AHORA</a>
             </Button>
-            <p className="text-sm text-muted-foreground mt-4 inline-flex items-center gap-1.5">
-              <Sparkles className="h-3.5 w-3.5 text-accent" aria-hidden />
-              Acceso inmediato después del pago
-            </p>
+            <p className="text-sm text-muted-foreground mt-4">⚡ Acceso inmediato después del pago</p>
           </div>
 
-          <div className="mt-12 md:mt-16 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.25s" }}>
+          <div className="mt-12 md:mt-16 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <img
               src={productoPreview}
               alt="Vista previa del kit de 50 moldes de llaveros bíblicos"
               width={1200}
               height={1500}
-              className="w-full rounded-3xl shadow-soft ring-1 ring-white/60"
+              className="w-full rounded-2xl shadow-soft"
             />
           </div>
         </div>
       </header>
 
       {/* WHAT YOU GET */}
-      <section className="py-20 md:py-28 container max-w-5xl reveal">
+      <section className="py-20 md:py-28 container max-w-5xl">
         <div className="text-center mb-14">
-          <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
             Lo que vas a recibir
           </h2>
           <p className="text-muted-foreground mt-3 text-lg">Todo incluido en tu kit digital</p>
@@ -129,9 +104,7 @@ const Index = () => {
               key={i}
               className="flex items-start gap-3 bg-card rounded-2xl p-5 shadow-card border border-border/60 hover:shadow-soft hover:-translate-y-0.5 transition-smooth"
             >
-              <span className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent/15 text-accent">
-                <Sparkles className="h-4 w-4" aria-hidden />
-              </span>
+              <span className="text-accent text-xl font-bold flex-shrink-0">✦</span>
               <p className="text-foreground font-medium">{b}</p>
             </div>
           ))}
@@ -168,23 +141,23 @@ const Index = () => {
       </section>
 
       {/* AUDIENCE */}
-      <section className="bg-gradient-sky py-20 md:py-28 reveal">
+      <section className="bg-gradient-sky py-20 md:py-28">
         <div className="container max-w-5xl">
           <div className="text-center mb-14">
-            <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
               ¿Para quién es?
             </h2>
             <p className="text-muted-foreground mt-3 text-lg">Para hombres y mujeres que quieren crear con propósito</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {audience.map((a, i) => (
               <div
                 key={i}
-                className="bg-card rounded-2xl p-7 flex flex-col items-center text-center gap-3 shadow-card border border-border/60 hover:shadow-soft hover:-translate-y-1 transition-smooth"
+                className="bg-card rounded-2xl p-6 flex items-center gap-4 shadow-card border border-border/60 hover:shadow-soft hover:-translate-y-1 transition-smooth"
               >
-                <div className="text-5xl">{a.icon}</div>
-                <p className="font-display text-xl font-semibold text-primary leading-snug">{a.text}</p>
+                <div className="text-4xl">{a.icon}</div>
+                <p className="font-display text-xl font-semibold text-primary">{a.text}</p>
               </div>
             ))}
           </div>
@@ -192,13 +165,13 @@ const Index = () => {
       </section>
 
       {/* BONUSES */}
-      <section className="pt-20 md:pt-28 pb-10 container max-w-5xl reveal">
+      <section className="pt-20 md:pt-28 pb-10 container max-w-5xl">
         <div className="text-center mb-14">
           <span className="inline-block bg-accent/20 text-accent-foreground text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4">
             🎁 Bonos exclusivos
           </span>
-          <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
-            Y además, llévate <span className="text-accent italic">5 regalos</span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
+            Y además, llévate <span className="text-accent">3 regalos</span>
           </h2>
           <p className="text-muted-foreground mt-3 text-lg">
             Bonos exclusivos incluidos sin costo adicional
@@ -213,7 +186,6 @@ const Index = () => {
               title: "Guía Rápida: Cómo Vender Llaveros Bíblicos",
               desc: "Estrategias prácticas para empezar a vender hoy mismo y generar ingresos extra.",
               value: "USD 17",
-              featured: true,
             },
             {
               tag: "Bono #2",
@@ -246,24 +218,13 @@ const Index = () => {
           ].map((bonus, i) => (
             <div
               key={i}
-              className={`relative bg-card rounded-2xl p-6 border-2 hover:-translate-y-1 transition-smooth flex flex-col ${
-                bonus.featured
-                  ? "border-accent/70 shadow-glow animate-shimmer-glow"
-                  : "border-accent/30 shadow-card hover:shadow-soft"
-              }`}
+              className="relative bg-card rounded-2xl p-6 shadow-card border-2 border-accent/30 hover:shadow-soft hover:-translate-y-1 transition-smooth flex flex-col"
             >
-              {/* GRATIS ribbon */}
-              <div className="absolute -top-3 -right-3 z-10 rotate-6">
-                <div className="bg-success text-primary-foreground font-display font-extrabold text-sm px-3 py-1 rounded-full shadow-soft border-2 border-background tracking-wider">
-                  GRATIS
-                </div>
-              </div>
-
               <div className="absolute -top-3 left-6 bg-gradient-gold-strong text-primary-foreground px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-gold">
                 {bonus.tag}
               </div>
               <div className="text-5xl mb-4 mt-3">{bonus.icon}</div>
-              <h3 className="font-display text-xl font-semibold text-primary mb-2 leading-tight">
+              <h3 className="font-display text-xl font-bold text-primary mb-2 leading-tight">
                 {bonus.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed flex-1">
@@ -327,31 +288,21 @@ const Index = () => {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="pb-20 md:pb-28 container max-w-6xl reveal">
+      <section className="pb-20 md:pb-28 container max-w-6xl">
         <div className="text-center mb-14">
-          <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
             Lo que dicen nuestras clientas
           </h2>
-          <p className="text-muted-foreground mt-3 text-lg inline-flex items-center gap-1.5 justify-center">
-            Más de 500 clientas satisfechas
-            <span className="inline-flex items-center text-accent">
-              <Star className="h-4 w-4 fill-current" aria-hidden />
-            </span>
-          </p>
+          <p className="text-muted-foreground mt-3 text-lg">Más de 500 clientas satisfechas ⭐</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="relative bg-card rounded-2xl p-6 shadow-card border border-border/60 hover:shadow-soft hover:-translate-y-1 transition-smooth flex flex-col"
+              className="bg-card rounded-2xl p-6 shadow-card border border-border/60 hover:shadow-soft transition-smooth flex flex-col"
             >
-              <span aria-hidden className="absolute -top-3 left-5 font-display text-6xl leading-none text-accent/40 select-none">"</span>
-              <div className="flex items-center gap-0.5 text-accent mb-3">
-                {Array.from({ length: 5 }).map((_, k) => (
-                  <Star key={k} className="h-4 w-4 fill-current" aria-hidden />
-                ))}
-              </div>
+              <div className="text-accent text-lg mb-2">★★★★★</div>
               <p className="text-foreground italic leading-relaxed flex-1">"{t.text}"</p>
               <div className="flex items-center gap-3 mt-5 pt-5 border-t border-border">
                 <img
@@ -373,10 +324,10 @@ const Index = () => {
       </section>
 
       {/* OFFER */}
-      <section id="oferta" className="bg-gradient-sky py-20 md:py-28 relative reveal">
+      <section id="oferta" className="bg-gradient-sky py-20 md:py-28 relative">
         <div className="container max-w-2xl">
           <div className="text-center mb-10">
-            <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
               Asegura tu kit ahora
             </h2>
             <p className="text-muted-foreground mt-4 text-lg">
@@ -486,23 +437,14 @@ const Index = () => {
 
 
       {/* GUARANTEE */}
-      <section className="py-20 md:py-28 container max-w-4xl reveal">
-        <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/40 p-8 md:p-14 text-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-sky opacity-50 pointer-events-none" />
-          <div aria-hidden className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 h-72 w-72 rounded-full bg-accent/20 blur-3xl" />
-
+      <section className="py-20 md:py-28 container max-w-4xl">
+        <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/30 p-8 md:p-12 text-center overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-sky opacity-40 pointer-events-none" />
           <div className="relative">
-            {/* Premium guarantee seal */}
-            <div className="relative inline-flex items-center justify-center mb-6">
-              <div className="absolute inset-0 rounded-full bg-gradient-gold-strong shadow-gold animate-pulse-gold" />
-              <div className="relative flex flex-col items-center justify-center w-32 h-32 md:w-36 md:h-36 rounded-full bg-gradient-gold-strong text-primary-foreground border-[6px] border-background ring-4 ring-accent/40">
-                <ShieldCheck className="h-9 w-9 md:h-11 md:w-11" aria-hidden />
-                <div className="mt-1 font-display font-extrabold text-2xl md:text-3xl leading-none">7</div>
-                <div className="font-sans-pro text-[10px] md:text-xs uppercase tracking-widest opacity-90">días</div>
-              </div>
+            <div className="inline-flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-gold-strong shadow-gold mb-6 animate-pulse-gold">
+              <span className="text-5xl md:text-6xl">🛡️</span>
             </div>
-
-            <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
               7 días de garantía incondicional
             </h2>
             <p className="text-muted-foreground text-lg mt-5 max-w-2xl mx-auto leading-relaxed">
@@ -531,9 +473,9 @@ const Index = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 md:py-28 container max-w-3xl reveal">
+      <section className="py-20 md:py-28 container max-w-3xl">
         <div className="text-center mb-12">
-          <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">
             Preguntas frecuentes
           </h2>
         </div>

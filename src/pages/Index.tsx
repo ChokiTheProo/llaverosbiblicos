@@ -533,7 +533,7 @@ const Index = () => {
       {/* FAQ */}
       <section className="py-20 md:py-28 container max-w-3xl reveal">
         <div className="text-center mb-12">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">
+          <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary">
             Preguntas frecuentes
           </h2>
         </div>

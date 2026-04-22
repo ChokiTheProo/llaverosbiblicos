@@ -200,6 +200,75 @@ const Index = () => {
         </div>
       </section>
 
+      {/* BONUSES */}
+      <section className="py-20 md:py-28 container max-w-5xl">
+        <div className="text-center mb-14">
+          <span className="inline-block bg-accent/20 text-accent-foreground text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4">
+            🎁 Bonos exclusivos
+          </span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
+            Y además, llévate <span className="text-accent">3 regalos</span>
+          </h2>
+          <p className="text-muted-foreground mt-3 text-lg">
+            Bonos exclusivos incluidos sin costo adicional
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              tag: "Bono #1",
+              icon: "📘",
+              title: "Guía Rápida: Cómo Vender Llaveros Bíblicos",
+              desc: "Estrategias prácticas para empezar a vender hoy mismo y generar ingresos extra.",
+              value: "USD 17",
+            },
+            {
+              tag: "Bono #2",
+              icon: "📱",
+              title: "Plantillas para Redes Sociales",
+              desc: "Posts listos para publicar y atraer clientes en Instagram, WhatsApp y Facebook.",
+              value: "USD 12",
+            },
+            {
+              tag: "Bono #3",
+              icon: "✝️",
+              title: "Versículos Extra para Imprimir",
+              desc: "Colección adicional de versículos bíblicos para personalizar aún más tus llaveros.",
+              value: "USD 9",
+            },
+          ].map((bonus, i) => (
+            <div
+              key={i}
+              className="relative bg-card rounded-2xl p-6 shadow-card border-2 border-accent/30 hover:shadow-soft hover:-translate-y-1 transition-smooth flex flex-col"
+            >
+              <div className="absolute -top-3 left-6 bg-gradient-gold-strong text-primary-foreground px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-gold">
+                {bonus.tag}
+              </div>
+              <div className="text-5xl mb-4 mt-3">{bonus.icon}</div>
+              <h3 className="font-display text-xl font-bold text-primary mb-2 leading-tight">
+                {bonus.title}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed flex-1">
+                {bonus.desc}
+              </p>
+              <div className="mt-5 pt-4 border-t border-border flex items-center justify-between">
+                <span className="text-sm text-muted-foreground">Valor:</span>
+                <span className="font-display font-bold text-accent line-through">
+                  {bonus.value}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <p className="font-display text-xl md:text-2xl text-primary">
+            Todo esto <b className="text-accent">GRATIS</b> al adquirir tu kit hoy
+          </p>
+        </div>
+      </section>
+
       {/* OFFER */}
       <section id="oferta" className="bg-gradient-sky py-20 md:py-28 relative">
         <div className="container max-w-2xl">

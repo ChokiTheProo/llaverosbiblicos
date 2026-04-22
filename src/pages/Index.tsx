@@ -1,19 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CountdownTimer } from "@/components/CountdownTimer";
-import productoPreview from "@/assets/producto-preview.jpg";
-import llavero1 from "@/assets/llavero-1.jpg";
-import llavero2 from "@/assets/llavero-2.jpg";
-import llavero3 from "@/assets/llavero-3.jpg";
-import llavero4 from "@/assets/llavero-4.jpg";
-import llavero5 from "@/assets/llavero-5.jpg";
-import llavero6 from "@/assets/llavero-6.jpg";
-import avatar1 from "@/assets/avatar-1.jpg";
-import avatar2 from "@/assets/avatar-2.jpg";
-import avatar3 from "@/assets/avatar-3.jpg";
-import avatar4 from "@/assets/avatar-4.jpg";
-import avatar5 from "@/assets/avatar-5.jpg";
-import avatar6 from "@/assets/avatar-6.jpg";
+import productoPreview from "@/assets/producto-preview.webp";
+import llavero1 from "@/assets/llavero-1.webp";
+import llavero2 from "@/assets/llavero-2.webp";
+import llavero3 from "@/assets/llavero-3.webp";
+import llavero4 from "@/assets/llavero-4.webp";
+import llavero5 from "@/assets/llavero-5.webp";
+import llavero6 from "@/assets/llavero-6.webp";
+import avatar1 from "@/assets/avatar-1.webp";
+import avatar2 from "@/assets/avatar-2.webp";
+import avatar3 from "@/assets/avatar-3.webp";
+import avatar4 from "@/assets/avatar-4.webp";
+import avatar5 from "@/assets/avatar-5.webp";
+import avatar6 from "@/assets/avatar-6.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/T105491862G?checkoutMode=10";
 
@@ -83,6 +83,9 @@ const Index = () => {
               alt="Vista previa del kit de 50 moldes de llaveros bíblicos"
               width={1200}
               height={1500}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
               className="w-full rounded-2xl shadow-soft"
             />
           </div>

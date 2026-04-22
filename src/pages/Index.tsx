@@ -486,14 +486,23 @@ const Index = () => {
 
 
       {/* GUARANTEE */}
-      <section className="py-20 md:py-28 container max-w-4xl">
-        <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/30 p-8 md:p-12 text-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-sky opacity-40 pointer-events-none" />
+      <section className="py-20 md:py-28 container max-w-4xl reveal">
+        <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/40 p-8 md:p-14 text-center overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-sky opacity-50 pointer-events-none" />
+          <div aria-hidden className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 h-72 w-72 rounded-full bg-accent/20 blur-3xl" />
+
           <div className="relative">
-            <div className="inline-flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-gold-strong shadow-gold mb-6 animate-pulse-gold">
-              <span className="text-5xl md:text-6xl">🛡️</span>
+            {/* Premium guarantee seal */}
+            <div className="relative inline-flex items-center justify-center mb-6">
+              <div className="absolute inset-0 rounded-full bg-gradient-gold-strong shadow-gold animate-pulse-gold" />
+              <div className="relative flex flex-col items-center justify-center w-32 h-32 md:w-36 md:h-36 rounded-full bg-gradient-gold-strong text-primary-foreground border-[6px] border-background ring-4 ring-accent/40">
+                <ShieldCheck className="h-9 w-9 md:h-11 md:w-11" aria-hidden />
+                <div className="mt-1 font-display font-extrabold text-2xl md:text-3xl leading-none">7</div>
+                <div className="font-sans-pro text-[10px] md:text-xs uppercase tracking-widest opacity-90">días</div>
+              </div>
             </div>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
+
+            <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
               7 días de garantía incondicional
             </h2>
             <p className="text-muted-foreground text-lg mt-5 max-w-2xl mx-auto leading-relaxed">
@@ -522,7 +531,7 @@ const Index = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 md:py-28 container max-w-3xl">
+      <section className="py-20 md:py-28 container max-w-3xl reveal">
         <div className="text-center mb-12">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">
             Preguntas frecuentes

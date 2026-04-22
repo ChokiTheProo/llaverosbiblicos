@@ -375,7 +375,7 @@ const Index = () => {
                 ))}
                 <div className="flex items-center gap-3 bg-gradient-to-r from-accent/15 to-accent/5 rounded-xl p-4 mt-5 border border-accent/20">
                   <span className="text-3xl">🎁</span>
-                  <span className="font-semibold text-foreground"><b>+3 regalos sorpresa</b> de obsequio</span>
+                  <span className="font-semibold text-foreground"><b>+5 regalos sorpresa</b> de obsequio</span>
                 </div>
               </div>
 

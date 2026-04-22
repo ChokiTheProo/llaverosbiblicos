@@ -192,13 +192,13 @@ const Index = () => {
       </section>
 
       {/* BONUSES */}
-      <section className="pt-20 md:pt-28 pb-10 container max-w-5xl">
+      <section className="pt-20 md:pt-28 pb-10 container max-w-5xl reveal">
         <div className="text-center mb-14">
           <span className="inline-block bg-accent/20 text-accent-foreground text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4">
             🎁 Bonos exclusivos
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
-            Y además, llévate <span className="text-accent">3 regalos</span>
+          <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
+            Y además, llévate <span className="text-accent italic">5 regalos</span>
           </h2>
           <p className="text-muted-foreground mt-3 text-lg">
             Bonos exclusivos incluidos sin costo adicional
@@ -213,6 +213,7 @@ const Index = () => {
               title: "Guía Rápida: Cómo Vender Llaveros Bíblicos",
               desc: "Estrategias prácticas para empezar a vender hoy mismo y generar ingresos extra.",
               value: "USD 17",
+              featured: true,
             },
             {
               tag: "Bono #2",
@@ -245,13 +246,24 @@ const Index = () => {
           ].map((bonus, i) => (
             <div
               key={i}
-              className="relative bg-card rounded-2xl p-6 shadow-card border-2 border-accent/30 hover:shadow-soft hover:-translate-y-1 transition-smooth flex flex-col"
+              className={`relative bg-card rounded-2xl p-6 border-2 hover:-translate-y-1 transition-smooth flex flex-col ${
+                bonus.featured
+                  ? "border-accent/70 shadow-glow animate-shimmer-glow"
+                  : "border-accent/30 shadow-card hover:shadow-soft"
+              }`}
             >
+              {/* GRATIS ribbon */}
+              <div className="absolute -top-3 -right-3 z-10 rotate-6">
+                <div className="bg-success text-primary-foreground font-display font-extrabold text-sm px-3 py-1 rounded-full shadow-soft border-2 border-background tracking-wider">
+                  GRATIS
+                </div>
+              </div>
+
               <div className="absolute -top-3 left-6 bg-gradient-gold-strong text-primary-foreground px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-gold">
                 {bonus.tag}
               </div>
               <div className="text-5xl mb-4 mt-3">{bonus.icon}</div>
-              <h3 className="font-display text-xl font-bold text-primary mb-2 leading-tight">
+              <h3 className="font-display text-xl font-semibold text-primary mb-2 leading-tight">
                 {bonus.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed flex-1">

@@ -329,10 +329,6 @@ const Index = () => {
             {/* Decorative gradient */}
             <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-accent/10 to-transparent pointer-events-none" />
 
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-gold-strong text-primary-foreground px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-gold">
-              ⭐ Más vendido
-            </div>
-
             <div className="relative">
               <h3 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mt-4">
                 Kit Llaveros Bíblicos

@@ -238,6 +238,13 @@ const Index = () => {
               desc: "Mensajes listos para copiar y pegar que te ayudan a vender más llaveros por chat y redes sociales.",
               value: "USD 15",
             },
+            {
+              tag: "Bono #5",
+              icon: "🎉",
+              title: "Dinámicas con Llaveros Bíblicos para Jóvenes y Grupos",
+              desc: "Actividades y juegos creativos usando los llaveros bíblicos para reuniones de jóvenes, células y escuela dominical.",
+              value: "USD 19",
+            },
           ].map((bonus, i) => (
             <div
               key={i}

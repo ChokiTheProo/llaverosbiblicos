@@ -391,9 +391,6 @@ const Index = () => {
                 <a href={CHECKOUT_URL}>🛒 ¡QUIERO EL KIT AHORA!</a>
               </Button>
 
-              <p className="text-center text-sm text-muted-foreground mt-5">
-                ✅ Compra 100% segura · Entrega digital instantánea
-              </p>
             </div>
           </div>
 

@@ -168,23 +168,23 @@ const Index = () => {
       </section>
 
       {/* AUDIENCE */}
-      <section className="bg-gradient-sky py-20 md:py-28">
+      <section className="bg-gradient-sky py-20 md:py-28 reveal">
         <div className="container max-w-5xl">
           <div className="text-center mb-14">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
+            <h2 className="font-display text-4xl md:text-6xl font-semibold text-primary text-balance">
               ¿Para quién es?
             </h2>
             <p className="text-muted-foreground mt-3 text-lg">Para hombres y mujeres que quieren crear con propósito</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {audience.map((a, i) => (
               <div
                 key={i}
-                className="bg-card rounded-2xl p-6 flex items-center gap-4 shadow-card border border-border/60 hover:shadow-soft hover:-translate-y-1 transition-smooth"
+                className="bg-card rounded-2xl p-7 flex flex-col items-center text-center gap-3 shadow-card border border-border/60 hover:shadow-soft hover:-translate-y-1 transition-smooth"
               >
-                <div className="text-4xl">{a.icon}</div>
-                <p className="font-display text-xl font-semibold text-primary">{a.text}</p>
+                <div className="text-5xl">{a.icon}</div>
+                <p className="font-display text-xl font-semibold text-primary leading-snug">{a.text}</p>
               </div>
             ))}
           </div>

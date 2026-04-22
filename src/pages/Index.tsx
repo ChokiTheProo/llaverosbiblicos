@@ -225,9 +225,9 @@ const Index = () => {
             },
             {
               tag: "Bono #2",
-              icon: "📱",
-              title: "Plantillas para Redes Sociales",
-              desc: "Posts listos para publicar y atraer clientes en Instagram, WhatsApp y Facebook.",
+              icon: "🧮",
+              title: "Calculadora de Precio y Ganancia para Llaveros Bíblicos",
+              desc: "Define el precio ideal de venta y calcula tu ganancia real de forma fácil y rápida.",
               value: "USD 12",
             },
             {

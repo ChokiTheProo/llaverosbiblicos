@@ -260,14 +260,23 @@ const Index = () => {
               <p className="text-muted-foreground text-sm leading-relaxed flex-1">
                 {bonus.desc}
               </p>
-              <div className="mt-5 pt-4 border-t border-border flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Valor:</span>
-                <span className="font-display font-bold text-accent line-through">
-                  {bonus.value}
-                </span>
+              <div className="mt-5 pt-4 border-t border-border space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-muted-foreground">Valor:</span>
+                  <span className="font-display font-bold text-accent line-through">
+                    {bonus.value}
+                  </span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-muted-foreground">Ahorras:</span>
+                  <span className="font-display font-bold text-green-500">
+                    {bonus.value} (100%)
+                  </span>
+                </div>
               </div>
             </div>
           ))}
+        </div>
         </div>
 
         <div className="text-center mt-10">

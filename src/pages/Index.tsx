@@ -46,7 +46,7 @@ const Index = () => {
 
   const faqs = [
     { q: "¿Cómo voy a recibir el material?", a: "Recibirás el archivo PDF directamente en tu correo electrónico inmediatamente después de confirmar el pago. Acceso 100% digital e instantáneo." },
-    { q: "¿Necesito alguna habilidad especial?", a: "¡Para nada! Solo necesitas imprimir, recortar y armar. Incluimos un video tutorial paso a paso para que sea aún más fácil." },
+    { q: "¿Necesito alguna habilidad especial?", a: "¡Para nada! Solo necesitas imprimir, recortar y armar. Es muy sencillo, cualquier persona puede hacerlo." },
     { q: "¿Puedo vender los llaveros que arme?", a: "¡Sí! Tienes total libertad para vender los llaveros que crees con los moldes. Muchas de nuestras clientas ya generan ingresos extra con ellos." },
     { q: "¿El acceso es mensual?", a: "No, es un pago único. Una vez compras, el material es tuyo para siempre. Sin suscripciones ni cobros recurrentes." },
   ];

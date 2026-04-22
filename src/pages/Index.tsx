@@ -277,7 +277,6 @@ const Index = () => {
             </div>
           ))}
         </div>
-        </div>
 
         <div className="text-center mt-10">
           <p className="font-display text-xl md:text-2xl text-primary">

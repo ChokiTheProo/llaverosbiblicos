@@ -395,8 +395,10 @@ const ContentSection = () => (
   <section className="py-8 md:py-12 bg-muted/30" id="content">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-8">
-        <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-2">Oferta por tiempo limitado</p>
-        <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-4">
+        <div className="inline-block bg-destructive text-destructive-foreground text-xs sm:text-sm font-bold px-5 py-2 rounded-full uppercase tracking-wider mb-4 shadow-md animate-pulse-gold">
+          🔥 Oferta exclusiva — ¡Solo hoy!
+        </div>
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-4 text-balance">
           Accede hoy por un precio increíble
         </h2>
       </div>

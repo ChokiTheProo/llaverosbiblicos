@@ -247,9 +247,14 @@ const WhatYouReceiveSection = () => (
         </Card>
 
         <div>
-          <h3 className="text-center font-display text-lg sm:text-xl md:text-2xl font-semibold text-foreground mb-3">
-            BONOS INCLUIDOS GRATIS
-          </h3>
+          <div className="text-center mb-4">
+            <span className="inline-block bg-accent/20 text-accent-foreground text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+              🎁 Bonos exclusivos
+            </span>
+            <h3 className="mt-3 font-display text-xl sm:text-2xl md:text-3xl font-bold text-primary">
+              BONOS INCLUIDOS <span className="text-success">GRATIS</span>
+            </h3>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5">
             {bonuses.map((bonus, i) => (
               <Card key={i} className="p-4 sm:p-5 hover:shadow-soft transition-smooth">

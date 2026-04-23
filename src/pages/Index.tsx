@@ -1,6 +1,34 @@
 import { Button } from "@/components/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CountdownTimer } from "@/components/CountdownTimer";
+import { Card } from "@/components/ui/card";
+import {
+  Zap,
+  Gift,
+  Sparkles,
+  Clock,
+  Printer,
+  Scissors,
+  BookOpen,
+  Heart,
+  Church,
+  Users,
+  ShoppingBag,
+  Palette,
+  FileText,
+  Layout,
+  Calculator,
+  MessageCircle,
+  Gamepad2,
+  CheckCircle2,
+  Lock,
+  Globe,
+  Shield,
+  Infinity as InfinityIcon,
+  ShoppingCart,
+  ArrowRight,
+  Star,
+  Check,
+} from "lucide-react";
+
 import productoPreview from "@/assets/producto-preview.webp";
 import llavero1 from "@/assets/llavero-1.webp";
 import llavero2 from "@/assets/llavero-2.webp";
@@ -12,124 +40,141 @@ import avatar1 from "@/assets/avatar-1.webp";
 import avatar2 from "@/assets/avatar-2.webp";
 import avatar3 from "@/assets/avatar-3.webp";
 import avatar4 from "@/assets/avatar-4.webp";
-import avatar5 from "@/assets/avatar-5.webp";
-import avatar6 from "@/assets/avatar-6.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/T105491862G?checkoutMode=10";
 
-const Index = () => {
-  const benefits = [
-    "50 moldes de llaveros con personajes bíblicos",
-    "Cada molde con su versículo incluido",
-    "Archivo en PDF listo para imprimir en casa",
-    "Ideal para regalar, decorar o revender",
-    "Sin necesidad de experiencia — solo imprimir y armar",
-  ];
+const scrollToContent = () => {
+  document.getElementById("content")?.scrollIntoView({ behavior: "smooth" });
+};
 
-  const audience = [
-    { icon: "🙏", text: "Hombres y mujeres cristianos" },
-    { icon: "🎁", text: "Quien quiere regalar con propósito" },
-    { icon: "💰", text: "Emprendedores que quieren vender" },
-    { icon: "✂️", text: "Amantes de las manualidades" },
-    { icon: "⛪", text: "Iglesias, grupos y ministerios" },
-    { icon: "👨‍👩‍👧", text: "Familias y maestros de escuela bíblica" },
-  ];
+/* ---------- HERO ---------- */
+const HeroSection = () => (
+  <section className="min-h-screen flex items-center bg-background py-8">
+    <div className="container mx-auto px-4">
+      <div className="max-w-4xl mx-auto text-center space-y-4">
+        <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2 text-balance">
+          Pack de <span className="text-accent">50 Llaveros Bíblicos</span> — Descarga, Imprime y Listo
+        </h1>
 
-  const testimonials = [
-    { name: "Ana Paula", city: "Ciudad de México, MX", avatar: avatar1, text: "¡Me encantaron los moldes! Súper fáciles de armar y quedaron preciosos. ¡Ya regalé a toda mi familia de la iglesia!" },
-    { name: "Fernanda López", city: "Bogotá, CO", avatar: avatar2, text: "Empecé a vender los llaveros en la feria de la iglesia y recuperé la inversión el primer día." },
-    { name: "Mariana Santos", city: "Lima, PE", avatar: avatar3, text: "El video tutorial me ayudó muchísimo. Nunca había hecho manualidades y armé todo perfecto." },
-    { name: "Patricia Olivera", city: "Buenos Aires, AR", avatar: avatar4, text: "Los versículos en los llaveros son una bendición. ¡Los niños de la escuela bíblica los amaron!" },
-    { name: "Juliana Costa", city: "Madrid, ES", avatar: avatar5, text: "Material de calidad increíble. Imprimí en casa y quedó profesional. Súper recomendado." },
-    { name: "Camila Rodríguez", city: "Quito, EC", avatar: avatar6, text: "Entrega instantánea y moldes maravillosos. ¡Ya estoy esperando nuevos kits!" },
-  ];
-
-  const faqs = [
-    { q: "¿Cómo voy a recibir el material?", a: "Recibirás el archivo PDF directamente en tu correo electrónico inmediatamente después de confirmar el pago. Acceso 100% digital e instantáneo." },
-    { q: "¿Necesito alguna habilidad especial?", a: "¡Para nada! Solo necesitas imprimir, recortar y armar. Es muy sencillo, cualquier persona puede hacerlo." },
-    { q: "¿Puedo vender los llaveros que arme?", a: "¡Sí! Tienes total libertad para vender los llaveros que crees con los moldes. Muchas de nuestras clientas ya generan ingresos extra con ellos." },
-    { q: "¿El acceso es mensual?", a: "No, es un pago único. Una vez compras, el material es tuyo para siempre. Sin suscripciones ni cobros recurrentes." },
-  ];
-
-  const llaveros = [llavero1, llavero2, llavero3, llavero4, llavero5];
-
-  return (
-    <div className="min-h-screen bg-background overflow-x-hidden">
-      {/* HERO */}
-      <header className="bg-gradient-sky relative">
-        <div className="container py-16 md:py-24 text-center max-w-4xl">
-          <h1 className="font-display text-5xl md:text-7xl font-bold text-primary leading-[1.05] text-balance animate-fade-up">
-            Pack de 50 Llaveros Bíblicos
-            <span className="block italic text-secondary mt-2">— Descarga, Imprime y Listo</span>
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            50 personajes de la Biblia con versículos — listos para usar, regalar o vender.
-          </p>
-
-          <div className="mt-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg md:text-xl font-bold rounded-full px-10 py-7 shadow-gold animate-pulse-gold transition-smooth"
-            >
-              <a href={CHECKOUT_URL}>QUIERO MI KIT AHORA</a>
-            </Button>
-            <p className="text-sm text-muted-foreground mt-4">⚡ Acceso inmediato después del pago</p>
-          </div>
-
-          <div className="mt-12 md:mt-16 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
+        <div className="flex justify-center">
+          <div className="relative inline-block">
             <img
               src={productoPreview}
-              alt="Vista previa del kit de 50 moldes de llaveros bíblicos"
+              alt="Pack de 50 Llaveros Bíblicos"
               width={1200}
               height={1500}
               loading="eager"
               decoding="async"
               fetchPriority="high"
-              className="w-full rounded-2xl shadow-soft"
+              className="w-full max-w-[220px] sm:max-w-xs md:max-w-sm h-auto rounded-lg shadow-soft"
             />
           </div>
         </div>
-      </header>
 
-      {/* WHAT YOU GET */}
-      <section className="py-20 md:py-28 container max-w-5xl">
-        <div className="text-center mb-14">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
-            Lo que vas a recibir
-          </h2>
-          <p className="text-muted-foreground mt-3 text-lg">Todo incluido en tu kit digital</p>
-        </div>
-
-        <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
-          {benefits.map((b, i) => (
-            <div
-              key={i}
-              className="flex items-start gap-3 bg-card rounded-2xl p-5 shadow-card border border-border/60 hover:shadow-soft hover:-translate-y-0.5 transition-smooth"
-            >
-              <span className="text-accent text-xl font-bold flex-shrink-0">✦</span>
-              <p className="text-foreground font-medium">{b}</p>
-            </div>
-          ))}
-        </div>
-
-        <p className="text-center text-lg md:text-xl font-semibold text-primary mt-16 mb-8">
-          Mira cómo quedan los llaveros listos 👇
+        <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+          50 personajes bíblicos con versículos + bonos, listos en PDF para imprimir, regalar o vender desde cualquier dispositivo.
         </p>
 
-        <div className="mb-6">
-          <img
-            src={llavero6}
-            alt="Antes y después - llavero bíblico impreso y armado"
-            loading="lazy"
-            width={1200}
-            height={800}
-            className="w-full rounded-2xl shadow-soft"
-          />
-        </div>
+        <Button
+          size="lg"
+          onClick={scrollToContent}
+          className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
+        >
+          QUIERO GARANTIZAR AHORA
+          <ArrowRight className="w-5 h-5" />
+        </Button>
+      </div>
+    </div>
+  </section>
+);
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {llaveros.map((src, i) => (
+/* ---------- BENEFITS ---------- */
+const benefits = [
+  { icon: Zap, title: "Listos para imprimir", description: "Sin diseño, sin programas. Abre el PDF y manda a imprimir." },
+  { icon: Sparkles, title: "Versículos incluidos", description: "Cada llavero ya viene con su personaje y versículo bíblico." },
+  { icon: Gift, title: "Regala con propósito", description: "Detalles únicos para familia, iglesia o eventos cristianos." },
+  { icon: Clock, title: "Ahorra horas de trabajo", description: "Todo organizado y listo. Solo recortar y armar." },
+];
+
+const BenefitsSection = () => (
+  <section className="py-6 md:py-8 bg-muted/30" id="benefits">
+    <div className="container mx-auto px-4">
+      <div className="text-center max-w-3xl mx-auto mb-5">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">LA SOLUCIÓN</p>
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary text-balance">
+          Imagina llaveros bíblicos hechos en casa, listos para bendecir
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
+        {benefits.map((b, i) => (
+          <div key={i} className="text-center space-y-2 sm:space-y-3">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-xl bg-primary flex items-center justify-center shadow-md">
+              <b.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-foreground" />
+            </div>
+            <div>
+              <h3 className="text-sm sm:text-base md:text-lg font-semibold text-foreground mb-1">{b.title}</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{b.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+/* ---------- SHOWCASE ---------- */
+const categories = [
+  { icon: BookOpen, title: "Personajes del Antiguo Testamento", description: "Moisés, David, Noé, Abraham y más, cada uno con su versículo." },
+  { icon: Heart, title: "Personajes del Nuevo Testamento", description: "Jesús, María, los apóstoles y figuras inspiradoras de la fe." },
+  { icon: Sparkles, title: "Versículos de fe y esperanza", description: "Mensajes bíblicos que acompañan cada llavero." },
+  { icon: Printer, title: "Diseños listos para imprimir", description: "Archivos PDF en alta calidad, listos para imprimir en casa." },
+  { icon: Scissors, title: "Fáciles de recortar y armar", description: "Líneas claras de corte. Cualquier persona puede hacerlo." },
+  { icon: Palette, title: "Colores vibrantes y bíblicos", description: "Arte profesional pensado para iluminar cada detalle." },
+  { icon: ShoppingBag, title: "Ideales para vender", description: "Crea tu propio emprendimiento cristiano con bajo costo." },
+  { icon: Gift, title: "Regalos con propósito", description: "Perfectos para iglesia, escuela bíblica, bautizos y eventos." },
+];
+
+const ShowcaseSection = () => (
+  <section className="py-6 md:py-8 bg-background">
+    <div className="container mx-auto px-4">
+      <div className="text-center max-w-4xl mx-auto space-y-3">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent">Contenido del material</p>
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary">
+          ¿Qué vas a encontrar?
+        </h2>
+        <p className="text-sm sm:text-base text-muted-foreground">
+          Dentro del pack encontrarás 50 moldes organizados por categoría, listos para imprimir y armar.
+        </p>
+
+        <Card className="p-3 sm:p-5 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            {categories.map((c, i) => (
+              <div key={i} className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 rounded-md hover:bg-muted/50 transition-smooth text-left">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-md bg-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <c.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
+                </div>
+                <div>
+                  <span className="text-foreground text-xs sm:text-sm font-semibold block">{c.title}</span>
+                  <span className="text-muted-foreground text-xs hidden sm:block">{c.description}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Card>
+
+        <Button
+          size="lg"
+          onClick={scrollToContent}
+          className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
+        >
+          QUIERO GARANTIZAR AHORA
+          <ArrowRight className="w-5 h-5" />
+        </Button>
+
+        {/* Galeria de llaveros */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 pt-6">
+          {[llavero1, llavero2, llavero3, llavero4, llavero5, llavero6].map((src, i) => (
             <img
               key={i}
               src={src}
@@ -137,383 +182,403 @@ const Index = () => {
               loading="lazy"
               width={600}
               height={600}
-              className="w-full aspect-square object-cover rounded-2xl shadow-card hover:shadow-soft hover:-translate-y-1 transition-smooth"
+              decoding="async"
+              className="w-full aspect-square object-cover rounded-xl shadow-card"
             />
           ))}
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
+);
 
-      {/* AUDIENCE */}
-      <section className="bg-gradient-sky py-20 md:py-28">
-        <div className="container max-w-5xl">
-          <div className="text-center mb-14">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
-              ¿Para quién es?
-            </h2>
-            <p className="text-muted-foreground mt-3 text-lg">Para hombres y mujeres que quieren crear con propósito</p>
-          </div>
+/* ---------- WHAT YOU RECEIVE ---------- */
+const mainItems = [
+  "50 moldes en PDF de alta calidad",
+  "Personajes bíblicos con versículos",
+  "Listos para imprimir en casa",
+  "Líneas de corte fáciles de seguir",
+  "Para uso personal o comercial",
+  "Adaptable a cualquier impresora",
+];
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {audience.map((a, i) => (
-              <div
-                key={i}
-                className="bg-card rounded-2xl p-6 flex items-center gap-4 shadow-card border border-border/60 hover:shadow-soft hover:-translate-y-1 transition-smooth"
-              >
-                <div className="text-4xl">{a.icon}</div>
-                <p className="font-display text-xl font-semibold text-primary">{a.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+const bonuses = [
+  { icon: BookOpen, number: "BONO #1", title: "Guía Cómo Vender Llaveros Bíblicos", oldPrice: "$17.00", newPrice: "HOY GRATIS" },
+  { icon: Calculator, number: "BONO #2", title: "Calculadora de Precio y Ganancia", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
+  { icon: Layout, number: "BONO #3", title: "Plantilla de Control de Ventas", oldPrice: "$9.00", newPrice: "HOY GRATIS" },
+  { icon: MessageCircle, number: "BONO #4", title: "Scripts de Venta para WhatsApp y Facebook", oldPrice: "$15.00", newPrice: "HOY GRATIS" },
+  { icon: Gamepad2, number: "BONO #5", title: "Dinámicas con Llaveros para Grupos", oldPrice: "$19.00", newPrice: "HOY GRATIS" },
+];
 
-      {/* BONUSES */}
-      <section className="pt-20 md:pt-28 pb-10 container max-w-5xl">
-        <div className="text-center mb-14">
-          <span className="inline-block bg-accent/20 text-accent-foreground text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4">
-            🎁 Bonos exclusivos
-          </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
-            Y además, llévate <span className="text-accent">3 regalos</span>
-          </h2>
-          <p className="text-muted-foreground mt-3 text-lg">
-            Bonos exclusivos incluidos sin costo adicional
-          </p>
-        </div>
+const WhatYouReceiveSection = () => (
+  <section className="py-6 md:py-8 bg-muted/30" id="what-you-receive">
+    <div className="container mx-auto px-4">
+      <div className="text-center max-w-3xl mx-auto mb-5">
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2">
+          ¿Qué vas a recibir?
+        </h2>
+        <p className="text-sm text-muted-foreground">Todo esto con un solo acceso:</p>
+      </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {[
-            {
-              tag: "Bono #1",
-              icon: "📘",
-              title: "Guía Rápida: Cómo Vender Llaveros Bíblicos",
-              desc: "Estrategias prácticas para empezar a vender hoy mismo y generar ingresos extra.",
-              value: "USD 17",
-            },
-            {
-              tag: "Bono #2",
-              icon: "🧮",
-              title: "Calculadora de Precio y Ganancia para Llaveros Bíblicos",
-              desc: "Define el precio ideal de venta y calcula tu ganancia real de forma fácil y rápida.",
-              value: "USD 12",
-            },
-            {
-              tag: "Bono #3",
-              icon: "📊",
-              title: "Plantilla de Control de Gastos, Ventas y Ganancias para Llaveros Bíblicos",
-              desc: "Organiza tus finanzas, controla tus ventas y visualiza tus ganancias en una plantilla lista para usar.",
-              value: "USD 9",
-            },
-            {
-              tag: "Bono #4",
-              icon: "💬",
-              title: "Scripts de Venta para WhatsApp y Facebook",
-              desc: "Mensajes listos para copiar y pegar que te ayudan a vender más llaveros por chat y redes sociales.",
-              value: "USD 15",
-            },
-            {
-              tag: "Bono #5",
-              icon: "🎉",
-              title: "Dinámicas con Llaveros Bíblicos para Jóvenes y Grupos",
-              desc: "Actividades y juegos creativos usando los llaveros bíblicos para reuniones de jóvenes, células y escuela dominical.",
-              value: "USD 19",
-            },
-          ].map((bonus, i) => (
-            <div
-              key={i}
-              className="relative bg-card rounded-2xl p-6 shadow-card border-2 border-accent/30 hover:shadow-soft hover:-translate-y-1 transition-smooth flex flex-col"
-            >
-              <div className="absolute -top-3 left-6 bg-gradient-gold-strong text-primary-foreground px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-gold">
-                {bonus.tag}
-              </div>
-              <div className="text-5xl mb-4 mt-3">{bonus.icon}</div>
-              <h3 className="font-display text-xl font-bold text-primary mb-2 leading-tight">
-                {bonus.title}
+      <div className="max-w-5xl mx-auto space-y-5">
+        <Card className="p-4 sm:p-6 md:p-8">
+          <div className="flex flex-row gap-4 items-start">
+            <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl bg-primary flex-shrink-0 shadow-md">
+              <FileText className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-foreground" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-0.5">PRODUCTO PRINCIPAL</p>
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-foreground mb-2">
+                Pack de 50 Llaveros Bíblicos
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed flex-1">
-                {bonus.desc}
+              <p className="text-muted-foreground text-xs sm:text-sm mb-3">
+                Moldes listos para imprimir, recortar y armar — con personajes y versículos.
               </p>
-              <div className="mt-5 pt-4 border-t border-border space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">Valor:</span>
-                  <span className="font-display font-bold text-muted-foreground line-through">
-                    {bonus.value}
-                  </span>
-                </div>
-                <div className="flex items-center justify-between gap-2 bg-success/10 border-2 border-dashed border-success/50 rounded-xl px-3 py-2">
-                  <span className="text-sm font-semibold text-success-foreground flex items-center gap-1">
-                    <span className="text-base">🎉</span> Hoy:
-                  </span>
-                  <span className="font-display font-extrabold text-success text-2xl tracking-wider -rotate-3 drop-shadow-sm">
-                    ¡GRATIS!
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="text-center mt-10">
-          <p className="font-display text-xl md:text-2xl text-primary">
-            Todo esto <b className="text-accent">GRATIS</b> al adquirir tu kit hoy
-          </p>
-        </div>
-      </section>
-
-      {/* PRICE CTA AFTER BONUSES */}
-      <section className="pb-20 md:pb-28 px-4">
-        <div className="w-full max-w-xl mx-auto">
-          <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/40 overflow-hidden">
-            <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-accent/10 to-transparent pointer-events-none" />
-            <div className="relative flex flex-col items-center text-center px-6 py-10 sm:px-10 sm:py-12">
-              <p className="font-display text-2xl sm:text-3xl font-bold text-primary text-balance leading-tight">
-                Llévate <span className="text-accent">todo esto</span> por apenas
-              </p>
-
-              <div className="flex items-baseline justify-center gap-1 mt-6">
-                <span className="font-display text-3xl sm:text-4xl font-bold text-accent">$</span>
-                <span className="font-display text-7xl sm:text-8xl font-bold text-accent leading-none tracking-tight">
-                  9.90
-                </span>
-                <span className="font-display text-lg sm:text-xl text-muted-foreground ml-1">USD</span>
-              </div>
-              <p className="text-sm text-muted-foreground mt-4">💳 Pago único · Acceso inmediato</p>
-
-              <a
-                href={CHECKOUT_URL}
-                className="mt-8 inline-flex items-center justify-center w-full text-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base sm:text-lg font-bold rounded-full px-6 py-5 shadow-gold transition-smooth"
-              >
-                ¡QUIERO MI KIT AHORA!
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section className="pb-20 md:pb-28 container max-w-6xl">
-        <div className="text-center mb-14">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
-            Lo que dicen nuestras clientas
-          </h2>
-          <p className="text-muted-foreground mt-3 text-lg">Más de 500 clientas satisfechas ⭐</p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {testimonials.map((t, i) => (
-            <div
-              key={i}
-              className="bg-card rounded-2xl p-6 shadow-card border border-border/60 hover:shadow-soft transition-smooth flex flex-col"
-            >
-              <div className="text-accent text-lg mb-2">★★★★★</div>
-              <p className="text-foreground italic leading-relaxed flex-1">"{t.text}"</p>
-              <div className="flex items-center gap-3 mt-5 pt-5 border-t border-border">
-                <img
-                  src={t.avatar}
-                  alt={`Foto de ${t.name}, clienta satisfecha`}
-                  loading="lazy"
-                  width={88}
-                  height={88}
-                  className="w-11 h-11 rounded-full object-cover ring-2 ring-accent/40"
-                />
-                <div>
-                  <div className="font-semibold text-primary">{t.name}</div>
-                  <div className="text-sm text-muted-foreground">{t.city}</div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* OFFER */}
-      <section id="oferta" className="bg-gradient-sky py-20 md:py-28 relative">
-        <div className="container max-w-2xl">
-          <div className="text-center mb-10">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
-              Asegura tu kit ahora
-            </h2>
-            <p className="text-muted-foreground mt-4 text-lg">
-              Una inversión única para crear, regalar o vender con propósito
-            </p>
-          </div>
-
-          <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/40 p-8 md:p-12 overflow-hidden">
-            {/* Decorative gradient */}
-            <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-accent/10 to-transparent pointer-events-none" />
-
-            <div className="relative">
-              <h3 className="font-display text-3xl md:text-4xl font-bold text-primary text-center mt-4">
-                Kit Llaveros Bíblicos
-              </h3>
-              <p className="text-center text-muted-foreground mt-2">
-                50 moldes + bonos exclusivos
-              </p>
-
-              <div className="text-center my-8 py-6 border-y border-border/60">
-                <div className="flex items-center justify-center gap-3">
-                  <span className="text-muted-foreground line-through text-xl">USD 19.90</span>
-                  <span className="bg-accent/20 text-accent-foreground text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wide">
-                    -50%
-                  </span>
-                </div>
-                <div className="flex items-baseline justify-center gap-2 mt-2">
-                  <span className="font-display text-2xl font-bold text-accent">$</span>
-                  <span className="font-display text-7xl md:text-8xl font-bold text-accent leading-none">
-                    9.90
-                  </span>
-                  <span className="font-display text-xl text-muted-foreground">USD</span>
-                </div>
-                <div className="text-sm text-muted-foreground mt-3">
-                  💳 Pago único · Sin suscripciones
-                </div>
-              </div>
-
-              <div className="space-y-3 my-8">
-                {[
-                  <><b>50 moldes</b> de llaveros cristianos</>,
-                  <>Personajes de la Biblia con <b>versículos</b></>,
-                  <>Listos para <b>imprimir y armar</b></>,
-                  <>Acceso <b>inmediato</b> al material</>,
-                  <>Para uso personal o <b>comercial</b></>,
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3 text-foreground">
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-accent/20 text-accent font-bold text-sm flex-shrink-0">✓</span>
-                    <span>{item}</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                {mainItems.map((item, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                    <span className="text-xs sm:text-sm text-foreground">{item}</span>
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </Card>
 
-              {/* Bonos incluidos */}
-              <div className="bg-gradient-to-br from-success/10 to-accent/5 border-2 border-dashed border-success/40 rounded-2xl p-5 my-8">
-                <p className="font-display text-lg font-bold text-primary text-center mb-4">
-                  🎁 Bonos incluidos GRATIS
-                </p>
-                <div className="space-y-2.5">
-                  {[
-                    { icon: "📘", title: "Guía Cómo Vender Llaveros Bíblicos", value: 17 },
-                    { icon: "🧮", title: "Calculadora de Precio y Ganancia", value: 12 },
-                    { icon: "📊", title: "Plantilla de Control de Ventas", value: 9 },
-                    { icon: "💬", title: "Scripts de Venta para WhatsApp/Facebook", value: 15 },
-                    { icon: "🎉", title: "Dinámicas con Llaveros para Grupos", value: 19 },
-                  ].map((bonus, i) => (
-                    <div key={i} className="flex items-center justify-between gap-3 text-sm">
-                      <div className="flex items-center gap-2 text-foreground flex-1 min-w-0">
-                        <span className="text-base flex-shrink-0">{bonus.icon}</span>
-                        <span className="truncate">{bonus.title}</span>
-                      </div>
-                      <div className="flex items-center gap-2 flex-shrink-0">
-                        <span className="text-muted-foreground line-through text-xs">USD {bonus.value}</span>
-                        <span className="font-display font-extrabold text-success text-sm">GRATIS</span>
-                      </div>
+        <div>
+          <h3 className="text-center font-display text-lg sm:text-xl md:text-2xl font-semibold text-foreground mb-3">
+            BONOS INCLUIDOS GRATIS
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5">
+            {bonuses.map((bonus, i) => (
+              <Card key={i} className="p-4 sm:p-5 hover:shadow-soft transition-smooth">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg border-2 border-primary flex items-center justify-center flex-shrink-0">
+                    <bonus.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-widest text-accent mb-0.5">{bonus.number}</p>
+                    <h4 className="text-sm sm:text-base font-semibold text-foreground mb-1">{bonus.title}</h4>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="text-xs text-muted-foreground line-through">{bonus.oldPrice}</span>
+                      <span className="text-xs font-bold text-success">{bonus.newPrice}</span>
                     </div>
-                  ))}
+                  </div>
                 </div>
-                <div className="mt-4 pt-4 border-t border-success/30 text-center">
-                  <p className="font-display font-bold text-primary text-base sm:text-lg leading-tight">
-                    Hoy vas a pagar solo
-                  </p>
-                  <p className="font-display font-extrabold text-success text-3xl sm:text-4xl tracking-tight mt-1">
-                    USD 9,90
-                  </p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+/* ---------- TARGET AUDIENCE ---------- */
+const audiences = [
+  { icon: Heart, title: "Mujeres y hombres cristianos", description: "Que quieren crear y bendecir con propósito." },
+  { icon: ShoppingBag, title: "Emprendedores", description: "Que desean iniciar un negocio cristiano de bajo costo." },
+  { icon: Church, title: "Iglesias y ministerios", description: "Para regalar en eventos, grupos y escuela bíblica." },
+  { icon: Users, title: "Familias y maestros", description: "Para enseñar la Palabra a niños de forma creativa." },
+];
+
+const TargetAudienceSection = () => (
+  <section className="py-6 md:py-8 bg-muted/30">
+    <div className="container mx-auto px-4">
+      <div className="text-center max-w-3xl mx-auto mb-5">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">¿Para quién es este material?</p>
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary text-balance">
+          Si te identificas con alguno de estos perfiles, este kit fue creado para ti.
+        </h2>
+      </div>
+
+      <div className="max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          {audiences.map((a, i) => (
+            <div key={i} className="text-center space-y-2">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-2xl bg-accent/20 border-2 border-accent/40 flex items-center justify-center">
+                <a.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-accent" />
+              </div>
+              <div>
+                <h3 className="text-sm sm:text-base md:text-lg font-semibold text-foreground mb-1">{a.title}</h3>
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{a.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="text-center mt-6">
+        <Button
+          size="lg"
+          onClick={scrollToContent}
+          className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
+        >
+          QUIERO GARANTIZAR AHORA
+          <ArrowRight className="w-5 h-5" />
+        </Button>
+      </div>
+    </div>
+  </section>
+);
+
+/* ---------- TESTIMONIALS ---------- */
+const testimonials = [
+  { name: "Ana Paula", role: "Ciudad de México, MX", avatar: avatar1, initials: "AP", quote: "¡Me encantaron los moldes! Súper fáciles de armar y quedaron preciosos. ¡Ya regalé a toda mi familia de la iglesia!" },
+  { name: "Fernanda López", role: "Bogotá, CO", avatar: avatar2, initials: "FL", quote: "Empecé a vender los llaveros en la feria de la iglesia y recuperé la inversión el primer día." },
+  { name: "Mariana Santos", role: "Lima, PE", avatar: avatar3, initials: "MS", quote: "El material me ayudó muchísimo. Nunca había hecho manualidades y armé todo perfecto." },
+  { name: "Patricia Olivera", role: "Buenos Aires, AR", avatar: avatar4, initials: "PO", quote: "Los versículos en los llaveros son una bendición. ¡Los niños de la escuela bíblica los amaron!" },
+];
+
+const TestimonialsSection = () => (
+  <section className="py-6 md:py-8 bg-background" id="testimonials">
+    <div className="container mx-auto px-4">
+      <div className="text-center max-w-3xl mx-auto mb-5">
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary">
+          Lo que dicen quienes ya lo usan
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-5xl mx-auto">
+        {testimonials.map((t, i) => (
+          <Card key={i} className="p-4 sm:p-5 hover:shadow-soft transition-smooth">
+            <div className="space-y-2 sm:space-y-3">
+              <div className="flex gap-0.5">
+                {Array.from({ length: 5 }).map((_, j) => (
+                  <Star key={j} className="w-4 h-4 sm:w-5 sm:h-5 fill-accent text-accent" />
+                ))}
+              </div>
+              <p className="text-foreground italic leading-relaxed text-sm sm:text-base">"{t.quote}"</p>
+              <div className="flex items-center gap-3 pt-1">
+                <img
+                  src={t.avatar}
+                  alt={t.name}
+                  loading="lazy"
+                  width={88}
+                  height={88}
+                  className="w-10 h-10 rounded-full object-cover ring-2 ring-accent/40"
+                />
+                <div>
+                  <p className="font-semibold text-foreground text-sm">{t.name}</p>
+                  <p className="text-xs text-muted-foreground">{t.role}</p>
                 </div>
               </div>
-
-              <Button
-                asChild
-                size="lg"
-                className="w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-lg font-bold rounded-full py-7 shadow-gold animate-pulse-gold transition-smooth"
-              >
-                <a href={CHECKOUT_URL}>¡QUIERO EL KIT AHORA!</a>
-              </Button>
-
             </div>
-          </div>
-
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-8 text-sm text-muted-foreground">
-            <span>🔒 Compra segura</span>
-            <span>📧 Soporte por email</span>
-            <span>⚡ Entrega instantánea</span>
-          </div>
-        </div>
-      </section>
-
-
-      {/* GUARANTEE */}
-      <section className="py-20 md:py-28 container max-w-4xl">
-        <div className="relative bg-card rounded-3xl shadow-soft border-2 border-accent/30 p-8 md:p-12 text-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-sky opacity-40 pointer-events-none" />
-          <div className="relative">
-            <div className="inline-flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-gold-strong shadow-gold mb-6 animate-pulse-gold">
-              <span className="text-5xl md:text-6xl">🛡️</span>
-            </div>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary text-balance">
-              7 días de garantía incondicional
-            </h2>
-            <p className="text-muted-foreground text-lg mt-5 max-w-2xl mx-auto leading-relaxed">
-              Prueba el kit completo durante <b>7 días sin riesgo</b>. Si por cualquier motivo no estás 100% satisfecha, te devolvemos <b>todo tu dinero</b> — sin preguntas, sin burocracia y sin complicaciones.
-            </p>
-
-            <div className="grid sm:grid-cols-3 gap-4 mt-10 max-w-2xl mx-auto">
-              {[
-                { icon: "✅", title: "Sin riesgo", text: "Reembolso total garantizado" },
-                { icon: "💬", title: "Sin preguntas", text: "Solo envíanos un email" },
-                { icon: "⚡", title: "Sin demora", text: "Devolución rápida y simple" },
-              ].map((item, i) => (
-                <div key={i} className="bg-background/70 backdrop-blur rounded-2xl p-5 border border-border/60">
-                  <div className="text-3xl mb-2">{item.icon}</div>
-                  <div className="font-display font-bold text-primary">{item.title}</div>
-                  <div className="text-sm text-muted-foreground mt-1">{item.text}</div>
-                </div>
-              ))}
-            </div>
-
-            <p className="font-display italic text-primary text-lg mt-10">
-              "El riesgo es nuestro. Tu satisfacción es la prioridad."
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 md:py-28 container max-w-3xl">
-        <div className="text-center mb-12">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">
-            Preguntas frecuentes
-          </h2>
-        </div>
-
-        <Accordion type="single" collapsible className="space-y-4">
-          {faqs.map((faq, i) => (
-            <AccordionItem
-              key={i}
-              value={`item-${i}`}
-              className="bg-card border border-border rounded-2xl px-6 shadow-card"
-            >
-              <AccordionTrigger className="font-display text-lg font-semibold text-left text-primary hover:no-underline py-5">
-                {faq.q}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                {faq.a}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="bg-primary text-primary-foreground/80 py-10">
-        <div className="container text-center text-sm space-y-2">
-          <p>Todos los derechos reservados © {new Date().getFullYear()}</p>
-          <p className="text-primary-foreground/60">
-            <a href="#" className="hover:text-primary-foreground transition-smooth">Política de Privacidad</a>
-            <span className="mx-2">·</span>
-            <a href="#" className="hover:text-primary-foreground transition-smooth">Términos de Uso</a>
-          </p>
-        </div>
-      </footer>
+          </Card>
+        ))}
+      </div>
     </div>
-  );
-};
+  </section>
+);
+
+/* ---------- CONTENT (PRICING) ---------- */
+const items = [
+  { title: "Pack de 50 Llaveros Bíblicos", value: "$39.90", icon: CheckCircle2 },
+  { title: "Bono #1 — Guía Cómo Vender Llaveros Bíblicos", value: "$17.00", icon: CheckCircle2 },
+  { title: "Bono #2 — Calculadora de Precio y Ganancia", value: "$12.00", icon: CheckCircle2 },
+  { title: "Bono #3 — Plantilla de Control de Ventas", value: "$9.00", icon: CheckCircle2 },
+  { title: "Bono #4 — Scripts de Venta para WhatsApp/Facebook", value: "$15.00", icon: CheckCircle2 },
+  { title: "Bono #5 — Dinámicas con Llaveros para Grupos", value: "$19.00", icon: CheckCircle2 },
+  { title: "Garantía de satisfacción de 7 días", value: null, icon: Shield },
+  { title: "Acceso vitalicio al material", value: null, icon: InfinityIcon },
+  { title: "Actualizaciones gratuitas", value: null, icon: Sparkles },
+  { title: "Acceso inmediato", value: null, icon: Zap },
+];
+
+const ContentSection = () => (
+  <section className="py-8 md:py-12 bg-muted/30" id="content">
+    <div className="container mx-auto px-4">
+      <div className="text-center max-w-3xl mx-auto mb-8">
+        <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-2">Oferta por tiempo limitado</p>
+        <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-4">
+          Accede hoy por un precio increíble
+        </h2>
+      </div>
+
+      <div className="max-w-2xl mx-auto">
+        <Card className="p-6 md:p-8 border-2 border-accent">
+          <div className="flex justify-center mb-6">
+            <img
+              src={productoPreview}
+              alt="Pack de 50 Llaveros Bíblicos"
+              loading="lazy"
+              width={1200}
+              height={1500}
+              className="max-w-full sm:max-w-xs h-auto rounded-md"
+            />
+          </div>
+
+          <p className="text-center text-sm font-semibold text-muted-foreground mb-4">
+            Recapitulando lo que vas a recibir:
+          </p>
+
+          <div className="space-y-4 mb-8">
+            {items.map((item, i) => (
+              <div key={i} className="text-left">
+                <div className="flex items-center gap-2 mb-1">
+                  <item.icon className="w-5 h-5 text-success flex-shrink-0" />
+                  <p className="text-base md:text-lg font-medium text-foreground">{item.title}</p>
+                </div>
+                {item.value && (
+                  <p className="text-sm font-bold text-destructive line-through mt-1 ml-7">
+                    VALORADO EN {item.value}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="pt-4 mb-6">
+            <p className="text-center text-lg md:text-xl text-destructive line-through mb-2">$111.90 USD</p>
+            <p className="text-center text-xl md:text-2xl font-semibold text-foreground mb-1">Todo esto por apenas</p>
+            <p className="text-center text-4xl md:text-5xl font-bold text-success mb-3">$9.90 USD</p>
+            <p className="text-center text-sm text-muted-foreground mb-6">Pago único · Acceso inmediato</p>
+          </div>
+
+          <Button
+            asChild
+            size="lg"
+            className="animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-3 gap-2 rounded-full py-7"
+          >
+            <a href={CHECKOUT_URL}>
+              <ShoppingCart className="w-5 h-5" />
+              QUIERO GARANTIZAR AHORA
+            </a>
+          </Button>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-muted-foreground">
+            <div className="flex items-center gap-1">
+              <Lock className="w-4 h-4" />
+              <span>Pago seguro</span>
+            </div>
+            <span>|</span>
+            <div className="flex items-center gap-1">
+              <Zap className="w-4 h-4" />
+              <span>Acceso inmediato</span>
+            </div>
+            <span>|</span>
+            <div className="flex items-center gap-1">
+              <Globe className="w-4 h-4" />
+              <span>Pago en tu moneda local</span>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </section>
+);
+
+/* ---------- GUARANTEE + FAQ ---------- */
+const faqs = [
+  { question: "¿Cómo recibo el material?", answer: "Recibes acceso inmediato al PDF tras completar el pago, directamente por email." },
+  { question: "¿Es físico o digital?", answer: "Es 100% digital. Puedes acceder e imprimir desde cualquier dispositivo." },
+  { question: "¿Necesito experiencia para armar los llaveros?", answer: "No. Solo necesitas imprimir, recortar y armar. Es muy sencillo." },
+  { question: "¿Puedo vender los llaveros que arme?", answer: "¡Sí! Tienes total libertad para vender los llaveros creados con los moldes." },
+  { question: "¿Puedo pedir reembolso?", answer: "Sí. Tienes 7 días de garantía. Si no estás satisfecho, te devolvemos el 100% de tu dinero, sin preguntas." },
+];
+
+const GuaranteeSection = () => (
+  <section className="py-6 md:py-8 bg-background">
+    <div className="container mx-auto px-4">
+      <div className="max-w-4xl mx-auto">
+        <Card className="p-6 mb-6 bg-success/10 border-success/30">
+          <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+            <div className="w-20 h-20 rounded-full bg-success/20 flex items-center justify-center flex-shrink-0">
+              <Shield className="w-10 h-10 text-success" />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-3xl font-display font-semibold text-foreground mb-3">
+                Garantía de satisfacción de 7 días
+              </h3>
+              <p className="text-foreground leading-relaxed mb-2 font-semibold">
+                Riesgo cero. Tu inversión está protegida.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Si por cualquier razón no estás satisfecho con el material, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.
+              </p>
+            </div>
+          </div>
+        </Card>
+
+        <div className="text-center mb-4">
+          <h3 className="font-display text-3xl font-semibold text-foreground mb-3">Preguntas frecuentes</h3>
+        </div>
+
+        <div className="space-y-4">
+          {faqs.map((faq, i) => (
+            <Card key={i} className="p-6">
+              <div className="flex items-start gap-4">
+                <Check className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <p className="font-semibold text-foreground mb-1">{faq.question}</p>
+                  <p className="text-muted-foreground">{faq.answer}</p>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+/* ---------- FINAL CTA ---------- */
+const FinalCTASection = () => (
+  <section className="py-8 md:py-10 bg-primary">
+    <div className="container mx-auto px-4">
+      <div className="max-w-4xl mx-auto text-center space-y-4">
+        <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-primary-foreground">
+          ¡Comienza hoy mismo!
+        </h2>
+        <p className="text-base sm:text-xl md:text-2xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
+          No pierdas más tiempo — descarga, imprime y empieza a crear tus llaveros bíblicos hoy.
+        </p>
+        <div className="flex flex-col items-center gap-2">
+          <Button
+            asChild
+            size="lg"
+            className="w-full sm:w-auto bg-background text-primary hover:bg-background/90 font-bold text-base sm:text-lg px-8 shadow-xl gap-2 rounded-full"
+          >
+            <a href={CHECKOUT_URL} onClick={scrollToContent}>
+              <ShoppingCart className="w-5 h-5" />
+              QUIERO GARANTIZAR AHORA
+            </a>
+          </Button>
+          <span className="text-primary-foreground font-semibold text-lg">$9.90 USD</span>
+        </div>
+        <p className="text-primary-foreground/70 text-xs sm:text-sm">
+          Acceso inmediato tras la compra · Material 100% digital · Garantía 7 días
+        </p>
+      </div>
+    </div>
+  </section>
+);
+
+/* ---------- PAGE ---------- */
+const Index = () => (
+  <div className="min-h-screen bg-background overflow-x-hidden">
+    <HeroSection />
+    <BenefitsSection />
+    <ShowcaseSection />
+    <WhatYouReceiveSection />
+    <TargetAudienceSection />
+    <TestimonialsSection />
+    <ContentSection />
+    <GuaranteeSection />
+    <FinalCTASection />
+
+    <footer className="bg-primary text-primary-foreground/80 py-10">
+      <div className="container text-center text-sm space-y-2">
+        <p>Todos los derechos reservados © {new Date().getFullYear()}</p>
+        <p className="text-primary-foreground/60">
+          <a href="#" className="hover:text-primary-foreground transition-smooth">Política de Privacidad</a>
+          <span className="mx-2">·</span>
+          <a href="#" className="hover:text-primary-foreground transition-smooth">Términos de Uso</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+);
 
 export default Index;

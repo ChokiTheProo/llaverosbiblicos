@@ -486,40 +486,66 @@ const faqs = [
 ];
 
 const GuaranteeSection = () => (
-  <section className="py-6 md:py-8 bg-background">
+  <section className="py-10 md:py-14 bg-background">
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto">
-        <Card className="p-6 mb-6 bg-success/10 border-success/30">
-          <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
-            <div className="w-20 h-20 rounded-full bg-success/20 flex items-center justify-center flex-shrink-0">
-              <Shield className="w-10 h-10 text-success" />
+        <div className="text-center mb-6">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-balance">
+            Garantía Incondicional de 7 Días
+          </h2>
+        </div>
+
+        <Card className="p-6 md:p-10 mb-12 bg-success/10 border-2 border-success/30 shadow-soft">
+          <div className="flex flex-col items-center text-center gap-5">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-success/20 flex items-center justify-center shadow-md animate-pulse-gold">
+              <span className="text-6xl sm:text-7xl" role="img" aria-label="Escudo de garantía">🛡️</span>
             </div>
-            <div className="flex-1">
-              <h3 className="text-3xl font-display font-semibold text-foreground mb-3">
-                Garantía de satisfacción de 7 días
-              </h3>
-              <p className="text-foreground leading-relaxed mb-2 font-semibold">
-                Riesgo cero. Tu inversión está protegida.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Si por cualquier razón no estás satisfecho con el material, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.
-              </p>
+            <p className="text-foreground leading-relaxed max-w-2xl">
+              Creemos tanto en el poder de este Pack de 50 Llaveros Bíblicos que te ofrecemos una garantía de
+              <b> 7 días sin riesgo</b>.
+            </p>
+            <p className="text-muted-foreground leading-relaxed max-w-2xl text-sm sm:text-base">
+              Si por cualquier motivo — cualquiera mismo — no estás 100% satisfecho con el material, solo
+              envíanos un mensaje y te devolvemos el <b>100% de tu dinero</b>.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-2">
+              {[
+                { icon: "✅", text: "Sin letras pequeñas" },
+                { icon: "💬", text: "Sin enredos" },
+                { icon: "🤝", text: "Sin preguntas incómodas" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-2 text-sm font-semibold text-success">
+                  <span className="text-lg">{item.icon}</span>
+                  <span>{item.text}</span>
+                </div>
+              ))}
             </div>
+
+            <p className="font-display italic text-primary text-base sm:text-lg pt-2 flex items-center gap-2">
+              <span className="text-2xl">💰</span>
+              ¡O amas la experiencia, o recibes tu dinero de vuelta!
+            </p>
           </div>
         </Card>
 
-        <div className="text-center mb-4">
-          <h3 className="font-display text-3xl font-semibold text-foreground mb-3">Preguntas frecuentes</h3>
+        <div className="text-center mb-6">
+          <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-2">
+            Preguntas frecuentes
+          </h3>
+          <p className="text-sm text-muted-foreground">Resuelve todas tus dudas antes de empezar</p>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <Card key={i} className="p-6">
+            <Card key={i} className="p-5 sm:p-6 hover:shadow-soft transition-smooth">
               <div className="flex items-start gap-4">
-                <Check className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Check className="w-4 h-4 text-primary" />
+                </div>
                 <div>
-                  <p className="font-semibold text-foreground mb-1">{faq.question}</p>
-                  <p className="text-muted-foreground">{faq.answer}</p>
+                  <p className="font-display font-semibold text-primary mb-1">{faq.question}</p>
+                  <p className="text-muted-foreground text-sm sm:text-base">{faq.answer}</p>
                 </div>
               </div>
             </Card>

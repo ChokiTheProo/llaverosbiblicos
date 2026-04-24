@@ -49,9 +49,9 @@ const scrollToContent = () => {
 
 /* ---------- HERO ---------- */
 const HeroSection = () => (
-  <section className="min-h-screen flex items-center bg-background py-8">
+  <section className="min-h-[85vh] flex items-center bg-background py-6 md:py-10">
     <div className="container mx-auto px-4">
-      <div className="max-w-4xl mx-auto text-center space-y-4">
+      <div className="max-w-4xl mx-auto text-center space-y-3 md:space-y-4">
         <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2 text-balance">
           Pack de <span className="text-accent">50 Llaveros Bíblicos</span> — Descarga, Imprime y Listo
         </h1>
@@ -97,7 +97,7 @@ const benefits = [
 ];
 
 const BenefitsSection = () => (
-  <section className="py-6 md:py-8 bg-muted/30" id="benefits">
+  <section className="py-5 md:py-7 bg-muted/30" id="benefits">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
         <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">LA SOLUCIÓN</p>
@@ -106,9 +106,9 @@ const BenefitsSection = () => (
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 max-w-5xl mx-auto">
         {benefits.map((b, i) => (
-          <div key={i} className="text-center space-y-2 sm:space-y-3">
+          <div key={i} className="text-center space-y-1.5 sm:space-y-2">
             <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-xl bg-primary flex items-center justify-center shadow-md">
               <b.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-foreground" />
             </div>
@@ -136,7 +136,7 @@ const categories = [
 ];
 
 const ShowcaseSection = () => (
-  <section className="py-6 md:py-8 bg-background">
+  <section className="py-5 md:py-7 bg-background">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-4xl mx-auto space-y-3">
         <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent">Contenido del material</p>
@@ -147,7 +147,7 @@ const ShowcaseSection = () => (
           Dentro del pack encontrarás 50 moldes organizados por categoría, listos para imprimir y armar.
         </p>
 
-        <Card className="p-3 sm:p-5 max-w-4xl mx-auto">
+        <Card className="p-2.5 sm:p-4 max-w-4xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {categories.map((c, i) => (
               <div key={i} className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 rounded-md hover:bg-muted/50 transition-smooth text-left">
@@ -173,7 +173,7 @@ const ShowcaseSection = () => (
         </Button>
 
         {/* Galeria de llaveros */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 pt-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2.5 pt-4">
           {[llavero1, llavero2, llavero3, llavero4, llavero5, llavero6].map((src, i) => (
             <img
               key={i}
@@ -211,7 +211,7 @@ const bonuses = [
 ];
 
 const WhatYouReceiveSection = () => (
-  <section className="py-6 md:py-8 bg-muted/30" id="what-you-receive">
+  <section className="py-5 md:py-7 bg-muted/30" id="what-you-receive">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2">
@@ -221,7 +221,7 @@ const WhatYouReceiveSection = () => (
       </div>
 
       <div className="max-w-5xl mx-auto space-y-5">
-        <Card className="p-4 sm:p-6 md:p-8">
+        <Card className="p-3.5 sm:p-5 md:p-6">
           <div className="flex flex-row gap-4 items-start">
             <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl bg-primary flex-shrink-0 shadow-md">
               <FileText className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-foreground" />
@@ -255,7 +255,7 @@ const WhatYouReceiveSection = () => (
               BONOS INCLUIDOS <span className="text-success">GRATIS</span>
             </h3>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 md:gap-4">
             {bonuses.map((bonus, i) => (
               <Card key={i} className="p-4 sm:p-5 hover:shadow-soft transition-smooth">
                 <div className="flex items-start gap-3">
@@ -289,7 +289,7 @@ const audiences = [
 ];
 
 const TargetAudienceSection = () => (
-  <section className="py-6 md:py-8 bg-muted/30">
+  <section className="py-5 md:py-7 bg-muted/30">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
         <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">¿Para quién es este material?</p>
@@ -299,7 +299,7 @@ const TargetAudienceSection = () => (
       </div>
 
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5">
           {audiences.map((a, i) => (
             <div key={i} className="text-center space-y-2">
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-2xl bg-accent/20 border-2 border-accent/40 flex items-center justify-center">
@@ -314,7 +314,7 @@ const TargetAudienceSection = () => (
         </div>
       </div>
 
-      <div className="text-center mt-6">
+      <div className="text-center mt-5">
         <Button
           size="lg"
           onClick={scrollToContent}
@@ -337,7 +337,7 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => (
-  <section className="py-6 md:py-8 bg-background" id="testimonials">
+  <section className="py-5 md:py-7 bg-background" id="testimonials">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary">
@@ -347,7 +347,7 @@ const TestimonialsSection = () => (
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-5xl mx-auto">
         {testimonials.map((t, i) => (
-          <Card key={i} className="p-4 sm:p-5 hover:shadow-soft transition-smooth">
+          <Card key={i} className="p-3.5 sm:p-4 hover:shadow-soft transition-smooth">
             <div className="space-y-2 sm:space-y-3">
               <div className="flex gap-0.5">
                 {Array.from({ length: 5 }).map((_, j) => (
@@ -392,7 +392,7 @@ const items = [
 ];
 
 const ContentSection = () => (
-  <section className="py-8 md:py-12 bg-muted/30" id="content">
+  <section className="py-6 md:py-10 bg-muted/30" id="content">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-8">
         <div className="inline-block bg-destructive text-destructive-foreground text-xs sm:text-sm font-bold px-5 py-2 rounded-full uppercase tracking-wider mb-4 shadow-md animate-pulse-gold">
@@ -404,7 +404,7 @@ const ContentSection = () => (
       </div>
 
       <div className="max-w-2xl mx-auto">
-        <Card className="p-6 md:p-8 border-2 border-accent">
+        <Card className="p-5 md:p-7 border-2 border-accent">
           <div className="flex justify-center mb-6">
             <img
               src={productoPreview}
@@ -420,7 +420,7 @@ const ContentSection = () => (
             Recapitulando lo que vas a recibir:
           </p>
 
-          <div className="space-y-4 mb-8">
+          <div className="space-y-3 mb-6">
             {items.map((item, i) => (
               <div key={i} className="text-left">
                 <div className="flex items-center gap-2 mb-1">
@@ -486,7 +486,7 @@ const faqs = [
 ];
 
 const GuaranteeSection = () => (
-  <section className="py-10 md:py-14 bg-background">
+  <section className="py-8 md:py-12 bg-background">
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-6">

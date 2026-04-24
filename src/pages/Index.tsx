@@ -94,6 +94,7 @@ const benefits = [
   { icon: Sparkles, title: "Versículos incluidos", description: "Cada llavero ya viene con su personaje y versículo bíblico." },
   { icon: Gift, title: "Regala con propósito", description: "Detalles únicos para familia, iglesia o eventos cristianos." },
   { icon: Clock, title: "Ahorra horas de trabajo", description: "Todo organizado y listo. Solo recortar y armar." },
+  { icon: ShoppingBag, title: "Revende y genera ganancias", description: "Imprime, arma y vende en tu iglesia, ferias o redes — con bajo costo y alto margen." },
 ];
 
 const BenefitsSection = () => (
@@ -106,7 +107,7 @@ const BenefitsSection = () => (
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 max-w-5xl mx-auto">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-5 max-w-5xl mx-auto">
         {benefits.map((b, i) => (
           <div key={i} className="text-center space-y-1.5 sm:space-y-2">
             <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-xl bg-primary flex items-center justify-center shadow-md">

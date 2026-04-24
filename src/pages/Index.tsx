@@ -558,7 +558,7 @@ const GuaranteeSection = () => (
 
 /* ---------- FINAL CTA ---------- */
 const FinalCTASection = () => (
-  <section className="py-8 md:py-10 bg-primary">
+  <section className="py-6 md:py-8 bg-primary">
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto text-center space-y-4">
         <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-primary-foreground">
@@ -601,7 +601,7 @@ const Index = () => (
     <GuaranteeSection />
     <FinalCTASection />
 
-    <footer className="bg-primary text-primary-foreground/80 py-10">
+    <footer className="bg-primary text-primary-foreground/80 py-8">
       <div className="container text-center text-sm space-y-2">
         <p>Todos los derechos reservados © {new Date().getFullYear()}</p>
         <p className="text-primary-foreground/60">

@@ -109,7 +109,14 @@ const BenefitsSection = () => (
 
       <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-5 max-w-5xl mx-auto">
         {benefits.map((b, i) => (
-          <div key={i} className="text-center space-y-1.5 sm:space-y-2">
+          <div
+            key={i}
+            className={`text-center space-y-1.5 sm:space-y-2 ${
+              i === benefits.length - 1 && benefits.length % 2 !== 0
+                ? "col-span-2 lg:col-span-1"
+                : ""
+            }`}
+          >
             <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-xl bg-primary flex items-center justify-center shadow-md">
               <b.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-foreground" />
             </div>

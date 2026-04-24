@@ -584,8 +584,8 @@ const Index = () => (
   <div className="min-h-screen bg-background overflow-x-hidden">
     <HeroSection />
     <TargetAudienceSection />
-    <BenefitsSection />
     <ShowcaseSection />
+    <BenefitsSection />
     <WhatYouReceiveSection />
     <TestimonialsSection />
     <ContentSection />

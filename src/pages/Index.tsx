@@ -314,16 +314,6 @@ const TargetAudienceSection = () => (
         </div>
       </div>
 
-      <div className="text-center mt-5">
-        <Button
-          size="lg"
-          onClick={scrollToContent}
-          className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
-        >
-          QUIERO GARANTIZAR AHORA
-          <ArrowRight className="w-5 h-5" />
-        </Button>
-      </div>
     </div>
   </section>
 );
@@ -592,10 +582,10 @@ const FinalCTASection = () => (
 const Index = () => (
   <div className="min-h-screen bg-background overflow-x-hidden">
     <HeroSection />
+    <TargetAudienceSection />
     <BenefitsSection />
     <ShowcaseSection />
     <WhatYouReceiveSection />
-    <TargetAudienceSection />
     <TestimonialsSection />
     <ContentSection />
     <GuaranteeSection />

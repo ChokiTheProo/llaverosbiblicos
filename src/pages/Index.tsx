@@ -282,6 +282,15 @@ const WhatYouReceiveSection = () => (
               </Card>
             ))}
           </div>
+          <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" className="block mt-6">
+            <Button
+              size="lg"
+              className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full animate-pulse-gold"
+            >
+              <ShoppingCart className="w-5 h-5" />
+              GARANTIR AGORA
+            </Button>
+          </a>
         </div>
       </div>
     </div>

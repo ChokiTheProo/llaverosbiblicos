@@ -447,7 +447,7 @@ const ContentSection = () => (
           >
             <a href={CHECKOUT_URL}>
               <ShoppingCart className="w-5 h-5" />
-              QUIERO ACCEDER AHORA
+              QUIERO GARANTIZAR AHORA
             </a>
           </Button>
 

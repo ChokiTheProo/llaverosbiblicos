@@ -294,9 +294,6 @@ const TargetAudienceSection = () => (
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
         <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">¿Para quién es este material?</p>
-        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary text-balance">
-          Si te identificas con alguno de estos perfiles, este kit fue creado para ti.
-        </h2>
       </div>
 
       <div className="max-w-5xl mx-auto">

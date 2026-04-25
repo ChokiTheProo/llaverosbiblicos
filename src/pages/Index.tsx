@@ -440,16 +440,7 @@ const ContentSection = () => (
             ))}
           </div>
 
-          <Button
-            asChild
-            size="lg"
-            className="w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base font-bold mb-6 gap-2 rounded-full py-6 animate-pulse-gold"
-          >
-            <a href={CHECKOUT_URL}>
-              <ShoppingCart className="w-5 h-5" />
-              QUIERO GARANTIZAR AHORA
-            </a>
-          </Button>
+
 
           <div className="pt-4 mb-6">
             <p className="text-center text-lg md:text-xl text-destructive line-through mb-2">$111.90 USD</p>

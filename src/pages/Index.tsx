@@ -66,7 +66,7 @@ const HeroSection = () => (
               loading="eager"
               decoding="async"
               fetchPriority="high"
-              className="w-full max-w-[220px] sm:max-w-xs md:max-w-sm h-auto rounded-lg shadow-soft"
+              className="w-full max-w-[280px] sm:max-w-sm md:max-w-md h-auto rounded-lg shadow-soft"
             />
           </div>
         </div>

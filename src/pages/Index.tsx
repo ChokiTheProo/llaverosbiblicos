@@ -139,12 +139,12 @@ const BenefitsSection = () => (
 
 /* ---------- SHOWCASE ---------- */
 const categories = [
-  { icon: Heart, title: "Jesús, María y José", description: "El corazón del kit, con versículos clásicos." },
+  { icon: Crown, title: "Jesús, María y José", description: "El corazón del kit, con versículos clásicos." },
   { icon: Users, title: "Los 12 apóstoles", description: "Pedro, Juan, Mateo y todos los discípulos con su versículo." },
-  { icon: BookOpen, title: "Héroes del Antiguo Testamento", description: "Moisés, David, Noé, Abraham, Daniel, Sansón y más." },
+  { icon: Sword, title: "Héroes del Antiguo Testamento", description: "Moisés, David, Noé, Abraham, Daniel, Sansón y más." },
   { icon: Sparkles, title: "Mujeres de la Biblia", description: "Ester, Rut, Débora, Ana — modelos de fe para las niñas." },
   { icon: Gift, title: "Símbolos cristianos", description: "El arca, el arco iris, el pez, la corona — clásicos atemporales." },
-  { icon: Printer, title: "Diseños listos para imprimir", description: "Archivos PDF en alta calidad, listos para imprimir en casa." },
+  { icon: FileText, title: "Diseños listos para imprimir", description: "Archivos PDF en alta calidad, listos para imprimir en casa." },
   { icon: Scissors, title: "Fáciles de recortar y armar", description: "Líneas claras de corte. Cualquier persona puede hacerlo." },
   { icon: Palette, title: "Colores vibrantes", description: "Arte profesional pensado para iluminar cada detalle." },
 ];

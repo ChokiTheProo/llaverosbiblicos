@@ -27,6 +27,12 @@ import {
   ArrowRight,
   Star,
   Check,
+  Crown,
+  Award,
+  Sword,
+  Download,
+  HandHeart,
+  BadgeCheck,
 } from "lucide-react";
 
 import productoPreview from "@/assets/producto-preview.webp";

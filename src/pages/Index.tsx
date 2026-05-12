@@ -289,7 +289,7 @@ const WhatYouReceiveSection = () => (
               className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full animate-pulse-gold"
             >
               <ShoppingCart className="w-5 h-5" />
-              GARANTIR AGORA
+              Quiero el Kit por $9.90
             </Button>
           </a>
         </div>

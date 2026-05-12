@@ -78,7 +78,7 @@ const HeroSection = () => (
         <Button
           size="lg"
           onClick={scrollToContent}
-          className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
+          className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
         >
           Quiero el Kit por $9.90
           <ArrowRight className="w-5 h-5" />
@@ -117,7 +117,7 @@ const BenefitsSection = () => (
                 : ""
             }`}
           >
-            <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-xl bg-primary flex items-center justify-center shadow-md">
+            <div className="icon-tile w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-2xl flex items-center justify-center">
               <b.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-foreground" />
             </div>
             <div>
@@ -159,7 +159,7 @@ const ShowcaseSection = () => (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {categories.map((c, i) => (
               <div key={i} className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 rounded-md hover:bg-muted/50 transition-smooth text-left">
-                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-md bg-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="icon-tile-soft w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                   <c.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
                 </div>
                 <div>
@@ -174,7 +174,7 @@ const ShowcaseSection = () => (
         <Button
           size="lg"
           onClick={scrollToContent}
-          className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
+          className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
         >
           Quiero el Kit por $9.90
           <ArrowRight className="w-5 h-5" />
@@ -232,7 +232,7 @@ const WhatYouReceiveSection = () => (
       <div className="max-w-5xl mx-auto space-y-5">
         <Card className="p-3.5 sm:p-5 md:p-6">
           <div className="flex flex-row gap-4 items-start">
-            <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl bg-primary flex-shrink-0 shadow-md">
+            <div className="icon-tile flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl flex-shrink-0">
               <FileText className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-foreground" />
             </div>
             <div className="flex-1 min-w-0">
@@ -268,7 +268,7 @@ const WhatYouReceiveSection = () => (
             {bonuses.map((bonus, i) => (
               <Card key={i} className="p-4 sm:p-5 hover:shadow-soft transition-smooth">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg border-2 border-primary flex items-center justify-center flex-shrink-0">
+                  <div className="icon-tile-soft w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center flex-shrink-0">
                     <bonus.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
@@ -286,7 +286,7 @@ const WhatYouReceiveSection = () => (
           <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" className="block mt-6">
             <Button
               size="lg"
-              className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full animate-pulse-gold"
+              className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full shiny-cta animate-pulse-gold"
             >
               <ShoppingCart className="w-5 h-5" />
               Quiero el Kit por $9.90
@@ -320,7 +320,7 @@ const TargetAudienceSection = () => (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5">
           {audiences.map((a, i) => (
             <div key={i} className="text-center space-y-2">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-2xl bg-accent/20 border-2 border-accent/40 flex items-center justify-center">
+              <div className="icon-tile-soft w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto rounded-2xl flex items-center justify-center">
                 <a.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-accent" />
               </div>
               <div>
@@ -456,7 +456,7 @@ const ContentSection = () => (
           <Button
             asChild
             size="lg"
-            className="animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-3 gap-2 rounded-full py-7"
+            className="shiny-cta animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-3 gap-2 rounded-full py-7"
           >
             <a href={CHECKOUT_URL}>
               <ShoppingCart className="w-5 h-5" />

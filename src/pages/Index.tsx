@@ -202,30 +202,31 @@ const ShowcaseSection = () => (
 
 /* ---------- WHAT YOU RECEIVE ---------- */
 const mainItems = [
-  "50 moldes en PDF de alta calidad",
-  "Personajes bíblicos con versículos",
-  "Listos para imprimir en casa",
+  "50 personajes bíblicos con versículo",
+  "Archivo PDF de alta calidad",
+  "Imprime cuantas veces quieras",
   "Líneas de corte fáciles de seguir",
-  "Para uso personal o comercial",
-  "Adaptable a cualquier impresora",
+  "Licencia para uso personal o comercial",
+  "Compatible con cualquier impresora",
 ];
 
 const bonuses = [
-  { icon: BookOpen, number: "BONO #1", title: "Guía Cómo Vender Llaveros Bíblicos", oldPrice: "$17.00", newPrice: "HOY GRATIS" },
-  { icon: Calculator, number: "BONO #2", title: "Calculadora de Precio y Ganancia", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
-  { icon: Layout, number: "BONO #3", title: "Plantilla de Control de Ventas", oldPrice: "$9.00", newPrice: "HOY GRATIS" },
-  { icon: MessageCircle, number: "BONO #4", title: "Scripts de Venta para WhatsApp y Facebook", oldPrice: "$15.00", newPrice: "HOY GRATIS" },
-  { icon: Gamepad2, number: "BONO #5", title: "Dinámicas con Llaveros para Grupos", oldPrice: "$19.00", newPrice: "HOY GRATIS" },
+  { icon: Printer, number: "BONO 01", title: "Guía de Impresión: ajustes y papel ideal", oldPrice: "$9.00", newPrice: "HOY GRATIS" },
+  { icon: BookOpen, number: "BONO 02", title: "Plan de Clase Dominical: 4 clases listas con los llaveros", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
+  { icon: Gift, number: "BONO 03", title: "Tarjetas para Regalar: mini-cards con mensajes", oldPrice: "$7.00", newPrice: "HOY GRATIS" },
+  { icon: Layout, number: "BONO 04", title: "Plantillas para Vender: posts y precios sugeridos", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
+  { icon: InfinityIcon, number: "BONO 05", title: "Actualizaciones de por vida: nuevos personajes sin costo", oldPrice: "$7.00", newPrice: "HOY GRATIS" },
 ];
 
 const WhatYouReceiveSection = () => (
   <section className="py-5 md:py-7 bg-muted/30" id="what-you-receive">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">HOY CON BONO</p>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2">
-          ¿Qué vas a recibir?
+          5 Bonos GRATIS al comprar hoy
         </h2>
-        <p className="text-sm text-muted-foreground">Todo esto con un solo acceso:</p>
+        <p className="text-sm text-muted-foreground">Al confirmar tu compra, también recibes estos materiales extras — pensados para que aproveches el kit al máximo.</p>
       </div>
 
       <div className="max-w-5xl mx-auto space-y-5">

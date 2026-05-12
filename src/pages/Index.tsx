@@ -300,17 +300,20 @@ const WhatYouReceiveSection = () => (
 
 /* ---------- TARGET AUDIENCE ---------- */
 const audiences = [
-  { icon: Heart, title: "Mujeres y hombres cristianos", description: "Que quieren crear y bendecir con propósito." },
-  { icon: ShoppingBag, title: "Emprendedores", description: "Que desean iniciar un negocio cristiano de bajo costo." },
-  { icon: Church, title: "Iglesias y ministerios", description: "Para regalar en eventos, grupos y escuela bíblica." },
-  { icon: Users, title: "Familias y maestros", description: "Para enseñar la Palabra a niños de forma creativa." },
+  { icon: Users, title: "Maestras de escuela dominical", description: "Actividad lista, sin perder horas preparando." },
+  { icon: Heart, title: "Mamás cristianas", description: "Una manera linda de enseñar la Palabra en casa." },
+  { icon: Church, title: "Líderes de iglesia", description: "Regalos significativos para eventos y bautizos." },
+  { icon: ShoppingBag, title: "Emprendedoras cristianas", description: "Producto listo para vender, margen alto y costo bajo." },
 ];
 
 const TargetAudienceSection = () => (
   <section className="py-5 md:py-7 bg-muted/30">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
-        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">¿Para quién es este material?</p>
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">PARA QUIÉN ES</p>
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary text-balance">
+          Hecho para quien vive y comparte la fe
+        </h2>
       </div>
 
       <div className="max-w-5xl mx-auto">

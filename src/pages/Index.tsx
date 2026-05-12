@@ -447,10 +447,10 @@ const ContentSection = () => (
 
 
           <div className="pt-4 mb-6">
-            <p className="text-center text-lg md:text-xl text-destructive line-through mb-2">$111.90 USD</p>
+            <p className="text-center text-lg md:text-xl text-destructive line-through mb-2">De $47 USD</p>
             <p className="text-center text-xl md:text-2xl font-semibold text-foreground mb-1">Todo esto por apenas</p>
             <p className="text-center text-4xl md:text-5xl font-bold text-success mb-3">$9.90 USD</p>
-            <p className="text-center text-sm text-muted-foreground mb-6">Pago único · Acceso inmediato</p>
+            <p className="text-center text-sm text-muted-foreground mb-6">Pago único · Sin renovaciones · Acceso de por vida</p>
           </div>
 
           <Button
@@ -460,7 +460,7 @@ const ContentSection = () => (
           >
             <a href={CHECKOUT_URL}>
               <ShoppingCart className="w-5 h-5" />
-              QUIERO GARANTIZAR AHORA
+              Quiero el Kit ahora
             </a>
           </Button>
 

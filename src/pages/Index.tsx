@@ -403,7 +403,7 @@ const ContentSection = () => (
   <section className="py-6 md:py-10 bg-muted/30" id="content">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-8">
-        <div className="inline-block bg-destructive text-destructive-foreground text-xs sm:text-sm font-bold px-5 py-2 rounded-full uppercase tracking-wider mb-4 shadow-md shiny-cta animate-pulse-gold">
+        <div className="inline-block bg-destructive text-destructive-foreground text-xs sm:text-sm font-bold px-5 py-2 rounded-full uppercase tracking-wider mb-4 shadow-md animate-pulse-gold">
           OFERTA DE LANZAMIENTO
         </div>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-4 text-balance">
@@ -507,7 +507,7 @@ const GuaranteeSection = () => (
 
         <Card className="p-6 md:p-10 mb-12 bg-success/10 border-2 border-success/30 shadow-soft">
           <div className="flex flex-col items-center text-center gap-5">
-            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-success/20 flex items-center justify-center shadow-md shiny-cta animate-pulse-gold">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-success/20 flex items-center justify-center shadow-md animate-pulse-gold">
               <span className="text-6xl sm:text-7xl" role="img" aria-label="Escudo de garantía">🛡️</span>
             </div>
             <p className="text-foreground leading-relaxed max-w-2xl">

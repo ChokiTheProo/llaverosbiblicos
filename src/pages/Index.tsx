@@ -53,7 +53,7 @@ const HeroSection = () => (
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto text-center space-y-3 md:space-y-4">
         <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2 text-balance">
-          Pack de <span className="text-accent">50 Llaveros Bíblicos</span> — Descarga, Imprime y Listo
+          50 Llaveros Bíblicos para Imprimir, Armar y Regalar — <span className="text-accent">Lleva la Palabra de Dios a Cada Familia</span>
         </h1>
 
         <div className="flex justify-center">
@@ -72,7 +72,7 @@ const HeroSection = () => (
         </div>
 
         <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-          50 personajes bíblicos con versículos + bonos, listos en PDF para imprimir, regalar o vender desde cualquier dispositivo.
+          Moldes listos para imprimir en casa. Una bendición que cabe en el bolsillo, perfecta para escuela dominical, regalos cristianos o para empezar a vender en tu iglesia.
         </p>
 
         <Button
@@ -80,7 +80,7 @@ const HeroSection = () => (
           onClick={scrollToContent}
           className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
         >
-          QUIERO GARANTIZAR AHORA
+          Quiero el Kit por $9.90
           <ArrowRight className="w-5 h-5" />
         </Button>
       </div>
@@ -90,11 +90,11 @@ const HeroSection = () => (
 
 /* ---------- BENEFITS ---------- */
 const benefits = [
-  { icon: Zap, title: "Listos para imprimir", description: "Sin diseño, sin programas. Abre el PDF y manda a imprimir." },
-  { icon: Sparkles, title: "Versículos incluidos", description: "Cada llavero ya viene con su personaje y versículo bíblico." },
-  { icon: Gift, title: "Regala con propósito", description: "Detalles únicos para familia, iglesia o eventos cristianos." },
-  { icon: Clock, title: "Ahorra horas de trabajo", description: "Todo organizado y listo. Solo recortar y armar." },
-  { icon: ShoppingBag, title: "Revende y genera ganancias", description: "Imprime, arma y vende en tu iglesia, ferias o redes — con bajo costo y alto margen." },
+  { icon: Zap, title: "Descarga inmediata", description: "Recibes el PDF en tu email apenas confirmes el pago. Sin esperar envíos, sin costos extra." },
+  { icon: Printer, title: "Imprime cuantos quieras", description: "Un solo pago, uso ilimitado. Imprime para tu familia, tu iglesia o para vender." },
+  { icon: Scissors, title: "Fácil de armar", description: "Solo necesitas tijera, papel y una argolla. Listo en menos de 5 minutos por llavero." },
+  { icon: ShoppingBag, title: "Ideal para vender", description: "Cada llavero te cuesta centavos. Véndelos en tu iglesia, ferias o por WhatsApp." },
+  { icon: BookOpen, title: "Con versículos reales", description: "Cada personaje viene con un versículo cuidadosamente elegido — la Palabra acompaña el regalo." },
 ];
 
 const BenefitsSection = () => (
@@ -103,7 +103,7 @@ const BenefitsSection = () => (
       <div className="text-center max-w-3xl mx-auto mb-5">
         <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">LA SOLUCIÓN</p>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary text-balance">
-          Imagina llaveros bíblicos hechos en casa, listos para bendecir
+          Un kit completo. Una bendición lista para imprimir.
         </h2>
       </div>
 
@@ -133,26 +133,26 @@ const BenefitsSection = () => (
 
 /* ---------- SHOWCASE ---------- */
 const categories = [
-  { icon: BookOpen, title: "Personajes del Antiguo Testamento", description: "Moisés, David, Noé, Abraham y más, cada uno con su versículo." },
-  { icon: Heart, title: "Personajes del Nuevo Testamento", description: "Jesús, María, los apóstoles y figuras inspiradoras de la fe." },
-  { icon: Sparkles, title: "Versículos de fe y esperanza", description: "Mensajes bíblicos que acompañan cada llavero." },
+  { icon: Heart, title: "Jesús, María y José", description: "El corazón del kit, con versículos clásicos." },
+  { icon: Users, title: "Los 12 apóstoles", description: "Pedro, Juan, Mateo y todos los discípulos con su versículo." },
+  { icon: BookOpen, title: "Héroes del Antiguo Testamento", description: "Moisés, David, Noé, Abraham, Daniel, Sansón y más." },
+  { icon: Sparkles, title: "Mujeres de la Biblia", description: "Ester, Rut, Débora, Ana — modelos de fe para las niñas." },
+  { icon: Gift, title: "Símbolos cristianos", description: "El arca, el arco iris, el pez, la corona — clásicos atemporales." },
   { icon: Printer, title: "Diseños listos para imprimir", description: "Archivos PDF en alta calidad, listos para imprimir en casa." },
   { icon: Scissors, title: "Fáciles de recortar y armar", description: "Líneas claras de corte. Cualquier persona puede hacerlo." },
-  { icon: Palette, title: "Colores vibrantes y bíblicos", description: "Arte profesional pensado para iluminar cada detalle." },
-  { icon: ShoppingBag, title: "Ideales para vender", description: "Crea tu propio emprendimiento cristiano con bajo costo." },
-  { icon: Gift, title: "Regalos con propósito", description: "Perfectos para iglesia, escuela bíblica, bautizos y eventos." },
+  { icon: Palette, title: "Colores vibrantes", description: "Arte profesional pensado para iluminar cada detalle." },
 ];
 
 const ShowcaseSection = () => (
   <section className="py-5 md:py-7 bg-background">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-4xl mx-auto space-y-3">
-        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent">Contenido del material</p>
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent">QUÉ INCLUYE</p>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary">
-          ¿Qué vas a encontrar?
+          50 personajes bíblicos — cada uno con su versículo
         </h2>
         <p className="text-sm sm:text-base text-muted-foreground">
-          Dentro del pack encontrarás 50 moldes organizados por categoría, listos para imprimir y armar.
+          Del Antiguo al Nuevo Testamento. Todos los personajes que tus hijos, alumnos o clientes aman.
         </p>
 
         <Card className="p-2.5 sm:p-4 max-w-4xl mx-auto">
@@ -176,7 +176,7 @@ const ShowcaseSection = () => (
           onClick={scrollToContent}
           className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
         >
-          QUIERO GARANTIZAR AHORA
+          Quiero el Kit por $9.90
           <ArrowRight className="w-5 h-5" />
         </Button>
 
@@ -202,30 +202,31 @@ const ShowcaseSection = () => (
 
 /* ---------- WHAT YOU RECEIVE ---------- */
 const mainItems = [
-  "50 moldes en PDF de alta calidad",
-  "Personajes bíblicos con versículos",
-  "Listos para imprimir en casa",
+  "50 personajes bíblicos con versículo",
+  "Archivo PDF de alta calidad",
+  "Imprime cuantas veces quieras",
   "Líneas de corte fáciles de seguir",
-  "Para uso personal o comercial",
-  "Adaptable a cualquier impresora",
+  "Licencia para uso personal o comercial",
+  "Compatible con cualquier impresora",
 ];
 
 const bonuses = [
-  { icon: BookOpen, number: "BONO #1", title: "Guía Cómo Vender Llaveros Bíblicos", oldPrice: "$17.00", newPrice: "HOY GRATIS" },
-  { icon: Calculator, number: "BONO #2", title: "Calculadora de Precio y Ganancia", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
-  { icon: Layout, number: "BONO #3", title: "Plantilla de Control de Ventas", oldPrice: "$9.00", newPrice: "HOY GRATIS" },
-  { icon: MessageCircle, number: "BONO #4", title: "Scripts de Venta para WhatsApp y Facebook", oldPrice: "$15.00", newPrice: "HOY GRATIS" },
-  { icon: Gamepad2, number: "BONO #5", title: "Dinámicas con Llaveros para Grupos", oldPrice: "$19.00", newPrice: "HOY GRATIS" },
+  { icon: Printer, number: "BONO 01", title: "Guía de Impresión: ajustes y papel ideal", oldPrice: "$9.00", newPrice: "HOY GRATIS" },
+  { icon: BookOpen, number: "BONO 02", title: "Plan de Clase Dominical: 4 clases listas con los llaveros", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
+  { icon: Gift, number: "BONO 03", title: "Tarjetas para Regalar: mini-cards con mensajes", oldPrice: "$7.00", newPrice: "HOY GRATIS" },
+  { icon: Layout, number: "BONO 04", title: "Plantillas para Vender: posts y precios sugeridos", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
+  { icon: InfinityIcon, number: "BONO 05", title: "Actualizaciones de por vida: nuevos personajes sin costo", oldPrice: "$7.00", newPrice: "HOY GRATIS" },
 ];
 
 const WhatYouReceiveSection = () => (
   <section className="py-5 md:py-7 bg-muted/30" id="what-you-receive">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">HOY CON BONO</p>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2">
-          ¿Qué vas a recibir?
+          5 Bonos GRATIS al comprar hoy
         </h2>
-        <p className="text-sm text-muted-foreground">Todo esto con un solo acceso:</p>
+        <p className="text-sm text-muted-foreground">Al confirmar tu compra, también recibes estos materiales extras — pensados para que aproveches el kit al máximo.</p>
       </div>
 
       <div className="max-w-5xl mx-auto space-y-5">
@@ -288,7 +289,7 @@ const WhatYouReceiveSection = () => (
               className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full animate-pulse-gold"
             >
               <ShoppingCart className="w-5 h-5" />
-              GARANTIR AGORA
+              Quiero el Kit por $9.90
             </Button>
           </a>
         </div>
@@ -299,17 +300,20 @@ const WhatYouReceiveSection = () => (
 
 /* ---------- TARGET AUDIENCE ---------- */
 const audiences = [
-  { icon: Heart, title: "Mujeres y hombres cristianos", description: "Que quieren crear y bendecir con propósito." },
-  { icon: ShoppingBag, title: "Emprendedores", description: "Que desean iniciar un negocio cristiano de bajo costo." },
-  { icon: Church, title: "Iglesias y ministerios", description: "Para regalar en eventos, grupos y escuela bíblica." },
-  { icon: Users, title: "Familias y maestros", description: "Para enseñar la Palabra a niños de forma creativa." },
+  { icon: Users, title: "Maestras de escuela dominical", description: "Actividad lista, sin perder horas preparando." },
+  { icon: Heart, title: "Mamás cristianas", description: "Una manera linda de enseñar la Palabra en casa." },
+  { icon: Church, title: "Líderes de iglesia", description: "Regalos significativos para eventos y bautizos." },
+  { icon: ShoppingBag, title: "Emprendedoras cristianas", description: "Producto listo para vender, margen alto y costo bajo." },
 ];
 
 const TargetAudienceSection = () => (
   <section className="py-5 md:py-7 bg-muted/30">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
-        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">¿Para quién es este material?</p>
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">PARA QUIÉN ES</p>
+        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary text-balance">
+          Hecho para quien vive y comparte la fe
+        </h2>
       </div>
 
       <div className="max-w-5xl mx-auto">
@@ -334,9 +338,9 @@ const TargetAudienceSection = () => (
 
 /* ---------- TESTIMONIALS ---------- */
 const testimonials = [
-  { name: "Ana Paula", role: "Ciudad de México, MX", avatar: avatar1, initials: "AP", quote: "¡Me encantaron los moldes! Súper fáciles de armar y quedaron preciosos. ¡Ya regalé a toda mi familia de la iglesia!" },
-  { name: "Fernanda López", role: "Bogotá, CO", avatar: avatar2, initials: "FL", quote: "Empecé a vender los llaveros en la feria de la iglesia y recuperé la inversión el primer día." },
-  { name: "Mariana Santos", role: "Lima, PE", avatar: avatar3, initials: "MS", quote: "El material me ayudó muchísimo. Nunca había hecho manualidades y armé todo perfecto." },
+  { name: "María R.", role: "México, mamá de 3", avatar: avatar1, initials: "MR", quote: "Compré el kit pensando en mis hijos, pero terminé regalando a toda mi célula. Los niños quedaron encantados con los versículos. Vale cada centavo." },
+  { name: "Jésica S.", role: "Colombia, maestra", avatar: avatar2, initials: "JS", quote: "Soy maestra de escuela dominical y este kit me salvó. Los niños se llevan su llavero a casa y los papás me agradecen. Excelente material." },
+  { name: "Carla L.", role: "Argentina, emprendedora", avatar: avatar3, initials: "CL", quote: "Imprimí 30 llaveros y los vendí en mi iglesia el mismo domingo. Recuperé la inversión muchas veces. Ahora es mi ingreso extra fijo." },
   { name: "Patricia Olivera", role: "Buenos Aires, AR", avatar: avatar4, initials: "PO", quote: "Los versículos en los llaveros son una bendición. ¡Los niños de la escuela bíblica los amaron!" },
 ];
 
@@ -345,7 +349,7 @@ const TestimonialsSection = () => (
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary">
-          Lo que dicen quienes ya lo usan
+          Lo que dicen las familias
         </h2>
       </div>
 
@@ -383,14 +387,14 @@ const TestimonialsSection = () => (
 
 /* ---------- CONTENT (PRICING) ---------- */
 const items = [
-  { title: "Pack de 50 Llaveros Bíblicos", value: "$39.90", icon: CheckCircle2 },
-  { title: "Bono #1 — Guía Cómo Vender Llaveros Bíblicos", value: "$17.00", icon: CheckCircle2 },
-  { title: "Bono #2 — Calculadora de Precio y Ganancia", value: "$12.00", icon: CheckCircle2 },
-  { title: "Bono #3 — Plantilla de Control de Ventas", value: "$9.00", icon: CheckCircle2 },
-  { title: "Bono #4 — Scripts de Venta para WhatsApp/Facebook", value: "$15.00", icon: CheckCircle2 },
-  { title: "Bono #5 — Dinámicas con Llaveros para Grupos", value: "$19.00", icon: CheckCircle2 },
-  { title: "Garantía de satisfacción de 7 días", value: null, icon: Shield },
-  { title: "Acceso vitalicio al material", value: null, icon: InfinityIcon },
+  { title: "Kit con 50 llaveros bíblicos (PDF imprimible)", value: "$39.90", icon: CheckCircle2 },
+  { title: "Bono 01 — Guía de impresión", value: "$9.00", icon: CheckCircle2 },
+  { title: "Bono 02 — Plan de clase dominical", value: "$12.00", icon: CheckCircle2 },
+  { title: "Bono 03 — Tarjetas para regalar", value: "$7.00", icon: CheckCircle2 },
+  { title: "Bono 04 — Plantillas para vender", value: "$12.00", icon: CheckCircle2 },
+  { title: "Bono 05 — Actualizaciones de por vida", value: "$7.00", icon: CheckCircle2 },
+  { title: "Garantía total de 7 días", value: null, icon: Shield },
+  { title: "Acceso de por vida al material", value: null, icon: InfinityIcon },
   { title: "Actualizaciones gratuitas", value: null, icon: Sparkles },
   { title: "Acceso inmediato", value: null, icon: Zap },
 ];
@@ -400,10 +404,10 @@ const ContentSection = () => (
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-8">
         <div className="inline-block bg-destructive text-destructive-foreground text-xs sm:text-sm font-bold px-5 py-2 rounded-full uppercase tracking-wider mb-4 shadow-md animate-pulse-gold">
-          🔥 Oferta exclusiva — ¡Solo hoy!
+          OFERTA DE LANZAMIENTO
         </div>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-4 text-balance">
-          Accede hoy por un precio increíble
+          Empieza hoy a bendecir con la Palabra
         </h2>
       </div>
 
@@ -443,10 +447,10 @@ const ContentSection = () => (
 
 
           <div className="pt-4 mb-6">
-            <p className="text-center text-lg md:text-xl text-destructive line-through mb-2">$111.90 USD</p>
+            <p className="text-center text-lg md:text-xl text-destructive line-through mb-2">De $47 USD</p>
             <p className="text-center text-xl md:text-2xl font-semibold text-foreground mb-1">Todo esto por apenas</p>
             <p className="text-center text-4xl md:text-5xl font-bold text-success mb-3">$9.90 USD</p>
-            <p className="text-center text-sm text-muted-foreground mb-6">Pago único · Acceso inmediato</p>
+            <p className="text-center text-sm text-muted-foreground mb-6">Pago único · Sin renovaciones · Acceso de por vida</p>
           </div>
 
           <Button
@@ -456,7 +460,7 @@ const ContentSection = () => (
           >
             <a href={CHECKOUT_URL}>
               <ShoppingCart className="w-5 h-5" />
-              QUIERO GARANTIZAR AHORA
+              Quiero el Kit ahora
             </a>
           </Button>
 
@@ -484,11 +488,11 @@ const ContentSection = () => (
 
 /* ---------- GUARANTEE + FAQ ---------- */
 const faqs = [
-  { question: "¿Cómo recibo el material?", answer: "Recibes acceso inmediato al PDF tras completar el pago, directamente por email." },
-  { question: "¿Es físico o digital?", answer: "Es 100% digital. Puedes acceder e imprimir desde cualquier dispositivo." },
-  { question: "¿Necesito experiencia para armar los llaveros?", answer: "No. Solo necesitas imprimir, recortar y armar. Es muy sencillo." },
-  { question: "¿Puedo vender los llaveros que arme?", answer: "¡Sí! Tienes total libertad para vender los llaveros creados con los moldes." },
-  { question: "¿Puedo pedir reembolso?", answer: "Sí. Tienes 7 días de garantía. Si no estás satisfecho, te devolvemos el 100% de tu dinero, sin preguntas." },
+  { question: "¿Cómo recibo el kit después de pagar?", answer: "En menos de 1 minuto recibes un email de Hotmart con el enlace de descarga. Si no lo ves, revisa la carpeta de promociones o spam." },
+  { question: "¿Necesito una impresora especial?", answer: "No. Funciona con cualquier impresora casera (chorro de tinta o láser). Recomendamos hoja A4 o cartulina blanca de 180g." },
+  { question: "¿Puedo vender los llaveros que imprimo?", answer: "¡Sí! El kit incluye licencia de uso comercial. El bono 04 trae plantillas y precios sugeridos." },
+  { question: "¿En qué idioma están los versículos?", answer: "Todos los versículos están en español, en versión clara para niños y adultos." },
+  { question: "¿Y si no me gusta? ¿Es un pago único?", answer: "Tienes 7 días de garantía total. Si no te encanta, te devolvemos el 100% de tu dinero. Es un pago único de $9.90 USD, sin renovaciones ni cobros futuros." },
 ];
 
 const GuaranteeSection = () => (
@@ -497,7 +501,7 @@ const GuaranteeSection = () => (
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-6">
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-balance">
-            Garantía Incondicional de 7 Días
+            Garantía total de 7 días
           </h2>
         </div>
 
@@ -507,12 +511,11 @@ const GuaranteeSection = () => (
               <span className="text-6xl sm:text-7xl" role="img" aria-label="Escudo de garantía">🛡️</span>
             </div>
             <p className="text-foreground leading-relaxed max-w-2xl">
-              Creemos tanto en el poder de este Pack de 50 Llaveros Bíblicos que te ofrecemos una garantía de
-              <b> 7 días sin riesgo</b>.
+              Si por cualquier motivo el kit no te encanta, escribes a soporte y te devolvemos
+              <b> cada centavo</b>.
             </p>
             <p className="text-muted-foreground leading-relaxed max-w-2xl text-sm sm:text-base">
-              Si por cualquier motivo — cualquiera mismo — no estás 100% satisfecho con el material, solo
-              envíanos un mensaje y te devolvemos el <b>100% de tu dinero</b>.
+              Sin preguntas, sin trámites. El riesgo es nuestro — la <b>bendición es tuya</b>.
             </p>
 
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-2">
@@ -530,16 +533,16 @@ const GuaranteeSection = () => (
 
             <p className="font-display italic text-primary text-base sm:text-lg pt-2 flex items-center gap-2">
               <span className="text-2xl">💰</span>
-              ¡O amas la experiencia, o recibes tu dinero de vuelta!
+              ¡O amas el kit, o recibes tu dinero de vuelta!
             </p>
           </div>
         </Card>
 
         <div className="text-center mb-6">
           <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-2">
-            Preguntas frecuentes
+            Todo lo que necesitas saber
           </h3>
-          <p className="text-sm text-muted-foreground">Resuelve todas tus dudas antes de empezar</p>
+          <p className="text-sm text-muted-foreground">PREGUNTAS FRECUENTES</p>
         </div>
 
         <div className="space-y-4">
@@ -568,10 +571,10 @@ const FinalCTASection = () => (
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto text-center space-y-4">
         <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-primary-foreground">
-          ¡Comienza hoy mismo!
+          Sí, quiero el kit por $9.90
         </h2>
         <p className="text-base sm:text-xl md:text-2xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
-          No pierdas más tiempo — descarga, imprime y empieza a crear tus llaveros bíblicos hoy.
+          Acceso inmediato al kit completo + los 5 bonos. Un solo pago, sin mensualidades.
         </p>
         <div className="flex flex-col items-center gap-2">
           <Button
@@ -581,13 +584,13 @@ const FinalCTASection = () => (
           >
             <a href={CHECKOUT_URL} onClick={scrollToContent}>
               <ShoppingCart className="w-5 h-5" />
-              QUIERO GARANTIZAR AHORA
+              Sí, quiero el kit por $9.90
             </a>
           </Button>
           <span className="text-primary-foreground font-semibold text-lg">$9.90 USD</span>
         </div>
         <p className="text-primary-foreground/70 text-xs sm:text-sm">
-          Acceso inmediato tras la compra · Material 100% digital · Garantía 7 días
+          🔒 Compra segura vía Hotmart · Garantía de 7 días · Acceso de por vida
         </p>
       </div>
     </div>
@@ -609,11 +612,10 @@ const Index = () => (
 
     <footer className="bg-primary text-primary-foreground/80 py-8">
       <div className="container text-center text-sm space-y-2">
-        <p>Todos los derechos reservados © {new Date().getFullYear()}</p>
-        <p className="text-primary-foreground/60">
-          <a href="#" className="hover:text-primary-foreground transition-smooth">Política de Privacidad</a>
-          <span className="mx-2">·</span>
-          <a href="#" className="hover:text-primary-foreground transition-smooth">Términos de Uso</a>
+        <p className="font-semibold text-primary-foreground">Llaveros Bíblicos · Kit Digital</p>
+        <p>© 2026 — Todos los derechos reservados · Pagos procesados de forma segura por Hotmart</p>
+        <p className="text-primary-foreground/60 text-xs max-w-2xl mx-auto">
+          Este producto no garantiza resultados financieros. Los testimonios reflejan experiencias individuales.
         </p>
       </div>
     </footer>

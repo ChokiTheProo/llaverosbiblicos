@@ -580,14 +580,14 @@ const FinalCTASection = () => (
           <Button
             asChild
             size="lg"
-            className="w-full sm:w-auto bg-background text-primary hover:bg-background/90 font-bold text-base sm:text-lg px-8 shadow-xl gap-2 rounded-full"
+            className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
             <a href={CHECKOUT_URL} onClick={scrollToContent}>
               <ShoppingCart className="w-5 h-5" />
               Sí, quiero el kit por $9.90
             </a>
           </Button>
-          <span className="text-primary-foreground font-semibold text-lg">$9.90 USD</span>
+          <span className="text-primary-foreground/80 font-semibold text-sm">Pago único · Acceso de por vida</span>
         </div>
         <p className="text-primary-foreground/70 text-xs sm:text-sm">
           🔒 Compra segura vía Hotmart · Garantía de 7 días · Acceso de por vida

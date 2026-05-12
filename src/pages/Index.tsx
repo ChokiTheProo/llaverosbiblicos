@@ -555,8 +555,8 @@ const GuaranteeSection = () => (
           {faqs.map((faq, i) => (
             <Card key={i} className="p-5 sm:p-6 hover:shadow-soft transition-smooth">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-4 h-4 text-primary" />
+                <div className="icon-tile-soft w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0">
+                  <BadgeCheck className="w-4 h-4 text-primary" />
                 </div>
                 <div>
                   <p className="font-display font-semibold text-primary mb-1">{faq.question}</p>

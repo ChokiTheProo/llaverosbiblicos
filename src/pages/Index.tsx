@@ -176,7 +176,7 @@ const ShowcaseSection = () => (
           onClick={scrollToContent}
           className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
         >
-          QUIERO GARANTIZAR AHORA
+          Quiero el Kit por $9.90
           <ArrowRight className="w-5 h-5" />
         </Button>
 

@@ -387,14 +387,14 @@ const TestimonialsSection = () => (
 
 /* ---------- CONTENT (PRICING) ---------- */
 const items = [
-  { title: "Pack de 50 Llaveros Bíblicos", value: "$39.90", icon: CheckCircle2 },
-  { title: "Bono #1 — Guía Cómo Vender Llaveros Bíblicos", value: "$17.00", icon: CheckCircle2 },
-  { title: "Bono #2 — Calculadora de Precio y Ganancia", value: "$12.00", icon: CheckCircle2 },
-  { title: "Bono #3 — Plantilla de Control de Ventas", value: "$9.00", icon: CheckCircle2 },
-  { title: "Bono #4 — Scripts de Venta para WhatsApp/Facebook", value: "$15.00", icon: CheckCircle2 },
-  { title: "Bono #5 — Dinámicas con Llaveros para Grupos", value: "$19.00", icon: CheckCircle2 },
-  { title: "Garantía de satisfacción de 7 días", value: null, icon: Shield },
-  { title: "Acceso vitalicio al material", value: null, icon: InfinityIcon },
+  { title: "Kit con 50 llaveros bíblicos (PDF imprimible)", value: "$39.90", icon: CheckCircle2 },
+  { title: "Bono 01 — Guía de impresión", value: "$9.00", icon: CheckCircle2 },
+  { title: "Bono 02 — Plan de clase dominical", value: "$12.00", icon: CheckCircle2 },
+  { title: "Bono 03 — Tarjetas para regalar", value: "$7.00", icon: CheckCircle2 },
+  { title: "Bono 04 — Plantillas para vender", value: "$12.00", icon: CheckCircle2 },
+  { title: "Bono 05 — Actualizaciones de por vida", value: "$7.00", icon: CheckCircle2 },
+  { title: "Garantía total de 7 días", value: null, icon: Shield },
+  { title: "Acceso de por vida al material", value: null, icon: InfinityIcon },
   { title: "Actualizaciones gratuitas", value: null, icon: Sparkles },
   { title: "Acceso inmediato", value: null, icon: Zap },
 ];
@@ -404,10 +404,10 @@ const ContentSection = () => (
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-8">
         <div className="inline-block bg-destructive text-destructive-foreground text-xs sm:text-sm font-bold px-5 py-2 rounded-full uppercase tracking-wider mb-4 shadow-md animate-pulse-gold">
-          🔥 Oferta exclusiva — ¡Solo hoy!
+          OFERTA DE LANZAMIENTO
         </div>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-4 text-balance">
-          Accede hoy por un precio increíble
+          Empieza hoy a bendecir con la Palabra
         </h2>
       </div>
 

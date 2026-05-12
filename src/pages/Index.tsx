@@ -306,8 +306,8 @@ const WhatYouReceiveSection = () => (
 
 /* ---------- TARGET AUDIENCE ---------- */
 const audiences = [
-  { icon: Users, title: "Maestras de escuela dominical", description: "Actividad lista, sin perder horas preparando." },
-  { icon: Heart, title: "Mamás cristianas", description: "Una manera linda de enseñar la Palabra en casa." },
+  { icon: BookOpen, title: "Maestras de escuela dominical", description: "Actividad lista, sin perder horas preparando." },
+  { icon: HandHeart, title: "Mamás cristianas", description: "Una manera linda de enseñar la Palabra en casa." },
   { icon: Church, title: "Líderes de iglesia", description: "Regalos significativos para eventos y bautizos." },
   { icon: ShoppingBag, title: "Emprendedoras cristianas", description: "Producto listo para vender, margen alto y costo bajo." },
 ];

@@ -27,6 +27,12 @@ import {
   ArrowRight,
   Star,
   Check,
+  Crown,
+  Award,
+  Sword,
+  Download,
+  HandHeart,
+  BadgeCheck,
 } from "lucide-react";
 
 import productoPreview from "@/assets/producto-preview.webp";
@@ -90,7 +96,7 @@ const HeroSection = () => (
 
 /* ---------- BENEFITS ---------- */
 const benefits = [
-  { icon: Zap, title: "Descarga inmediata", description: "Recibes el PDF en tu email apenas confirmes el pago. Sin esperar envíos, sin costos extra." },
+  { icon: Download, title: "Descarga inmediata", description: "Recibes el PDF en tu email apenas confirmes el pago. Sin esperar envíos, sin costos extra." },
   { icon: Printer, title: "Imprime cuantos quieras", description: "Un solo pago, uso ilimitado. Imprime para tu familia, tu iglesia o para vender." },
   { icon: Scissors, title: "Fácil de armar", description: "Solo necesitas tijera, papel y una argolla. Listo en menos de 5 minutos por llavero." },
   { icon: ShoppingBag, title: "Ideal para vender", description: "Cada llavero te cuesta centavos. Véndelos en tu iglesia, ferias o por WhatsApp." },
@@ -133,12 +139,12 @@ const BenefitsSection = () => (
 
 /* ---------- SHOWCASE ---------- */
 const categories = [
-  { icon: Heart, title: "Jesús, María y José", description: "El corazón del kit, con versículos clásicos." },
+  { icon: Crown, title: "Jesús, María y José", description: "El corazón del kit, con versículos clásicos." },
   { icon: Users, title: "Los 12 apóstoles", description: "Pedro, Juan, Mateo y todos los discípulos con su versículo." },
-  { icon: BookOpen, title: "Héroes del Antiguo Testamento", description: "Moisés, David, Noé, Abraham, Daniel, Sansón y más." },
+  { icon: Sword, title: "Héroes del Antiguo Testamento", description: "Moisés, David, Noé, Abraham, Daniel, Sansón y más." },
   { icon: Sparkles, title: "Mujeres de la Biblia", description: "Ester, Rut, Débora, Ana — modelos de fe para las niñas." },
   { icon: Gift, title: "Símbolos cristianos", description: "El arca, el arco iris, el pez, la corona — clásicos atemporales." },
-  { icon: Printer, title: "Diseños listos para imprimir", description: "Archivos PDF en alta calidad, listos para imprimir en casa." },
+  { icon: FileText, title: "Diseños listos para imprimir", description: "Archivos PDF en alta calidad, listos para imprimir en casa." },
   { icon: Scissors, title: "Fáciles de recortar y armar", description: "Líneas claras de corte. Cualquier persona puede hacerlo." },
   { icon: Palette, title: "Colores vibrantes", description: "Arte profesional pensado para iluminar cada detalle." },
 ];
@@ -300,8 +306,8 @@ const WhatYouReceiveSection = () => (
 
 /* ---------- TARGET AUDIENCE ---------- */
 const audiences = [
-  { icon: Users, title: "Maestras de escuela dominical", description: "Actividad lista, sin perder horas preparando." },
-  { icon: Heart, title: "Mamás cristianas", description: "Una manera linda de enseñar la Palabra en casa." },
+  { icon: BookOpen, title: "Maestras de escuela dominical", description: "Actividad lista, sin perder horas preparando." },
+  { icon: HandHeart, title: "Mamás cristianas", description: "Una manera linda de enseñar la Palabra en casa." },
   { icon: Church, title: "Líderes de iglesia", description: "Regalos significativos para eventos y bautizos." },
   { icon: ShoppingBag, title: "Emprendedoras cristianas", description: "Producto listo para vender, margen alto y costo bajo." },
 ];
@@ -549,8 +555,8 @@ const GuaranteeSection = () => (
           {faqs.map((faq, i) => (
             <Card key={i} className="p-5 sm:p-6 hover:shadow-soft transition-smooth">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-4 h-4 text-primary" />
+                <div className="icon-tile-soft w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0">
+                  <BadgeCheck className="w-4 h-4 text-primary" />
                 </div>
                 <div>
                   <p className="font-display font-semibold text-primary mb-1">{faq.question}</p>
@@ -580,14 +586,14 @@ const FinalCTASection = () => (
           <Button
             asChild
             size="lg"
-            className="w-full sm:w-auto bg-background text-primary hover:bg-background/90 font-bold text-base sm:text-lg px-8 shadow-xl gap-2 rounded-full"
+            className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
             <a href={CHECKOUT_URL} onClick={scrollToContent}>
               <ShoppingCart className="w-5 h-5" />
               Sí, quiero el kit por $9.90
             </a>
           </Button>
-          <span className="text-primary-foreground font-semibold text-lg">$9.90 USD</span>
+          <span className="text-primary-foreground/80 font-semibold text-sm">Pago único · Acceso de por vida</span>
         </div>
         <p className="text-primary-foreground/70 text-xs sm:text-sm">
           🔒 Compra segura vía Hotmart · Garantía de 7 días · Acceso de por vida

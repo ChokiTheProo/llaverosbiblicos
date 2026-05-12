@@ -571,10 +571,10 @@ const FinalCTASection = () => (
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto text-center space-y-4">
         <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-primary-foreground">
-          ¡Comienza hoy mismo!
+          Sí, quiero el kit por $9.90
         </h2>
         <p className="text-base sm:text-xl md:text-2xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
-          No pierdas más tiempo — descarga, imprime y empieza a crear tus llaveros bíblicos hoy.
+          Acceso inmediato al kit completo + los 5 bonos. Un solo pago, sin mensualidades.
         </p>
         <div className="flex flex-col items-center gap-2">
           <Button
@@ -584,13 +584,13 @@ const FinalCTASection = () => (
           >
             <a href={CHECKOUT_URL} onClick={scrollToContent}>
               <ShoppingCart className="w-5 h-5" />
-              QUIERO GARANTIZAR AHORA
+              Sí, quiero el kit por $9.90
             </a>
           </Button>
           <span className="text-primary-foreground font-semibold text-lg">$9.90 USD</span>
         </div>
         <p className="text-primary-foreground/70 text-xs sm:text-sm">
-          Acceso inmediato tras la compra · Material 100% digital · Garantía 7 días
+          🔒 Compra segura vía Hotmart · Garantía de 7 días · Acceso de por vida
         </p>
       </div>
     </div>

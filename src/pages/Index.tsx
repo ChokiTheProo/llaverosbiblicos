@@ -338,9 +338,9 @@ const TargetAudienceSection = () => (
 
 /* ---------- TESTIMONIALS ---------- */
 const testimonials = [
-  { name: "Ana Paula", role: "Ciudad de México, MX", avatar: avatar1, initials: "AP", quote: "¡Me encantaron los moldes! Súper fáciles de armar y quedaron preciosos. ¡Ya regalé a toda mi familia de la iglesia!" },
-  { name: "Fernanda López", role: "Bogotá, CO", avatar: avatar2, initials: "FL", quote: "Empecé a vender los llaveros en la feria de la iglesia y recuperé la inversión el primer día." },
-  { name: "Mariana Santos", role: "Lima, PE", avatar: avatar3, initials: "MS", quote: "El material me ayudó muchísimo. Nunca había hecho manualidades y armé todo perfecto." },
+  { name: "María R.", role: "México, mamá de 3", avatar: avatar1, initials: "MR", quote: "Compré el kit pensando en mis hijos, pero terminé regalando a toda mi célula. Los niños quedaron encantados con los versículos. Vale cada centavo." },
+  { name: "Jésica S.", role: "Colombia, maestra", avatar: avatar2, initials: "JS", quote: "Soy maestra de escuela dominical y este kit me salvó. Los niños se llevan su llavero a casa y los papás me agradecen. Excelente material." },
+  { name: "Carla L.", role: "Argentina, emprendedora", avatar: avatar3, initials: "CL", quote: "Imprimí 30 llaveros y los vendí en mi iglesia el mismo domingo. Recuperé la inversión muchas veces. Ahora es mi ingreso extra fijo." },
   { name: "Patricia Olivera", role: "Buenos Aires, AR", avatar: avatar4, initials: "PO", quote: "Los versículos en los llaveros son una bendición. ¡Los niños de la escuela bíblica los amaron!" },
 ];
 
@@ -349,7 +349,7 @@ const TestimonialsSection = () => (
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary">
-          Lo que dicen quienes ya lo usan
+          Lo que dicen las familias
         </h2>
       </div>
 

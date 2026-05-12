@@ -153,23 +153,54 @@
   position: relative;
   background: linear-gradient(140deg, hsl(217 60% 32%), hsl(217 65% 22%));
   box-shadow:
-    inset 0 1px 0 hsl(40 85% 75% / 0.25),
-    0 8px 24px -10px hsl(217 60% 28% / 0.55),
-    0 0 0 1px hsl(36 70% 52% / 0.35);
+    inset 0 1px 0 hsl(40 85% 75% / 0.3),
+    0 10px 26px -10px hsl(217 60% 28% / 0.6),
+    0 0 0 1px hsl(36 70% 52% / 0.45);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
 }
 .icon-tile::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(120% 80% at 50% 0%, hsl(40 85% 70% / 0.35), transparent 60%);
+  background: radial-gradient(120% 80% at 50% 0%, hsl(40 85% 70% / 0.4), transparent 60%);
   pointer-events: none;
+}
+.icon-tile:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow:
+    inset 0 1px 0 hsl(40 85% 75% / 0.4),
+    0 16px 34px -10px hsl(36 70% 52% / 0.55),
+    0 0 0 1px hsl(36 70% 52% / 0.6);
 }
 
 .icon-tile-soft {
-  background: linear-gradient(140deg, hsl(36 80% 92%), hsl(40 85% 85%));
+  background: linear-gradient(140deg, hsl(36 80% 94%), hsl(40 85% 82%));
   box-shadow:
-    inset 0 1px 0 hsl(0 0% 100% / 0.7),
-    0 6px 18px -8px hsl(36 70% 52% / 0.45),
-    0 0 0 1px hsl(36 70% 52% / 0.35);
+    inset 0 1px 0 hsl(0 0% 100% / 0.8),
+    0 6px 18px -8px hsl(36 70% 52% / 0.5),
+    0 0 0 1px hsl(36 70% 52% / 0.4);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
+}
+.icon-tile-soft:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.9),
+    0 12px 24px -8px hsl(36 70% 52% / 0.55),
+    0 0 0 1px hsl(36 70% 52% / 0.65);
+}
+
+/* CTA button polish: gold glow + lift */
+.shiny-cta {
+  box-shadow:
+    0 14px 34px -12px hsl(36 70% 52% / 0.65),
+    inset 0 1px 0 hsl(40 90% 80% / 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+.shiny-cta:hover {
+  transform: translateY(-2px) scale(1.02);
+  filter: brightness(1.08);
+  box-shadow:
+    0 20px 40px -12px hsl(36 70% 52% / 0.8),
+    inset 0 1px 0 hsl(40 90% 80% / 0.6);
 }

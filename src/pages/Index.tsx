@@ -96,7 +96,7 @@ const HeroSection = () => (
 
 /* ---------- BENEFITS ---------- */
 const benefits = [
-  { icon: Zap, title: "Descarga inmediata", description: "Recibes el PDF en tu email apenas confirmes el pago. Sin esperar envíos, sin costos extra." },
+  { icon: Download, title: "Descarga inmediata", description: "Recibes el PDF en tu email apenas confirmes el pago. Sin esperar envíos, sin costos extra." },
   { icon: Printer, title: "Imprime cuantos quieras", description: "Un solo pago, uso ilimitado. Imprime para tu familia, tu iglesia o para vender." },
   { icon: Scissors, title: "Fácil de armar", description: "Solo necesitas tijera, papel y una argolla. Listo en menos de 5 minutos por llavero." },
   { icon: ShoppingBag, title: "Ideal para vender", description: "Cada llavero te cuesta centavos. Véndelos en tu iglesia, ferias o por WhatsApp." },

@@ -133,26 +133,26 @@ const BenefitsSection = () => (
 
 /* ---------- SHOWCASE ---------- */
 const categories = [
-  { icon: BookOpen, title: "Personajes del Antiguo Testamento", description: "Moisés, David, Noé, Abraham y más, cada uno con su versículo." },
-  { icon: Heart, title: "Personajes del Nuevo Testamento", description: "Jesús, María, los apóstoles y figuras inspiradoras de la fe." },
-  { icon: Sparkles, title: "Versículos de fe y esperanza", description: "Mensajes bíblicos que acompañan cada llavero." },
+  { icon: Heart, title: "Jesús, María y José", description: "El corazón del kit, con versículos clásicos." },
+  { icon: Users, title: "Los 12 apóstoles", description: "Pedro, Juan, Mateo y todos los discípulos con su versículo." },
+  { icon: BookOpen, title: "Héroes del Antiguo Testamento", description: "Moisés, David, Noé, Abraham, Daniel, Sansón y más." },
+  { icon: Sparkles, title: "Mujeres de la Biblia", description: "Ester, Rut, Débora, Ana — modelos de fe para las niñas." },
+  { icon: Gift, title: "Símbolos cristianos", description: "El arca, el arco iris, el pez, la corona — clásicos atemporales." },
   { icon: Printer, title: "Diseños listos para imprimir", description: "Archivos PDF en alta calidad, listos para imprimir en casa." },
   { icon: Scissors, title: "Fáciles de recortar y armar", description: "Líneas claras de corte. Cualquier persona puede hacerlo." },
-  { icon: Palette, title: "Colores vibrantes y bíblicos", description: "Arte profesional pensado para iluminar cada detalle." },
-  { icon: ShoppingBag, title: "Ideales para vender", description: "Crea tu propio emprendimiento cristiano con bajo costo." },
-  { icon: Gift, title: "Regalos con propósito", description: "Perfectos para iglesia, escuela bíblica, bautizos y eventos." },
+  { icon: Palette, title: "Colores vibrantes", description: "Arte profesional pensado para iluminar cada detalle." },
 ];
 
 const ShowcaseSection = () => (
   <section className="py-5 md:py-7 bg-background">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-4xl mx-auto space-y-3">
-        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent">Contenido del material</p>
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent">QUÉ INCLUYE</p>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary">
-          ¿Qué vas a encontrar?
+          50 personajes bíblicos — cada uno con su versículo
         </h2>
         <p className="text-sm sm:text-base text-muted-foreground">
-          Dentro del pack encontrarás 50 moldes organizados por categoría, listos para imprimir y armar.
+          Del Antiguo al Nuevo Testamento. Todos los personajes que tus hijos, alumnos o clientes aman.
         </p>
 
         <Card className="p-2.5 sm:p-4 max-w-4xl mx-auto">

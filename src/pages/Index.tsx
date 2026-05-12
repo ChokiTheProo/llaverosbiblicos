@@ -53,7 +53,7 @@ const HeroSection = () => (
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto text-center space-y-3 md:space-y-4">
         <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2 text-balance">
-          Pack de <span className="text-accent">50 Llaveros Bíblicos</span> — Descarga, Imprime y Listo
+          50 Llaveros Bíblicos para Imprimir, Armar y Regalar — <span className="text-accent">Lleva la Palabra de Dios a Cada Familia</span>
         </h1>
 
         <div className="flex justify-center">
@@ -72,7 +72,7 @@ const HeroSection = () => (
         </div>
 
         <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-          50 personajes bíblicos con versículos + bonos, listos en PDF para imprimir, regalar o vender desde cualquier dispositivo.
+          Moldes listos para imprimir en casa. Una bendición que cabe en el bolsillo, perfecta para escuela dominical, regalos cristianos o para empezar a vender en tu iglesia.
         </p>
 
         <Button
@@ -80,7 +80,7 @@ const HeroSection = () => (
           onClick={scrollToContent}
           className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
         >
-          QUIERO GARANTIZAR AHORA
+          Quiero el Kit por $9.90
           <ArrowRight className="w-5 h-5" />
         </Button>
       </div>

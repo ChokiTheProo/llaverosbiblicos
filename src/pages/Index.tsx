@@ -78,7 +78,7 @@ const HeroSection = () => (
         <Button
           size="lg"
           onClick={scrollToContent}
-          className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
+          className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
         >
           Quiero el Kit por $9.90
           <ArrowRight className="w-5 h-5" />
@@ -174,7 +174,7 @@ const ShowcaseSection = () => (
         <Button
           size="lg"
           onClick={scrollToContent}
-          className="animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
+          className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
         >
           Quiero el Kit por $9.90
           <ArrowRight className="w-5 h-5" />
@@ -286,7 +286,7 @@ const WhatYouReceiveSection = () => (
           <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" className="block mt-6">
             <Button
               size="lg"
-              className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full animate-pulse-gold"
+              className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full shiny-cta animate-pulse-gold"
             >
               <ShoppingCart className="w-5 h-5" />
               Quiero el Kit por $9.90
@@ -403,7 +403,7 @@ const ContentSection = () => (
   <section className="py-6 md:py-10 bg-muted/30" id="content">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-8">
-        <div className="inline-block bg-destructive text-destructive-foreground text-xs sm:text-sm font-bold px-5 py-2 rounded-full uppercase tracking-wider mb-4 shadow-md animate-pulse-gold">
+        <div className="inline-block bg-destructive text-destructive-foreground text-xs sm:text-sm font-bold px-5 py-2 rounded-full uppercase tracking-wider mb-4 shadow-md shiny-cta animate-pulse-gold">
           OFERTA DE LANZAMIENTO
         </div>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-4 text-balance">
@@ -456,7 +456,7 @@ const ContentSection = () => (
           <Button
             asChild
             size="lg"
-            className="animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-3 gap-2 rounded-full py-7"
+            className="shiny-cta animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-3 gap-2 rounded-full py-7"
           >
             <a href={CHECKOUT_URL}>
               <ShoppingCart className="w-5 h-5" />
@@ -507,7 +507,7 @@ const GuaranteeSection = () => (
 
         <Card className="p-6 md:p-10 mb-12 bg-success/10 border-2 border-success/30 shadow-soft">
           <div className="flex flex-col items-center text-center gap-5">
-            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-success/20 flex items-center justify-center shadow-md animate-pulse-gold">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-success/20 flex items-center justify-center shadow-md shiny-cta animate-pulse-gold">
               <span className="text-6xl sm:text-7xl" role="img" aria-label="Escudo de garantía">🛡️</span>
             </div>
             <p className="text-foreground leading-relaxed max-w-2xl">

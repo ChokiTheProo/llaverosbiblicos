@@ -488,11 +488,11 @@ const ContentSection = () => (
 
 /* ---------- GUARANTEE + FAQ ---------- */
 const faqs = [
-  { question: "¿Cómo recibo el material?", answer: "Recibes acceso inmediato al PDF tras completar el pago, directamente por email." },
-  { question: "¿Es físico o digital?", answer: "Es 100% digital. Puedes acceder e imprimir desde cualquier dispositivo." },
-  { question: "¿Necesito experiencia para armar los llaveros?", answer: "No. Solo necesitas imprimir, recortar y armar. Es muy sencillo." },
-  { question: "¿Puedo vender los llaveros que arme?", answer: "¡Sí! Tienes total libertad para vender los llaveros creados con los moldes." },
-  { question: "¿Puedo pedir reembolso?", answer: "Sí. Tienes 7 días de garantía. Si no estás satisfecho, te devolvemos el 100% de tu dinero, sin preguntas." },
+  { question: "¿Cómo recibo el kit después de pagar?", answer: "En menos de 1 minuto recibes un email de Hotmart con el enlace de descarga. Si no lo ves, revisa la carpeta de promociones o spam." },
+  { question: "¿Necesito una impresora especial?", answer: "No. Funciona con cualquier impresora casera (chorro de tinta o láser). Recomendamos hoja A4 o cartulina blanca de 180g." },
+  { question: "¿Puedo vender los llaveros que imprimo?", answer: "¡Sí! El kit incluye licencia de uso comercial. El bono 04 trae plantillas y precios sugeridos." },
+  { question: "¿En qué idioma están los versículos?", answer: "Todos los versículos están en español, en versión clara para niños y adultos." },
+  { question: "¿Y si no me gusta? ¿Es un pago único?", answer: "Tienes 7 días de garantía total. Si no te encanta, te devolvemos el 100% de tu dinero. Es un pago único de $9.90 USD, sin renovaciones ni cobros futuros." },
 ];
 
 const GuaranteeSection = () => (
@@ -501,7 +501,7 @@ const GuaranteeSection = () => (
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-6">
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-balance">
-            Garantía Incondicional de 7 Días
+            Garantía total de 7 días
           </h2>
         </div>
 
@@ -511,12 +511,11 @@ const GuaranteeSection = () => (
               <span className="text-6xl sm:text-7xl" role="img" aria-label="Escudo de garantía">🛡️</span>
             </div>
             <p className="text-foreground leading-relaxed max-w-2xl">
-              Creemos tanto en el poder de este Pack de 50 Llaveros Bíblicos que te ofrecemos una garantía de
-              <b> 7 días sin riesgo</b>.
+              Si por cualquier motivo el kit no te encanta, escribes a soporte y te devolvemos
+              <b> cada centavo</b>.
             </p>
             <p className="text-muted-foreground leading-relaxed max-w-2xl text-sm sm:text-base">
-              Si por cualquier motivo — cualquiera mismo — no estás 100% satisfecho con el material, solo
-              envíanos un mensaje y te devolvemos el <b>100% de tu dinero</b>.
+              Sin preguntas, sin trámites. El riesgo es nuestro — la <b>bendición es tuya</b>.
             </p>
 
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-2">
@@ -534,16 +533,16 @@ const GuaranteeSection = () => (
 
             <p className="font-display italic text-primary text-base sm:text-lg pt-2 flex items-center gap-2">
               <span className="text-2xl">💰</span>
-              ¡O amas la experiencia, o recibes tu dinero de vuelta!
+              ¡O amas el kit, o recibes tu dinero de vuelta!
             </p>
           </div>
         </Card>
 
         <div className="text-center mb-6">
           <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-2">
-            Preguntas frecuentes
+            Todo lo que necesitas saber
           </h3>
-          <p className="text-sm text-muted-foreground">Resuelve todas tus dudas antes de empezar</p>
+          <p className="text-sm text-muted-foreground">PREGUNTAS FRECUENTES</p>
         </div>
 
         <div className="space-y-4">

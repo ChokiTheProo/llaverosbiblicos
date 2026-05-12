@@ -612,11 +612,10 @@ const Index = () => (
 
     <footer className="bg-primary text-primary-foreground/80 py-8">
       <div className="container text-center text-sm space-y-2">
-        <p>Todos los derechos reservados © {new Date().getFullYear()}</p>
-        <p className="text-primary-foreground/60">
-          <a href="#" className="hover:text-primary-foreground transition-smooth">Política de Privacidad</a>
-          <span className="mx-2">·</span>
-          <a href="#" className="hover:text-primary-foreground transition-smooth">Términos de Uso</a>
+        <p className="font-semibold text-primary-foreground">Llaveros Bíblicos · Kit Digital</p>
+        <p>© 2026 — Todos los derechos reservados · Pagos procesados de forma segura por Hotmart</p>
+        <p className="text-primary-foreground/60 text-xs max-w-2xl mx-auto">
+          Este producto no garantiza resultados financieros. Los testimonios reflejan experiencias individuales.
         </p>
       </div>
     </footer>

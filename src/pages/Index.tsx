@@ -90,11 +90,11 @@ const HeroSection = () => (
 
 /* ---------- BENEFITS ---------- */
 const benefits = [
-  { icon: Zap, title: "Listos para imprimir", description: "Sin diseño, sin programas. Abre el PDF y manda a imprimir." },
-  { icon: Sparkles, title: "Versículos incluidos", description: "Cada llavero ya viene con su personaje y versículo bíblico." },
-  { icon: Gift, title: "Regala con propósito", description: "Detalles únicos para familia, iglesia o eventos cristianos." },
-  { icon: Clock, title: "Ahorra horas de trabajo", description: "Todo organizado y listo. Solo recortar y armar." },
-  { icon: ShoppingBag, title: "Revende y genera ganancias", description: "Imprime, arma y vende en tu iglesia, ferias o redes — con bajo costo y alto margen." },
+  { icon: Zap, title: "Descarga inmediata", description: "Recibes el PDF en tu email apenas confirmes el pago. Sin esperar envíos, sin costos extra." },
+  { icon: Printer, title: "Imprime cuantos quieras", description: "Un solo pago, uso ilimitado. Imprime para tu familia, tu iglesia o para vender." },
+  { icon: Scissors, title: "Fácil de armar", description: "Solo necesitas tijera, papel y una argolla. Listo en menos de 5 minutos por llavero." },
+  { icon: ShoppingBag, title: "Ideal para vender", description: "Cada llavero te cuesta centavos. Véndelos en tu iglesia, ferias o por WhatsApp." },
+  { icon: BookOpen, title: "Con versículos reales", description: "Cada personaje viene con un versículo cuidadosamente elegido — la Palabra acompaña el regalo." },
 ];
 
 const BenefitsSection = () => (
@@ -103,7 +103,7 @@ const BenefitsSection = () => (
       <div className="text-center max-w-3xl mx-auto mb-5">
         <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">LA SOLUCIÓN</p>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary text-balance">
-          Imagina llaveros bíblicos hechos en casa, listos para bendecir
+          Un kit completo. Una bendición lista para imprimir.
         </h2>
       </div>
 

@@ -211,14 +211,17 @@ const ShowcaseSection = () => (
           </div>
         </Card>
 
-        <Button
-          size="lg"
-          onClick={scrollToContent}
-          className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
-        >
-          Quiero el Kit por $9.90
-          <ArrowRight className="w-5 h-5" />
-        </Button>
+        <div className="flex flex-col items-center gap-1.5">
+          <Button
+            size="lg"
+            onClick={scrollToContent}
+            className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
+          >
+            Quiero el Kit por $9.90
+            <ArrowRight className="w-5 h-5" />
+          </Button>
+          <span className="text-[12px] text-muted-foreground">Antes que suba el precio el lunes</span>
+        </div>
 
         {/* Galeria de llaveros */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2.5 pt-4">

@@ -516,7 +516,7 @@ const ContentSection = () => (
           <Button
             asChild
             size="lg"
-            className="shiny-cta animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-3 gap-2 rounded-full py-7"
+            className="shiny-cta animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-1.5 gap-2 rounded-full py-7"
           >
             <a
               href={CHECKOUT_URL}
@@ -528,6 +528,7 @@ const ContentSection = () => (
               Quiero el Kit ahora
             </a>
           </Button>
+          <p className="text-center text-[12px] text-muted-foreground mb-3">+5 bonos incluidos hoy</p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-muted-foreground">
             <div className="flex items-center gap-1">

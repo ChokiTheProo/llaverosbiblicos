@@ -665,6 +665,7 @@ const FinalCTASection = () => (
 /* ---------- PAGE ---------- */
 const Index = () => (
   <div className="min-h-screen bg-background overflow-x-hidden">
+    <UrgencyTopbar />
     <HeroSection />
     <TargetAudienceSection />
     <ShowcaseSection />

@@ -380,10 +380,27 @@ const TargetAudienceSection = () => (
 
 /* ---------- TESTIMONIALS ---------- */
 const testimonials = [
-  { name: "María R.", role: "México, mamá de 3", avatar: avatar1, initials: "MR", quote: "Compré el kit pensando en mis hijos, pero terminé regalando a toda mi célula. Los niños quedaron encantados con los versículos. Vale cada centavo." },
-  { name: "Jésica S.", role: "Colombia, maestra", avatar: avatar2, initials: "JS", quote: "Soy maestra de escuela dominical y este kit me salvó. Los niños se llevan su llavero a casa y los papás me agradecen. Excelente material." },
-  { name: "Carla L.", role: "Argentina, emprendedora", avatar: avatar3, initials: "CL", quote: "Imprimí 30 llaveros y los vendí en mi iglesia el mismo domingo. Recuperé la inversión muchas veces. Ahora es mi ingreso extra fijo." },
-  { name: "Patricia Olivera", role: "Buenos Aires, AR", avatar: avatar4, initials: "PO", quote: "Los versículos en los llaveros son una bendición. ¡Los niños de la escuela bíblica los amaron!" },
+  {
+    name: "María R.",
+    role: "México · Mamá de 3",
+    avatar: avatar1,
+    quote:
+      "Compré el kit pensando en mis hijos, pero terminé regalando a toda mi célula. Los niños quedaron encantados con los versículos. Vale cada centavo.",
+  },
+  {
+    name: "Jésica S.",
+    role: "Colombia · Maestra de escuela dominical",
+    avatar: avatar2,
+    quote:
+      "Soy maestra de escuela dominical y este kit me salvó. Los niños se llevan su llavero a casa y los papás me agradecen. Excelente material.",
+  },
+  {
+    name: "Carla L.",
+    role: "Argentina · Emprendedora cristiana",
+    avatar: avatar3,
+    quote:
+      "Imprimí 30 llaveros y los compartí con familias de mi iglesia. Las respuestas fueron increíbles. Ahora es mi pequeño ministerio creativo.",
+  },
 ];
 
 const TestimonialsSection = () => (
@@ -395,29 +412,30 @@ const TestimonialsSection = () => (
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
         {testimonials.map((t, i) => (
-          <Card key={i} className="p-3.5 sm:p-4 hover:shadow-soft transition-smooth">
-            <div className="space-y-2 sm:space-y-3">
+          <Card key={i} className="p-4 sm:p-5 hover:shadow-soft transition-smooth">
+            <div className="flex flex-col items-center text-center space-y-3">
+              <img
+                src={t.avatar}
+                alt={t.name}
+                loading="lazy"
+                width={80}
+                height={80}
+                className="w-20 h-20 rounded-full object-cover ring-2 ring-accent/40"
+              />
               <div className="flex gap-0.5">
                 {Array.from({ length: 5 }).map((_, j) => (
                   <Star key={j} className="w-4 h-4 sm:w-5 sm:h-5 fill-accent text-accent" />
                 ))}
               </div>
               <p className="text-foreground italic leading-relaxed text-sm sm:text-base">"{t.quote}"</p>
-              <div className="flex items-center gap-3 pt-1">
-                <img
-                  src={t.avatar}
-                  alt={t.name}
-                  loading="lazy"
-                  width={88}
-                  height={88}
-                  className="w-10 h-10 rounded-full object-cover ring-2 ring-accent/40"
-                />
-                <div>
-                  <p className="font-semibold text-foreground text-sm">{t.name}</p>
-                  <p className="text-xs text-muted-foreground">{t.role}</p>
-                </div>
+              <div>
+                <p className="font-bold text-foreground text-sm">{t.name}</p>
+                <p className="text-xs text-muted-foreground">{t.role}</p>
+                <p className="text-[11px] font-semibold mt-1" style={{ color: "#2F7D4F" }}>
+                  ✓ Compra verificada
+                </p>
               </div>
             </div>
           </Card>

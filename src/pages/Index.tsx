@@ -294,7 +294,6 @@ const WhatYouReceiveSection = () => (
               size="lg"
               className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full shiny-cta animate-pulse-gold"
             >
-              <ShoppingCart className="w-5 h-5" />
               Quiero el Kit por $9.90
             </Button>
           </a>
@@ -465,7 +464,6 @@ const ContentSection = () => (
             className="shiny-cta animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-3 gap-2 rounded-full py-7"
           >
             <a href={CHECKOUT_URL}>
-              <ShoppingCart className="w-5 h-5" />
               Quiero el Kit ahora
             </a>
           </Button>
@@ -589,7 +587,6 @@ const FinalCTASection = () => (
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
             <a href={CHECKOUT_URL} onClick={scrollToContent}>
-              <ShoppingCart className="w-5 h-5" />
               Sí, quiero el kit por $9.90
             </a>
           </Button>

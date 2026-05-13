@@ -326,14 +326,15 @@ const WhatYouReceiveSection = () => (
               </Card>
             ))}
           </div>
-          <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" className="block mt-6">
+          <div className="mt-6 flex justify-center">
             <Button
               size="lg"
+              onClick={scrollToContent}
               className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full shiny-cta animate-pulse-gold"
             >
               Quiero el Kit por $9.90
             </Button>
-          </a>
+          </div>
         </div>
       </div>
     </div>
@@ -644,13 +645,11 @@ const FinalCTASection = () => (
         </p>
         <div className="flex flex-col items-center gap-2">
           <Button
-            asChild
             size="lg"
+            onClick={scrollToContent}
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            <a href={CHECKOUT_URL} onClick={scrollToContent}>
-              Sí, quiero el kit por $9.90
-            </a>
+            Sí, quiero el kit por $9.90
           </Button>
           <span className="text-[12px] text-primary-foreground/80">Acceso inmediato · 7 días de garantía</span>
         </div>

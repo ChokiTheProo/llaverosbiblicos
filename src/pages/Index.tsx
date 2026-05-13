@@ -304,14 +304,7 @@ const WhatYouReceiveSection = () => (
               </Card>
             ))}
           </div>
-          <a
-            href={CHECKOUT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block mt-6"
-            data-utmify-event="Quiero el Kit por $9.90"
-            onClick={() => trackCta("Quiero el Kit por $9.90")}
-          >
+          <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" className="block mt-6">
             <Button
               size="lg"
               className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full shiny-cta animate-pulse-gold"
@@ -612,14 +605,7 @@ const FinalCTASection = () => (
             size="lg"
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            <a
-              href={CHECKOUT_URL}
-              data-utmify-event="Sí, quiero el kit por $9.90"
-              onClick={(e) => {
-                trackCta("Sí, quiero el kit por $9.90");
-                scrollToContent();
-              }}
-            >
+            <a href={CHECKOUT_URL} onClick={scrollToContent}>
               Sí, quiero el kit por $9.90
             </a>
           </Button>

@@ -287,17 +287,17 @@ const WhatYouReceiveSection = () => (
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 md:gap-4">
             {bonuses.map((bonus, i) => (
-              <Card key={i} className="p-4 sm:p-5 hover:shadow-soft transition-smooth">
-                <div className="flex items-start gap-3">
-                  <div className="icon-tile-soft w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <bonus.icon className="w-5 h-5 text-primary" />
+              <Card key={i} className="p-4 sm:p-5 hover:shadow-soft transition-smooth border-2">
+                <div className="flex items-start gap-4">
+                  <div className="icon-tile w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <bonus.icon className="w-7 h-7 sm:w-8 sm:h-8 text-accent-foreground" strokeWidth={2.25} style={{ color: 'hsl(40 90% 75%)' }} />
                   </div>
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-accent mb-0.5">{bonus.number}</p>
-                    <h4 className="text-sm sm:text-base font-semibold text-foreground mb-1">{bonus.title}</h4>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-extrabold uppercase tracking-widest text-accent mb-1">{bonus.number}</p>
+                    <h4 className="text-base sm:text-lg font-bold text-primary mb-1.5 leading-snug">{bonus.title}</h4>
                     <div className="flex items-center gap-2 flex-wrap">
-                      <span className="text-xs text-muted-foreground line-through">{bonus.oldPrice}</span>
-                      <span className="text-xs font-bold text-success">{bonus.newPrice}</span>
+                      <span className="text-sm text-muted-foreground line-through">{bonus.oldPrice}</span>
+                      <span className="text-sm font-extrabold text-success">{bonus.newPrice}</span>
                     </div>
                   </div>
                 </div>

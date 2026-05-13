@@ -49,6 +49,21 @@ import avatar4 from "@/assets/avatar-4.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/T105491862G?checkoutMode=10";
 
+// UTMify CTA tracking — dispara o nome do evento (texto exato do botão) para o pixel UTMify
+const trackCta = (eventName: string) => {
+  try {
+    const w = window as any;
+    if (typeof w.utmify === "function") {
+      w.utmify("track", eventName);
+    }
+    w.dataLayer = w.dataLayer || [];
+    w.dataLayer.push({ event: eventName, cta_text: eventName });
+    window.dispatchEvent(new CustomEvent("utmify:track", { detail: { event: eventName } }));
+  } catch (_) {
+    /* noop */
+  }
+};
+
 const scrollToContent = () => {
   document.getElementById("content")?.scrollIntoView({ behavior: "smooth" });
 };
@@ -289,7 +304,14 @@ const WhatYouReceiveSection = () => (
               </Card>
             ))}
           </div>
-          <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" className="block mt-6">
+          <a
+            href={CHECKOUT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mt-6"
+            data-utmify-event="Quiero el Kit por $9.90"
+            onClick={() => trackCta("Quiero el Kit por $9.90")}
+          >
             <Button
               size="lg"
               className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full shiny-cta animate-pulse-gold"
@@ -463,7 +485,11 @@ const ContentSection = () => (
             size="lg"
             className="shiny-cta animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-3 gap-2 rounded-full py-7"
           >
-            <a href={CHECKOUT_URL}>
+            <a
+              href={CHECKOUT_URL}
+              data-utmify-event="Quiero el Kit ahora"
+              onClick={() => trackCta("Quiero el Kit ahora")}
+            >
               Quiero el Kit ahora
             </a>
           </Button>
@@ -586,7 +612,14 @@ const FinalCTASection = () => (
             size="lg"
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            <a href={CHECKOUT_URL} onClick={scrollToContent}>
+            <a
+              href={CHECKOUT_URL}
+              data-utmify-event="Sí, quiero el kit por $9.90"
+              onClick={(e) => {
+                trackCta("Sí, quiero el kit por $9.90");
+                scrollToContent();
+              }}
+            >
               Sí, quiero el kit por $9.90
             </a>
           </Button>

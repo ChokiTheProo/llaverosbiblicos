@@ -485,7 +485,11 @@ const ContentSection = () => (
             size="lg"
             className="shiny-cta animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-3 gap-2 rounded-full py-7"
           >
-            <a href={CHECKOUT_URL}>
+            <a
+              href={CHECKOUT_URL}
+              data-utmify-event="Quiero el Kit ahora"
+              onClick={() => trackCta("Quiero el Kit ahora")}
+            >
               Quiero el Kit ahora
             </a>
           </Button>

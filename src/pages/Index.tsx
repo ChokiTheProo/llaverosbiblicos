@@ -68,6 +68,22 @@ const scrollToContent = () => {
   document.getElementById("content")?.scrollIntoView({ behavior: "smooth" });
 };
 
+/* ---------- URGENCY TOPBAR ---------- */
+const UrgencyTopbar = () => (
+  <div
+    className="w-full text-center text-xs sm:text-sm font-medium px-3 py-2 leading-snug"
+    style={{ backgroundColor: "#1F1A14", color: "#FBF7EE" }}
+  >
+    <span className="inline-flex items-center gap-1.5 flex-wrap justify-center">
+      <span aria-hidden>⏰</span>
+      <span className="font-semibold uppercase tracking-wider">OFERTA DE LANZAMIENTO</span>
+      <span>— Solo esta semana por</span>
+      <span className="font-bold" style={{ color: "#C9A24A" }}>$9.90 USD</span>
+      <span className="opacity-80">(precio sube a $19.90 el próximo lunes)</span>
+    </span>
+  </div>
+);
+
 /* ---------- HERO ---------- */
 const HeroSection = () => (
   <section className="min-h-[85vh] flex items-center bg-background py-6 md:py-10">

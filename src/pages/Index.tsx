@@ -617,7 +617,7 @@ const FinalCTASection = () => (
               data-utmify-event="Sí, quiero el kit por $9.90"
               onClick={(e) => {
                 trackCta("Sí, quiero el kit por $9.90");
-                scrollToContent(e);
+                scrollToContent();
               }}
             >
               Sí, quiero el kit por $9.90

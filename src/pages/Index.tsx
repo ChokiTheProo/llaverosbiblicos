@@ -652,7 +652,7 @@ const FinalCTASection = () => (
               Sí, quiero el kit por $9.90
             </a>
           </Button>
-          <span className="text-primary-foreground/80 font-semibold text-sm">Pago único · Acceso de por vida</span>
+          <span className="text-[12px] text-primary-foreground/80">Acceso inmediato · 7 días de garantía</span>
         </div>
         <p className="text-primary-foreground/70 text-xs sm:text-sm">
           🔒 Compra segura vía Hotmart · Garantía de 7 días · Acceso de por vida

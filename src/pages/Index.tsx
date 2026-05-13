@@ -112,14 +112,17 @@ const HeroSection = () => (
           Moldes listos para imprimir en casa. Una bendición que cabe en el bolsillo, perfecta para escuela dominical, regalos cristianos o para empezar a vender en tu iglesia.
         </p>
 
-        <Button
-          size="lg"
-          onClick={scrollToContent}
-          className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
-        >
-          Quiero el Kit por $9.90
-          <ArrowRight className="w-5 h-5" />
-        </Button>
+        <div className="flex flex-col items-center gap-1.5">
+          <Button
+            size="lg"
+            onClick={scrollToContent}
+            className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
+          >
+            Quiero el Kit por $9.90
+            <ArrowRight className="w-5 h-5" />
+          </Button>
+          <span className="text-[12px] text-muted-foreground">Oferta válida solo esta semana</span>
+        </div>
       </div>
     </div>
   </section>

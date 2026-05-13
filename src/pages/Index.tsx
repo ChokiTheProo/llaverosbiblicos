@@ -49,6 +49,21 @@ import avatar4 from "@/assets/avatar-4.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/T105491862G?checkoutMode=10";
 
+// UTMify CTA tracking — dispara o nome do evento (texto exato do botão) para o pixel UTMify
+const trackCta = (eventName: string) => {
+  try {
+    const w = window as any;
+    if (typeof w.utmify === "function") {
+      w.utmify("track", eventName);
+    }
+    w.dataLayer = w.dataLayer || [];
+    w.dataLayer.push({ event: eventName, cta_text: eventName });
+    window.dispatchEvent(new CustomEvent("utmify:track", { detail: { event: eventName } }));
+  } catch (_) {
+    /* noop */
+  }
+};
+
 const scrollToContent = () => {
   document.getElementById("content")?.scrollIntoView({ behavior: "smooth" });
 };

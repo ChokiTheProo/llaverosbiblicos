@@ -480,6 +480,8 @@ const ContentSection = () => (
           >
             <a
               href={CHECKOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               data-utmify-event="Quiero el Kit ahora"
               onClick={() => trackCta("Quiero el Kit ahora")}
             >

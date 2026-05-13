@@ -612,7 +612,14 @@ const FinalCTASection = () => (
             size="lg"
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            <a href={CHECKOUT_URL} onClick={scrollToContent}>
+            <a
+              href={CHECKOUT_URL}
+              data-utmify-event="Sí, quiero el kit por $9.90"
+              onClick={(e) => {
+                trackCta("Sí, quiero el kit por $9.90");
+                scrollToContent(e);
+              }}
+            >
               Sí, quiero el kit por $9.90
             </a>
           </Button>

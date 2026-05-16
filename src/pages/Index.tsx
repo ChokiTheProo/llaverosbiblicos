@@ -335,13 +335,11 @@ const WhatYouReceiveSection = () => (
           </div>
           <div className="mt-6 flex justify-center">
             <Button
-              asChild
               size="lg"
+              onClick={() => { trackCta("Bonus CTA $9.90"); scrollToContent(); }}
               className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full shiny-cta animate-pulse-gold"
             >
-              <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackCta("Bonus CTA $9.90")}>
-                Quiero el Kit por $9.90
-              </a>
+              Quiero el Kit por $9.90
             </Button>
           </div>
         </div>

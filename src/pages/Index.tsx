@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import type { MouseEvent } from "react";
 import {
   Zap,
   Gift,
@@ -62,6 +63,12 @@ const trackCta = (eventName: string) => {
   } catch (_) {
     /* noop */
   }
+};
+
+const openCheckoutInNewTab = (eventName: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+  event.preventDefault();
+  trackCta(eventName);
+  window.open(CHECKOUT_URL, "_blank", "noopener,noreferrer");
 };
 
 const scrollToContent = () => {
@@ -530,7 +537,7 @@ const ContentSection = () => (
               target="_blank"
               rel="noopener noreferrer"
               data-utmify-event="Quiero el Kit ahora"
-              onClick={() => trackCta("Quiero el Kit ahora")}
+              onClick={openCheckoutInNewTab("Quiero el Kit ahora")}
             >
               Quiero el Kit ahora
             </a>

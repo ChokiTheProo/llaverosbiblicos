@@ -220,14 +220,12 @@ const ShowcaseSection = () => (
 
         <div className="flex flex-col items-center gap-1.5">
           <Button
-            asChild
             size="lg"
+            onClick={() => { trackCta("Showcase CTA $9.90"); scrollToContent(); }}
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackCta("Showcase CTA $9.90")}>
-              Quiero el Kit por $9.90
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            Quiero el Kit por $9.90
+            <ArrowRight className="w-5 h-5" />
           </Button>
           <span className="text-[12px] text-muted-foreground">Antes que suba el precio el lunes</span>
         </div>

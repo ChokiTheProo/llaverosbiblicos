@@ -537,7 +537,7 @@ const ContentSection = () => (
               target="_blank"
               rel="noopener noreferrer"
               data-utmify-event="Quiero el Kit ahora"
-              onClick={() => trackCta("Quiero el Kit ahora")}
+              onClick={openCheckoutInNewTab("Quiero el Kit ahora")}
             >
               Quiero el Kit ahora
             </a>

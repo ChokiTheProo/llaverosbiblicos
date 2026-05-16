@@ -114,12 +114,14 @@ const HeroSection = () => (
 
         <div className="flex flex-col items-center gap-1.5">
           <Button
+            asChild
             size="lg"
-            onClick={scrollToContent}
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            Quiero el Kit por $9.90
-            <ArrowRight className="w-5 h-5" />
+            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackCta("Hero CTA $9.90")}>
+              Quiero el Kit por $9.90
+              <ArrowRight className="w-5 h-5" />
+            </a>
           </Button>
           <span className="text-[12px] text-muted-foreground">Oferta válida solo esta semana</span>
         </div>

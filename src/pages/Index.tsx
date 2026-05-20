@@ -468,43 +468,43 @@ const items = [
 ];
 
 const ContentSection = () => (
-  <section className="py-6 md:py-10 bg-muted/30" id="content">
+  <section className="py-4 md:py-8 bg-muted/30" id="content">
     <div className="container mx-auto px-4">
-      <div className="text-center max-w-3xl mx-auto mb-8">
-        <div className="inline-block bg-destructive text-destructive-foreground text-xs sm:text-sm font-bold px-5 py-2 rounded-full uppercase tracking-wider mb-4 shadow-md animate-pulse-gold">
+      <div className="text-center max-w-3xl mx-auto mb-4 md:mb-6">
+        <div className="inline-block bg-destructive text-destructive-foreground text-xs sm:text-sm font-bold px-5 py-2 rounded-full uppercase tracking-wider mb-3 shadow-md animate-pulse-gold">
           OFERTA DE LANZAMIENTO
         </div>
-        <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-4 text-balance">
+        <h2 className="font-display text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2 text-balance">
           Empieza hoy a bendecir con la Palabra
         </h2>
       </div>
 
       <div className="max-w-2xl mx-auto">
-        <Card className="p-5 md:p-7 border-2 border-accent">
-          <div className="flex justify-center mb-6">
+        <Card className="p-4 md:p-6 border-2 border-accent">
+          <div className="flex justify-center mb-3 md:mb-5">
             <img
               src={productoPreview}
               alt="Pack de 50 Llaveros Bíblicos"
               loading="lazy"
               width={1200}
               height={1500}
-              className="max-w-full sm:max-w-xs h-auto rounded-md"
+              className="max-w-[180px] sm:max-w-xs h-auto rounded-md"
             />
           </div>
 
-          <p className="text-center text-sm font-semibold text-muted-foreground mb-4">
+          <p className="text-center text-sm font-semibold text-muted-foreground mb-3">
             Recapitulando lo que vas a recibir:
           </p>
 
-          <div className="space-y-3 mb-6">
+          <div className="space-y-2 mb-4">
             {items.map((item, i) => (
               <div key={i} className="text-left">
-                <div className="flex items-center gap-2 mb-1">
-                  <item.icon className="w-5 h-5 text-success flex-shrink-0" />
-                  <p className="text-base md:text-lg font-medium text-foreground">{item.title}</p>
+                <div className="flex items-center gap-2">
+                  <item.icon className="w-4 h-4 md:w-5 md:h-5 text-success flex-shrink-0" />
+                  <p className="text-sm md:text-lg font-medium text-foreground">{item.title}</p>
                 </div>
                 {item.value && (
-                  <p className="text-sm font-bold text-destructive line-through mt-1 ml-7">
+                  <p className="text-xs font-bold text-destructive line-through mt-0.5 ml-6">
                     VALORADO EN {item.value}
                   </p>
                 )}
@@ -512,14 +512,13 @@ const ContentSection = () => (
             ))}
           </div>
 
-
-
-          <div className="pt-4 mb-6">
-            <p className="text-center text-lg md:text-xl text-destructive line-through mb-2">De $47 USD</p>
-            <p className="text-center text-xl md:text-2xl font-semibold text-foreground mb-1">Todo esto por apenas</p>
-            <p className="text-center text-4xl md:text-5xl font-bold text-success mb-3">$9.90 USD</p>
-            <p className="text-center text-sm text-muted-foreground mb-6">Pago único · Sin renovaciones · Acceso de por vida</p>
+          <div className="pt-2 mb-4">
+            <p className="text-center text-base md:text-xl text-destructive line-through mb-1">De $47 USD</p>
+            <p className="text-center text-base md:text-2xl font-semibold text-foreground mb-1">Todo esto por apenas</p>
+            <p className="text-center text-3xl md:text-5xl font-bold text-success mb-2">$9.90 USD</p>
+            <p className="text-center text-xs md:text-sm text-muted-foreground mb-2">Pago único · Sin renovaciones · Acceso de por vida</p>
           </div>
+
 
           <Button
             asChild

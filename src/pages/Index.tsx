@@ -72,7 +72,8 @@ const openCheckoutInNewTab = (eventName: string) => (event: MouseEvent<HTMLAncho
 };
 
 const scrollToContent = () => {
-  document.getElementById("content")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const el = document.getElementById("cta-button") ?? document.getElementById("content");
+  el?.scrollIntoView({ behavior: "smooth", block: "center" });
 };
 
 /* ---------- URGENCY TOPBAR ---------- */
@@ -521,6 +522,7 @@ const ContentSection = () => (
 
 
           <Button
+            id="cta-button"
             asChild
             size="lg"
             className="shiny-cta animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold mb-1.5 gap-2 rounded-full py-7"

@@ -520,9 +520,10 @@ const ContentSection = () => (
             <p className="text-center text-xs md:text-sm text-muted-foreground mb-2">Pago único · Sin renovaciones · Acceso de por vida</p>
           </div>
 
-          <p className="text-center text-xs font-semibold text-destructive mb-2 animate-pulse">
+          <p className="text-center text-xs font-semibold text-destructive mb-2">
             👇 Haz clic en el botón de abajo para adquirir 👇
           </p>
+
 
 
 

@@ -72,8 +72,8 @@ const openCheckoutInNewTab = (eventName: string) => (event: MouseEvent<HTMLAncho
 };
 
 const scrollToContent = () => {
-  const el = document.getElementById("cta-button") ?? document.getElementById("content");
-  el?.scrollIntoView({ behavior: "smooth", block: "center" });
+  const el = document.getElementById("content");
+  el?.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
 /* ---------- URGENCY TOPBAR ---------- */

@@ -659,12 +659,10 @@ const FinalCTASection = () => (
         <div className="flex flex-col items-center gap-2">
           <Button
             size="lg"
-            asChild
+            onClick={() => { trackCta("Final CTA $9.90"); scrollToContent(); }}
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" onClick={openCheckoutInNewTab("Final CTA $9.90")}>
-              Sí, quiero el kit por $9.90
-            </a>
+            Sí, quiero el kit por $9.90
           </Button>
           <span className="text-[12px] text-primary-foreground/80">Acceso inmediato · 7 días de garantía</span>
         </div>

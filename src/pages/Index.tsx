@@ -122,13 +122,11 @@ const HeroSection = () => (
         <div className="flex flex-col items-center gap-1.5">
           <Button
             size="lg"
-            asChild
+            onClick={() => { trackCta("Hero CTA $9.90"); scrollToContent(); }}
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" onClick={openCheckoutInNewTab("Hero CTA $9.90")}>
-              Quiero el Kit por $9.90
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            Quiero el Kit por $9.90
+            <ArrowRight className="w-5 h-5" />
           </Button>
           <span className="text-[12px] text-muted-foreground">Oferta válida solo esta semana</span>
         </div>
@@ -223,13 +221,11 @@ const ShowcaseSection = () => (
         <div className="flex flex-col items-center gap-1.5">
           <Button
             size="lg"
-            asChild
+            onClick={() => { trackCta("Showcase CTA $9.90"); scrollToContent(); }}
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" onClick={openCheckoutInNewTab("Showcase CTA $9.90")}>
-              Quiero el Kit por $9.90
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            Quiero el Kit por $9.90
+            <ArrowRight className="w-5 h-5" />
           </Button>
           <span className="text-[12px] text-muted-foreground">Antes que suba el precio el lunes</span>
         </div>
@@ -340,12 +336,10 @@ const WhatYouReceiveSection = () => (
           <div className="mt-6 flex justify-center">
             <Button
               size="lg"
-              asChild
+              onClick={() => { trackCta("Bonus CTA $9.90"); scrollToContent(); }}
               className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full shiny-cta animate-pulse-gold"
             >
-              <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" onClick={openCheckoutInNewTab("Bonus CTA $9.90")}>
-                Quiero el Kit por $9.90
-              </a>
+              Quiero el Kit por $9.90
             </Button>
           </div>
         </div>

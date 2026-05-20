@@ -72,7 +72,7 @@ const openCheckoutInNewTab = (eventName: string) => (event: MouseEvent<HTMLAncho
 };
 
 const scrollToContent = () => {
-  document.getElementById("content")?.scrollIntoView({ behavior: "smooth" });
+  document.getElementById("content")?.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
 /* ---------- URGENCY TOPBAR ---------- */

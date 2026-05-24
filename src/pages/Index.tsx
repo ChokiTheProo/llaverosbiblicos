@@ -538,10 +538,10 @@ const ContentSection = () => (
               href={CHECKOUT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              data-utmify-event="Quiero solo el molde"
-              onClick={openCheckoutInNewTab("Quiero solo el molde")}
+              data-utmify-event="Quiero comprar ahora"
+              onClick={openCheckoutInNewTab("Quiero comprar ahora")}
             >
-              Quiero solo el molde
+              Quiero comprar ahora
             </a>
           </Button>
           <p className="text-center text-[11px] text-muted-foreground mt-2">Sin bonos incluidos</p>

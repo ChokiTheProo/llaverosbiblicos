@@ -538,10 +538,10 @@ const ContentSection = () => (
               href={CHECKOUT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              data-utmify-event="Quiero solo el molde"
-              onClick={openCheckoutInNewTab("Quiero solo el molde")}
+              data-utmify-event="Quiero comprar ahora"
+              onClick={openCheckoutInNewTab("Quiero comprar ahora")}
             >
-              Quiero solo el molde
+              Quiero comprar ahora
             </a>
           </Button>
           <p className="text-center text-[11px] text-muted-foreground mt-2">Sin bonos incluidos</p>
@@ -604,10 +604,10 @@ const ContentSection = () => (
               href={CHECKOUT_URL_PREMIUM}
               target="_blank"
               rel="noopener noreferrer"
-              data-utmify-event="Quiero el Kit Completo"
-              onClick={openCheckoutInNewTab("Quiero el Kit Completo", CHECKOUT_URL_PREMIUM)}
+              data-utmify-event="Quiero comprar ahora"
+              onClick={openCheckoutInNewTab("Quiero comprar ahora", CHECKOUT_URL_PREMIUM)}
             >
-              Quiero el Kit Completo
+              Quiero comprar ahora
             </a>
           </Button>
           <p className="text-center text-[12px] text-muted-foreground mt-2">+5 bonos incluidos hoy</p>

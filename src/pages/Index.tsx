@@ -66,10 +66,10 @@ const trackCta = (eventName: string) => {
   }
 };
 
-const openCheckoutInNewTab = (eventName: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+const openCheckoutInNewTab = (eventName: string, url: string = CHECKOUT_URL) => (event: MouseEvent<HTMLAnchorElement>) => {
   event.preventDefault();
   trackCta(eventName);
-  window.open(CHECKOUT_URL, "_blank", "noopener,noreferrer");
+  window.open(url, "_blank", "noopener,noreferrer");
 };
 
 const scrollToContent = () => {

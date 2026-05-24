@@ -604,10 +604,10 @@ const ContentSection = () => (
               href={CHECKOUT_URL_PREMIUM}
               target="_blank"
               rel="noopener noreferrer"
-              data-utmify-event="Quiero el Kit Completo"
-              onClick={openCheckoutInNewTab("Quiero el Kit Completo", CHECKOUT_URL_PREMIUM)}
+              data-utmify-event="Quiero comprar ahora"
+              onClick={openCheckoutInNewTab("Quiero comprar ahora", CHECKOUT_URL_PREMIUM)}
             >
-              Quiero el Kit Completo
+              Quiero comprar ahora
             </a>
           </Button>
           <p className="text-center text-[12px] text-muted-foreground mt-2">+5 bonos incluidos hoy</p>

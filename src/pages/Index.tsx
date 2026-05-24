@@ -49,6 +49,8 @@ import avatar3 from "@/assets/avatar-3.webp";
 import avatar4 from "@/assets/avatar-4.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/T105491862G?checkoutMode=10";
+// TODO: substituir pelo link de checkout do kit completo ($27.90)
+const CHECKOUT_URL_PREMIUM = "https://pay.hotmart.com/T105491862G?checkoutMode=10&offer=premium";
 
 // UTMify CTA tracking — dispara o nome do evento (texto exato do botão) para o pixel UTMify
 const trackCta = (eventName: string) => {

@@ -471,8 +471,8 @@ const basicItems = [
 
 const premiumItems = [
   { label: "Kit con 50 llaveros bíblicos (PDF imprimible)", highlight: false },
-  { label: "BONO 01 — Guía de Impresión", highlight: true },
-  { label: "BONO 02 — Plan de Clase Dominical (4 clases)", highlight: true },
+  { label: "BONO 01 — Control de Gastos y Ventas", highlight: true },
+  { label: "BONO 02 — Plan de Clase Dominical (1 clase)", highlight: true },
   { label: "BONO 03 — Tarjetas para Regalar", highlight: true },
   { label: "BONO 04 — Plantillas para Vender (posts + precios)", highlight: true },
   { label: "BONO 05 — Actualizaciones de por vida", highlight: true },

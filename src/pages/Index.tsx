@@ -264,8 +264,8 @@ const mainItems = [
 ];
 
 const bonuses = [
-  { icon: Printer, number: "BONO 01", title: "Guía 1+1: Impresión perfecta + clave de enseñanza", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
-  { icon: BookOpen, number: "BONO 02", title: "Plan de Clase Dominical: 6+ clases listas con los llaveros", oldPrice: "$18.00", newPrice: "HOY GRATIS" },
+  { icon: Printer, number: "BONO 01", title: "Control de Gastos y Ventas para Llaveros Bíblicos", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
+  { icon: BookOpen, number: "BONO 02", title: "Plan de Clase Dominical: 1 clase lista con los llaveros", oldPrice: "$18.00", newPrice: "HOY GRATIS" },
   { icon: Gift, number: "BONO 03", title: "Tarjetas para Regalar: mini-cards con mensajes", oldPrice: "$7.00", newPrice: "HOY GRATIS" },
   { icon: Layout, number: "BONO 04", title: "Plantillas para Vender: posts y precios sugeridos", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
   { icon: InfinityIcon, number: "BONO 05", title: "Actualizaciones de por vida: nuevos personajes sin costo", oldPrice: "$7.00", newPrice: "HOY GRATIS" },
@@ -471,8 +471,8 @@ const basicItems = [
 
 const premiumItems = [
   { label: "Kit con 50 llaveros bíblicos (PDF imprimible)", highlight: false },
-  { label: "BONO 01 — Guía de Impresión", highlight: true },
-  { label: "BONO 02 — Plan de Clase Dominical (4 clases)", highlight: true },
+  { label: "BONO 01 — Control de Gastos y Ventas", highlight: true },
+  { label: "BONO 02 — Plan de Clase Dominical (1 clase)", highlight: true },
   { label: "BONO 03 — Tarjetas para Regalar", highlight: true },
   { label: "BONO 04 — Plantillas para Vender (posts + precios)", highlight: true },
   { label: "BONO 05 — Actualizaciones de por vida", highlight: true },

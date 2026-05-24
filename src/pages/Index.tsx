@@ -49,8 +49,7 @@ import avatar3 from "@/assets/avatar-3.webp";
 import avatar4 from "@/assets/avatar-4.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/T105491862G?checkoutMode=10";
-// TODO: substituir pelo link de checkout do kit completo ($27.90)
-const CHECKOUT_URL_PREMIUM = "https://pay.hotmart.com/T105491862G?checkoutMode=10&offer=premium";
+const CHECKOUT_URL_PREMIUM = "https://pay.hotmart.com/D105980215L?checkoutMode=10";
 
 // UTMify CTA tracking — dispara o nome do evento (texto exato do botão) para o pixel UTMify
 const trackCta = (eventName: string) => {
@@ -67,10 +66,10 @@ const trackCta = (eventName: string) => {
   }
 };
 
-const openCheckoutInNewTab = (eventName: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+const openCheckoutInNewTab = (eventName: string, url: string = CHECKOUT_URL) => (event: MouseEvent<HTMLAnchorElement>) => {
   event.preventDefault();
   trackCta(eventName);
-  window.open(CHECKOUT_URL, "_blank", "noopener,noreferrer");
+  window.open(url, "_blank", "noopener,noreferrer");
 };
 
 const scrollToContent = () => {
@@ -606,7 +605,7 @@ const ContentSection = () => (
               target="_blank"
               rel="noopener noreferrer"
               data-utmify-event="Quiero el Kit Completo"
-              onClick={openCheckoutInNewTab("Quiero el Kit Completo")}
+              onClick={openCheckoutInNewTab("Quiero el Kit Completo", CHECKOUT_URL_PREMIUM)}
             >
               Quiero el Kit Completo
             </a>

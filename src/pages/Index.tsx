@@ -605,7 +605,7 @@ const ContentSection = () => (
               target="_blank"
               rel="noopener noreferrer"
               data-utmify-event="Quiero el Kit Completo"
-              onClick={openCheckoutInNewTab("Quiero el Kit Completo")}
+              onClick={openCheckoutInNewTab("Quiero el Kit Completo", CHECKOUT_URL_PREMIUM)}
             >
               Quiero el Kit Completo
             </a>

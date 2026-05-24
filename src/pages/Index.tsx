@@ -125,10 +125,10 @@ const HeroSection = () => (
         <div className="flex flex-col items-center gap-1.5">
           <Button
             size="lg"
-            onClick={() => { trackCta("Hero CTA $9.90"); scrollToContent(); }}
+            onClick={() => { trackCta("Hero CTA"); scrollToContent(); }}
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            Quiero el Kit por $9.90
+            Quiero el Kit
             <ArrowRight className="w-5 h-5" />
           </Button>
           <span className="text-[12px] text-muted-foreground">Oferta válida solo esta semana</span>
@@ -224,10 +224,10 @@ const ShowcaseSection = () => (
         <div className="flex flex-col items-center gap-1.5">
           <Button
             size="lg"
-            onClick={() => { trackCta("Showcase CTA $9.90"); scrollToContent(); }}
+            onClick={() => { trackCta("Showcase CTA"); scrollToContent(); }}
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            Quiero el Kit por $9.90
+            Quiero el Kit
             <ArrowRight className="w-5 h-5" />
           </Button>
           <span className="text-[12px] text-muted-foreground">Antes que suba el precio el lunes</span>
@@ -339,10 +339,10 @@ const WhatYouReceiveSection = () => (
           <div className="mt-6 flex justify-center">
             <Button
               size="lg"
-              onClick={() => { trackCta("Bonus CTA $9.90"); scrollToContent(); }}
+              onClick={() => { trackCta("Bonus CTA"); scrollToContent(); }}
               className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full shiny-cta animate-pulse-gold"
             >
-              Quiero el Kit por $9.90
+              Quiero el Kit
             </Button>
           </div>
         </div>
@@ -539,8 +539,8 @@ const ContentSection = () => (
               href={CHECKOUT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              data-utmify-event="Quiero solo el molde $9.90"
-              onClick={openCheckoutInNewTab("Quiero solo el molde $9.90")}
+              data-utmify-event="Quiero solo el molde"
+              onClick={openCheckoutInNewTab("Quiero solo el molde")}
             >
               Quiero solo el molde
             </a>
@@ -605,8 +605,8 @@ const ContentSection = () => (
               href={CHECKOUT_URL_PREMIUM}
               target="_blank"
               rel="noopener noreferrer"
-              data-utmify-event="Quiero el Kit Completo $27.90"
-              onClick={openCheckoutInNewTab("Quiero el Kit Completo $27.90")}
+              data-utmify-event="Quiero el Kit Completo"
+              onClick={openCheckoutInNewTab("Quiero el Kit Completo")}
             >
               Quiero el Kit Completo
             </a>
@@ -720,7 +720,7 @@ const FinalCTASection = () => (
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto text-center space-y-4">
         <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-primary-foreground">
-          Sí, quiero el kit por $9.90
+          Sí, quiero el kit
         </h2>
         <p className="text-base sm:text-xl md:text-2xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
           Acceso inmediato al kit completo + los 5 bonos. Un solo pago, sin mensualidades.
@@ -728,10 +728,10 @@ const FinalCTASection = () => (
         <div className="flex flex-col items-center gap-2">
           <Button
             size="lg"
-            onClick={() => { trackCta("Final CTA $9.90"); scrollToContent(); }}
+            onClick={() => { trackCta("Final CTA"); scrollToContent(); }}
             className="shiny-cta animate-pulse-gold w-full sm:w-auto bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base sm:text-lg px-8 gap-2 rounded-full"
           >
-            Sí, quiero el kit por $9.90
+            Sí, quiero el kit
           </Button>
           <span className="text-[12px] text-primary-foreground/80">Acceso inmediato · 7 días de garantía</span>
         </div>

@@ -459,15 +459,6 @@ const TestimonialsSection = () => (
 );
 
 /* ---------- CONTENT (PRICING) ---------- */
-const basicItems = [
-  "50 personajes bíblicos con versículo",
-  "Archivo PDF de alta calidad",
-  "Imprime cuantas veces quieras",
-  "Líneas de corte fáciles de seguir",
-  "Compatible con cualquier impresora",
-  "Acceso inmediato",
-];
-
 const premiumItems = [
   { label: "Kit con 50 llaveros bíblicos (PDF imprimible)", highlight: false },
   { label: "BONO 01 — Control de Gastos y Ventas", highlight: true },
@@ -487,84 +478,31 @@ const ContentSection = () => (
           OFERTA DE LANZAMIENTO
         </div>
         <h2 className="font-display text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2 text-balance">
-          Elige tu plan y empieza hoy
+          Llévate el Kit Completo hoy
         </h2>
         <p className="text-sm sm:text-base text-muted-foreground mt-2">
-          Solo el molde, o el Kit Completo con los 5 bonos. Tú decides.
+          Todo incluido: los 50 llaveros + los 5 bonos exclusivos por un solo pago.
         </p>
       </div>
 
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 items-stretch">
-        {/* ---- BASIC: SOLO MOLDE ---- */}
-        <Card className="p-5 md:p-6 border-2 border-border flex flex-col">
-          <div className="text-center mb-4">
-            <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">SOLO EL MOLDE</p>
-            <h3 className="font-display text-2xl md:text-3xl font-bold text-primary mb-1">Kit Básico</h3>
-            <p className="text-xs text-muted-foreground">Apenas los moldes en PDF — sin bonos.</p>
-          </div>
-
-          <div className="flex justify-center mb-4">
-            <img
-              src={productoPreview}
-              alt="Kit básico de llaveros bíblicos"
-              loading="lazy"
-              width={1200}
-              height={1500}
-              className="max-w-[160px] h-auto rounded-md"
-            />
-          </div>
-
-          <div className="space-y-2 mb-5 flex-1">
-            {basicItems.map((item, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-success flex-shrink-0" />
-                <span className="text-sm text-foreground">{item}</span>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mb-4">
-            <p className="text-sm text-destructive line-through">De $19.90 USD</p>
-            <p className="text-3xl md:text-4xl font-bold text-foreground">$9.90 USD</p>
-            <p className="text-[11px] text-muted-foreground mt-1">Pago único · Acceso de por vida</p>
-          </div>
-
-          <Button
-            asChild
-            size="lg"
-            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-base gap-2 rounded-full py-6"
-          >
-            <a
-              href={CHECKOUT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-utmify-event="Quiero comprar ahora"
-              onClick={openCheckoutInNewTab("Quiero comprar ahora")}
-            >
-              Quiero comprar ahora
-            </a>
-          </Button>
-          <p className="text-center text-[11px] text-muted-foreground mt-2">Sin bonos incluidos</p>
-        </Card>
-
-        {/* ---- PREMIUM: KIT COMPLETO ---- */}
+      <div className="max-w-xl mx-auto">
         <Card className="p-5 md:p-6 border-2 border-accent relative flex flex-col shadow-gold">
           <div className="absolute -top-3 left-1/2 -translate-x-1/2">
             <span className="bg-gradient-gold-strong text-primary-foreground text-[11px] font-extrabold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
-              ⭐ Más elegido
+              ⭐ Oferta única
             </span>
           </div>
 
           <div className="text-center mb-4 mt-2">
             <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">KIT COMPLETO + 5 BONOS</p>
-            <h3 className="font-display text-2xl md:text-3xl font-bold text-primary mb-1">Kit Premium</h3>
+            <h3 className="font-display text-2xl md:text-3xl font-bold text-primary mb-1">Kit Llaveros Bíblicos</h3>
             <p className="text-xs text-muted-foreground">Todo lo que necesitas para enseñar, regalar y vender.</p>
           </div>
 
           <div className="flex justify-center mb-4">
             <img
               src={productoPreview}
-              alt="Kit premium de llaveros bíblicos con bonos"
+              alt="Kit de llaveros bíblicos con bonos"
               loading="lazy"
               width={1200}
               height={1500}
@@ -586,7 +524,7 @@ const ContentSection = () => (
           <div className="text-center mb-4">
             <p className="text-sm text-destructive line-through">De $67 USD</p>
             <p className="text-base md:text-lg font-semibold text-foreground">Todo esto por apenas</p>
-            <p className="text-4xl md:text-5xl font-bold text-success">$27.90 USD</p>
+            <p className="text-4xl md:text-5xl font-bold text-success">$9.90 USD</p>
             <p className="text-[11px] text-muted-foreground mt-1">Pago único · Sin renovaciones · 7 días de garantía</p>
           </div>
 
@@ -601,11 +539,11 @@ const ContentSection = () => (
             className="shiny-cta animate-pulse-gold w-full bg-gradient-gold-strong hover:brightness-110 text-primary-foreground text-base md:text-lg font-bold gap-2 rounded-full py-7"
           >
             <a
-              href={CHECKOUT_URL_PREMIUM}
+              href={CHECKOUT_URL}
               target="_blank"
               rel="noopener noreferrer"
               data-utmify-event="Quiero comprar ahora"
-              onClick={openCheckoutInNewTab("Quiero comprar ahora", CHECKOUT_URL_PREMIUM)}
+              onClick={openCheckoutInNewTab("Quiero comprar ahora")}
             >
               Quiero comprar ahora
             </a>

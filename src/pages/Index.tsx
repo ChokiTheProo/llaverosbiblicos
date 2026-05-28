@@ -43,9 +43,9 @@ import llavero3 from "@/assets/llavero-3.webp";
 import llavero4 from "@/assets/llavero-4.webp";
 import llavero5 from "@/assets/llavero-5.webp";
 import llavero6 from "@/assets/llavero-6.webp";
-import avatar1 from "@/assets/avatar-1.webp";
-import avatar2 from "@/assets/avatar-2.webp";
-import avatar3 from "@/assets/avatar-3.webp";
+import avatar1 from "@/assets/avatar-real-1.jpg";
+import avatar2 from "@/assets/avatar-real-2.jpg";
+import avatar3 from "@/assets/avatar-real-3.jpg";
 import avatar4 from "@/assets/avatar-4.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/T105491862G?checkoutMode=10";
@@ -401,11 +401,11 @@ const testimonials = [
       "Compré el kit pensando en mis hijos, pero terminé regalando a toda mi célula. Los niños quedaron encantados con los versículos. Vale cada centavo.",
   },
   {
-    name: "Jésica S.",
-    role: "Colombia · Maestra de escuela dominical",
+    name: "Carlos M.",
+    role: "Colombia · Líder de jóvenes",
     avatar: avatar2,
     quote:
-      "Soy maestra de escuela dominical y este kit me salvó. Los niños se llevan su llavero a casa y los papás me agradecen. Excelente material.",
+      "Soy líder de jóvenes en mi iglesia y este kit me salvó. Los chicos se llevan su llavero a casa y los papás me agradecen. Excelente material.",
   },
   {
     name: "Carla L.",

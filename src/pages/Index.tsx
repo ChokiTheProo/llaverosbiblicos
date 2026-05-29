@@ -34,6 +34,13 @@ import {
   Download,
   HandHeart,
   BadgeCheck,
+  TrendingUp,
+  DollarSign,
+  Target,
+  Megaphone,
+  BarChart3,
+  ClipboardList,
+  Video,
 } from "lucide-react";
 
 import productoPreview from "@/assets/producto-preview.webp";
@@ -255,33 +262,43 @@ const ShowcaseSection = () => (
 /* ---------- WHAT YOU RECEIVE ---------- */
 const mainItems = [
   "50 personajes bíblicos con versículo",
-  "Archivo PDF de alta calidad",
-  "Imprime cuantas veces quieras",
+  "Archivo PDF de alta calidad listo para imprimir",
+  "Licencia de uso comercial ilimitada",
   "Líneas de corte fáciles de seguir",
-  "Licencia para uso personal o comercial",
-  "Compatible con cualquier impresora",
+  "Compatible con cualquier impresora casera",
+  "Instrucciones paso a paso para armar",
+];
+
+const trainingItems = [
+  "Cómo definir tu precio de venta y calcular tu margen",
+  "Dónde vender: WhatsApp, iglesia, ferias y redes sociales",
+  "Cómo crear ofertas irresistibles y vender más",
+  "Scripts de conversación para vender sin ser 'vendedor'",
+  "Plan de producción: cuántos imprimir y cuándo",
+  "Cómo escalar tu negocio de llaveros bíblicos",
 ];
 
 const bonuses = [
-  { icon: Printer, number: "BONO 01", title: "Control de Gastos y Ventas para Llaveros Bíblicos", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
-  { icon: BookOpen, number: "BONO 02", title: "Plan de Clase Dominical: 1 clase lista con los llaveros", oldPrice: "$18.00", newPrice: "HOY GRATIS" },
-  { icon: Gift, number: "BONO 03", title: "Tarjetas para Regalar: mini-cards con mensajes", oldPrice: "$7.00", newPrice: "HOY GRATIS" },
-  { icon: Layout, number: "BONO 04", title: "Plantillas para Vender: posts y precios sugeridos", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
-  { icon: InfinityIcon, number: "BONO 05", title: "Actualizaciones de por vida: nuevos personajes sin costo", oldPrice: "$7.00", newPrice: "HOY GRATIS" },
+  { icon: Calculator, number: "BONO 01", title: "Calculadora de Costos y Precios de Venta", oldPrice: "$15.00", newPrice: "HOY GRATIS" },
+  { icon: Megaphone, number: "BONO 02", title: "Plantillas para Vender en Redes Sociales", oldPrice: "$18.00", newPrice: "HOY GRATIS" },
+  { icon: Layout, number: "BONO 03", title: "Catálogo Digital Listo para Compartir", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
+  { icon: ClipboardList, number: "BONO 04", title: "Plan de Clase Dominical con los Llaveros", oldPrice: "$18.00", newPrice: "HOY GRATIS" },
+  { icon: InfinityIcon, number: "BONO 05", title: "Actualizaciones de por vida sin costo extra", oldPrice: "$10.00", newPrice: "HOY GRATIS" },
 ];
 
 const WhatYouReceiveSection = () => (
   <section className="py-5 md:py-7 bg-muted/30" id="what-you-receive">
     <div className="container mx-auto px-4">
       <div className="text-center max-w-3xl mx-auto mb-5">
-        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">HOY CON BONO</p>
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent mb-1">KIT COMPLETO</p>
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2">
-          5 Bonos GRATIS al comprar hoy
+          Producto + Entrenamiento para <span className="text-accent">Vender y Ganar</span>
         </h2>
-        <p className="text-sm text-muted-foreground">Al confirmar tu compra, también recibes estos materiales extras — pensados para que aproveches el kit al máximo.</p>
+        <p className="text-sm text-muted-foreground">No solo recibes los moldes. También te enseñamos cómo venderlos, cuánto cobrar y cómo generar ingresos desde el primer día.</p>
       </div>
 
       <div className="max-w-5xl mx-auto space-y-5">
+        {/* Producto Principal */}
         <Card className="p-3.5 sm:p-5 md:p-6">
           <div className="flex flex-row gap-4 items-start">
             <div className="icon-tile flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl flex-shrink-0">
@@ -290,10 +307,10 @@ const WhatYouReceiveSection = () => (
             <div className="flex-1 min-w-0">
               <p className="text-xs font-bold uppercase tracking-widest text-accent mb-0.5">PRODUCTO PRINCIPAL</p>
               <h3 className="text-base sm:text-lg md:text-xl font-semibold text-foreground mb-2">
-                Pack de 50 Llaveros Bíblicos
+                Pack de 50 Llaveros Bíblicos para Imprimir
               </h3>
               <p className="text-muted-foreground text-xs sm:text-sm mb-3">
-                Moldes listos para imprimir, recortar y armar — con personajes y versículos.
+                Moldes profesionales listos para imprimir, recortar y armar — con 50 personajes bíblicos y sus versículos.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
                 {mainItems.map((item, i) => (
@@ -307,6 +324,36 @@ const WhatYouReceiveSection = () => (
           </div>
         </Card>
 
+        {/* Entrenamiento Destaque */}
+        <Card className="p-3.5 sm:p-5 md:p-6 border-2 border-accent/40 relative overflow-hidden">
+          <div className="absolute top-0 right-0 bg-accent text-primary-foreground text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-bl-lg">
+            Entrenamiento Incluido
+          </div>
+          <div className="flex flex-row gap-4 items-start">
+            <div className="icon-tile flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl flex-shrink-0" style={{ background: 'linear-gradient(140deg, hsl(36 70% 52%), hsl(40 85% 65%))' }}>
+              <TrendingUp className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-foreground" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-xs font-bold uppercase tracking-widest text-accent mb-0.5">ENTRENAMIENTO COMPLETO</p>
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-foreground mb-2">
+                Cómo Vender Llaveros Bíblicos y Generar Ingresos Reales
+              </h3>
+              <p className="text-muted-foreground text-xs sm:text-sm mb-3">
+                Te damos el paso a paso completo: desde cómo calcular tu precio de venta hasta dónde encontrar clientes y cómo escalar tu negocio.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                {trainingItems.map((item, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
+                    <span className="text-xs sm:text-sm text-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Card>
+
+        {/* Bonos */}
         <div>
           <div className="text-center mb-4">
             <span className="inline-block bg-accent/20 text-accent-foreground text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
@@ -341,7 +388,7 @@ const WhatYouReceiveSection = () => (
               onClick={() => { trackCta("Bonus CTA"); scrollToContent(); }}
               className="w-full sm:w-auto mx-auto flex items-center justify-center bg-gradient-gold-strong hover:brightness-110 text-primary-foreground font-bold text-base px-8 gap-2 rounded-full shiny-cta animate-pulse-gold"
             >
-              Quiero el Kit
+              Quiero el Kit + Entrenamiento
             </Button>
           </div>
         </div>

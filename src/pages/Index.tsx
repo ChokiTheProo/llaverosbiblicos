@@ -34,6 +34,13 @@ import {
   Download,
   HandHeart,
   BadgeCheck,
+  TrendingUp,
+  DollarSign,
+  Target,
+  Megaphone,
+  BarChart3,
+  ClipboardList,
+  Video,
 } from "lucide-react";
 
 import productoPreview from "@/assets/producto-preview.webp";

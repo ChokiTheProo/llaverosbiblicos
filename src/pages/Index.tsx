@@ -330,7 +330,7 @@ const WhatYouReceiveSection = () => (
             Entrenamiento Incluido
           </div>
           <div className="flex flex-row gap-4 items-start">
-            <div className="icon-tile flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl flex-shrink-0" style={{ background: 'linear-gradient(140deg, hsl(36 70% 52%), hsl(40 85% 65%))' }}>
+            <div className="icon-tile flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl flex-shrink-0">
               <TrendingUp className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-foreground" />
             </div>
             <div className="flex-1 min-w-0">

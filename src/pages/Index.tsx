@@ -613,6 +613,7 @@ const ContentSection = () => (
               <span>Moneda local</span>
             </div>
           </div>
+          <p className="text-center text-[12px] text-muted-foreground mt-3">Pago con moneda local</p>
         </Card>
       </div>
     </div>

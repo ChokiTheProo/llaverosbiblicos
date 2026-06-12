@@ -625,7 +625,7 @@ const faqs = [
   { question: "¿Necesito una impresora especial?", answer: "No. Funciona con cualquier impresora casera (chorro de tinta o láser). Recomendamos hoja A4 o cartulina blanca de 180g." },
   { question: "¿Puedo vender los llaveros que imprimo?", answer: "¡Sí! El kit incluye licencia de uso comercial. El bono 04 trae plantillas y precios sugeridos." },
   { question: "¿En qué idioma están los versículos?", answer: "Todos los versículos están en español, en versión clara para niños y adultos." },
-  { question: "¿Y si no me gusta? ¿Es un pago único?", answer: "Tienes 7 días de garantía total. Si no te encanta, te devolvemos el 100% de tu dinero. Es un pago único de $9.90 USD, sin renovaciones ni cobros futuros." },
+  { question: "¿Y si no me gusta? ¿Es un pago único?", answer: "Tienes 7 días de garantía total. Si no te encanta, te devolvemos el 100% de tu dinero. Es un pago único de $6.90 USD, sin renovaciones ni cobros futuros." },
 ];
 
 const GuaranteeSection = () => (

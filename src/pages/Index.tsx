@@ -94,7 +94,7 @@ const UrgencyTopbar = () => (
       <span aria-hidden>⏰</span>
       <span className="font-semibold uppercase tracking-wider">OFERTA DE LANZAMIENTO</span>
       <span>— Solo esta semana por</span>
-      <span className="font-bold" style={{ color: "#C9A24A" }}>$9.90 USD</span>
+      <span className="font-bold" style={{ color: "#C9A24A" }}>$6.90 USD</span>
       <span className="opacity-80">(precio sube a $19.90 el próximo lunes)</span>
     </span>
   </div>

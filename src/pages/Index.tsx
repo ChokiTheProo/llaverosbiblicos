@@ -280,7 +280,7 @@ const trainingItems = [
 
 const bonuses = [
   { icon: ClipboardList, number: "BONO 01", title: "Control de Gastos y Ventas de Llaveros Bíblicos", oldPrice: "$7.00", newPrice: "HOY GRATIS" },
-  { icon: BookOpen, number: "BONO 02", title: "VIDEO CLASE: cómo hacer los llaveros en plástico y acrílico (paso a paso)", oldPrice: "$9.00", newPrice: "HOY GRATIS" },
+  { icon: BookOpen, number: "BONO 02", title: "VIDEO CLASE: cómo hacer los llaveros en plástico (paso a paso)", oldPrice: "$9.00", newPrice: "HOY GRATIS" },
   { icon: Calculator, number: "BONO 03", title: "Calculadora de Precio y Ganancia para Llaveros Bíblicos", oldPrice: "$5.00", newPrice: "HOY GRATIS" },
   { icon: Layout, number: "BONO 04", title: "Modelos para Vender: posts y precios sugeridos", oldPrice: "$9.00", newPrice: "HOY GRATIS" },
   { icon: InfinityIcon, number: "BONO 05", title: "Actualizaciones vitalicias: nuevos personajes sin costo", oldPrice: "$5.00", newPrice: "HOY GRATIS" },

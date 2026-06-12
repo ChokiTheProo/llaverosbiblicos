@@ -279,11 +279,11 @@ const trainingItems = [
 ];
 
 const bonuses = [
-  { icon: Calculator, number: "BONO 01", title: "Calculadora de Costos y Precios de Venta", oldPrice: "$15.00", newPrice: "HOY GRATIS" },
-  { icon: Megaphone, number: "BONO 02", title: "Plantillas para Vender en Redes Sociales", oldPrice: "$18.00", newPrice: "HOY GRATIS" },
-  { icon: Layout, number: "BONO 03", title: "Catálogo Digital Listo para Compartir", oldPrice: "$12.00", newPrice: "HOY GRATIS" },
-  { icon: ClipboardList, number: "BONO 04", title: "Plan de Clase Dominical con los Llaveros", oldPrice: "$18.00", newPrice: "HOY GRATIS" },
-  { icon: InfinityIcon, number: "BONO 05", title: "Actualizaciones de por vida sin costo extra", oldPrice: "$10.00", newPrice: "HOY GRATIS" },
+  { icon: ClipboardList, number: "BONO 01", title: "Control de Gastos y Ventas de Llaveros Bíblicos", oldPrice: "$7.00", newPrice: "HOY GRATIS" },
+  { icon: BookOpen, number: "BONO 02", title: "VIDEO CLASE: cómo hacer los llaveros en plástico y acrílico (paso a paso)", oldPrice: "$9.00", newPrice: "HOY GRATIS" },
+  { icon: Calculator, number: "BONO 03", title: "Calculadora de Precio y Ganancia para Llaveros Bíblicos", oldPrice: "$5.00", newPrice: "HOY GRATIS" },
+  { icon: Layout, number: "BONO 04", title: "Modelos para Vender: posts y precios sugeridos", oldPrice: "$9.00", newPrice: "HOY GRATIS" },
+  { icon: InfinityIcon, number: "BONO 05", title: "Actualizaciones vitalicias: nuevos personajes sin costo", oldPrice: "$5.00", newPrice: "HOY GRATIS" },
 ];
 
 const WhatYouReceiveSection = () => (

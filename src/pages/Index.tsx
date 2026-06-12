@@ -571,7 +571,7 @@ const ContentSection = () => (
           <div className="text-center mb-4">
             <p className="text-sm text-destructive line-through">De $67 USD</p>
             <p className="text-base md:text-lg font-semibold text-foreground">Todo esto por apenas</p>
-            <p className="text-4xl md:text-5xl font-bold text-success">$9.90 USD</p>
+            <p className="text-4xl md:text-5xl font-bold text-success">$6.90 USD</p>
             <p className="text-[11px] text-muted-foreground mt-1">Pago único · Sin renovaciones · 7 días de garantía</p>
           </div>
 

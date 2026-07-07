@@ -76,6 +76,17 @@ const trackCta = (eventName: string) => {
 const openCheckoutInNewTab = (eventName: string, url: string = CHECKOUT_URL) => (event: MouseEvent<HTMLAnchorElement>) => {
   event.preventDefault();
   trackCta(eventName);
+  try {
+    // Meta Pixel — InitiateCheckout
+    (window as any).fbq?.("track", "InitiateCheckout", {
+      content_name: eventName,
+      content_category: url === CHECKOUT_URL_PREMIUM ? "Premium" : "Standard",
+      currency: "USD",
+      value: url === CHECKOUT_URL_PREMIUM ? 14.9 : 6.9,
+    });
+  } catch (_) {
+    /* noop */
+  }
   window.open(url, "_blank", "noopener,noreferrer");
 };
 

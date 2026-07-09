@@ -624,7 +624,13 @@ const ContentSection = () => (
               <span>Moneda local</span>
             </div>
           </div>
-          <p className="text-center text-[12px] text-muted-foreground mt-3">Pago con moneda local</p>
+          <div className="mt-4 flex justify-center">
+            <div className="inline-flex items-center gap-2 rounded-full border-2 border-success/40 bg-success/10 px-4 py-2 shadow-sm">
+              <Globe className="w-5 h-5 text-success" />
+              <span className="text-sm font-bold text-success">Paga con tu moneda local</span>
+            </div>
+          </div>
+          <p className="text-center text-[11px] text-muted-foreground mt-2">Pesos, soles, reales, quetzales y más — conversión automática</p>
         </Card>
       </div>
     </div>

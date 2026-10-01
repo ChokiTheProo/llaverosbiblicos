@@ -126,7 +126,7 @@ const HeroSection = () => (
               src={productoPreview}
               alt="Pack de 50 Llaveros Bíblicos"
               width={1200}
-              height={1500}
+              height={1200}
               loading="eager"
               decoding="async"
               fetchPriority="high"
@@ -563,7 +563,8 @@ const ContentSection = () => (
               alt="Kit de llaveros bíblicos con bonos"
               loading="lazy"
               width={1200}
-              height={1500}
+              height={1200}
+              decoding="async"
               className="max-w-[180px] h-auto rounded-md"
             />
           </div>
